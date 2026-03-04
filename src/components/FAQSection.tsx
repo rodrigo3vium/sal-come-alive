@@ -7,40 +7,38 @@ import {
 
 const faqs = [
   {
-    question: "O que é personal branding?",
-    answer: "Personal branding é o processo estratégico de construir e gerenciar a percepção que o mundo tem de você. Vai além da estética — envolve posicionamento, comunicação, valores e a forma como você se apresenta em todos os pontos de contato.",
+    question: "O que é Branding Pessoal?",
+    answer: 'Toda pessoa que existe já é uma marca na medida em que todos com quem convivemos irão criar uma percepção de nós, quer estejamos conscientes disso ou não. Como diria o especialista no assunto, Dan Shawbel, "marca pessoal é sobre desenterrar tudo o que é verdadeiro e único sobre você e deixar todo mundo saber". Quando você trabalha sua marca pessoal, está tomando consciência e criando estratégias para que a marca que você deixa no mundo, seja o mais próxima daquilo que você deseja.',
   },
   {
-    question: "Para quem são os serviços do Studio SAL?",
-    answer: "Nossos serviços são voltados para mulheres que desejam se posicionar com autenticidade e estratégia no mercado — empreendedoras, profissionais liberais, executivas e criadoras de conteúdo que querem ser reconhecidas pelo seu valor.",
+    question: "Como saber qual serviço é ideal para mim?",
+    answer: "Gostamos de chamar nossos serviços de jornadas porque todos são uma experiência completa que proporciona grande crescimento. Cada cliente é única e se encontra em um momento de vida distinto, por isso temos uma diversidade grande de jornadas possíveis. Para entender qual a melhor para você, pense na tríade tempo-energia-dinheiro e qual desses três elementos você está mais disposta a investir. Quando não podemos investir muito tempo e nem energia, precisamos dispor de um maior investimento financeiro para que outros façam por nós. Quando não podemos investir dinheiro, precisamos dispor de mais tempo e energia para fazer acontecer. A boa notícia é que na Sal temos caminhos para as diferentes necessidades:\n\nA Consultoria Voo é o serviço mais exclusivo que temos, nele somos nós que colocamos a mão na massa e estruturamos sua marca, você só curte e aprova.\n\nJá na Mentoria SALto, montamos um ecossistema muito completo no qual te guiamos de forma próxima e personalizada para que você dê vida à sua marca.\n\nPense no seu momento pessoal e profissional e, se ainda ficar um restinho de dúvida, estamos aqui para te ajudar a tomar a melhor decisão.",
   },
   {
-    question: "Qual a diferença entre a Consultoria Voo e a Mentoria SALto?",
-    answer: "A Consultoria Voo é uma imersão pontual para clareza e direcionamento estratégico. Já a Mentoria SALto é um acompanhamento contínuo, ideal para quem busca construir e fortalecer seu posicionamento ao longo do tempo.",
+    question: "Como contratar a Sal?",
+    answer: 'Para SALtar conosco, basta clicar em um dos botões "QUERO SALTAR" ou "QUERO VOAR" dentro da página do serviço selecionado ou entrar em contato pelo WhatsApp +55 11 97540-4650 ou e-mail atendimento@studiosal.com.br. Com esse primeiro contato, iremos te conhecer melhor para entender se de fato faz sentido trabalharmos juntas. Somos uma agência boutique, comprometida com um atendimento personalizado, próximo e artesanal. Devido à alta demanda, precisamos selecionar com carinho os projetos que melhor se alinham com a transformação que podemos promover. Acreditamos que você nos escolhe, mas nós também escolhemos você! Por isso, ressaltamos que nem todos os projetos que recebemos poderão ser aprovados para fazerem parte da Sal.',
   },
   {
-    question: "Como posso começar?",
-    answer: "Você pode entrar em contato conosco pelo WhatsApp ou preencher o formulário de interesse. Faremos uma conversa inicial para entender suas necessidades e indicar o melhor caminho para você.",
+    question: "Qual a diferença entre branding e social media?",
+    answer: "Branding pessoal, em essência, é a percepção que as pessoas têm sobre você e o que você representa. Envolve entender quem você é, sua história, seus valores, diferenciais e como deseja ser percebida. O objetivo é construir uma identidade sólida e autêntica que conecte emocionalmente com as pessoas. O estrategista de branding pessoal é um guardião da essência da sua marca, além de te ajudar a ter clareza sobre o que você tem de mais único, ele também te guia no entendimento de como comunicar isso para o mundo de forma estratégica tanto on quanto offline.\n\nO social media cuida de como essa marca vai para o digital, auxiliando na criação e gerenciamento de conteúdo nas redes sociais. Ambos são essenciais, mas atuam em etapas diferentes no processo de construção da marca pessoal.",
   },
 ];
 
 const FAQSection = () => {
   return (
-    <section id="faq" className="bg-cream py-24 md:py-32">
+    <section id="faq" className="bg-beige py-24 md:py-32">
       <div className="container mx-auto px-6 max-w-2xl">
         <div className="text-center mb-16">
-          <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-4 font-body">Dúvidas</p>
           <h2 className="font-serif text-3xl md:text-4xl text-foreground">Perguntas Frequentes</h2>
-          <div className="mt-6 w-12 h-px bg-gold mx-auto" />
         </div>
 
         <Accordion type="single" collapsible className="space-y-2">
           {faqs.map((faq, index) => (
-            <AccordionItem key={index} value={`item-${index}`} className="border-b border-forest/10">
+            <AccordionItem key={index} value={`item-${index}`} className="border-b border-foreground/10">
               <AccordionTrigger className="font-serif text-left text-base text-foreground hover:no-underline py-5">
                 {faq.question}
               </AccordionTrigger>
-              <AccordionContent className="font-body text-sm text-muted-foreground leading-relaxed pb-5">
+              <AccordionContent className="font-body text-sm text-muted-foreground leading-relaxed pb-5 whitespace-pre-line">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>
@@ -48,14 +46,13 @@ const FAQSection = () => {
         </Accordion>
 
         <div className="mt-12 text-center">
-          <p className="font-body text-sm text-muted-foreground mb-3">Ainda tem dúvidas?</p>
           <a
-            href="https://wa.me/5511999999999"
+            href="https://wa.me/5511975404650"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-forest text-sm tracking-[0.1em] uppercase font-body border-b border-forest/30 pb-1 hover:border-forest transition-colors"
+            className="inline-flex items-center gap-2 text-foreground text-sm tracking-[0.1em] uppercase font-body border-b border-foreground/30 pb-1 hover:border-foreground transition-colors"
           >
-            Fale conosco pelo WhatsApp
+            RESTOU ALGUMA DÚVIDA? clique aqui para falar conosco
           </a>
         </div>
       </div>
