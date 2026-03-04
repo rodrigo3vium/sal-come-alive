@@ -1,61 +1,84 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Menu, X, ChevronDown } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
 
   const scrollTo = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
     setIsOpen(false);
+    setServicesOpen(false);
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-forest/95 backdrop-blur-sm">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-warm-white/95 backdrop-blur-sm">
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
-        <button onClick={() => scrollTo("hero")} className="font-serif text-xl tracking-[0.3em] text-primary-foreground">
-          STUDIO SAL
+        <button onClick={() => scrollTo("hero")} className="font-serif text-xl tracking-[0.15em] text-foreground">
+          STUDIO <span className="italic">SAL</span>
         </button>
 
         {/* Desktop */}
         <div className="hidden md:flex items-center gap-8">
-          <button onClick={() => scrollTo("hero")} className="text-sm tracking-[0.15em] uppercase text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-            Início
+          <button onClick={() => scrollTo("hero")} className="text-sm tracking-[0.1em] lowercase text-foreground/80 hover:text-foreground transition-colors font-body">
+            início
           </button>
-          <button onClick={() => scrollTo("about")} className="text-sm tracking-[0.15em] uppercase text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-            Sobre Nós
+          <button onClick={() => scrollTo("about")} className="text-sm tracking-[0.1em] lowercase text-foreground/80 hover:text-foreground transition-colors font-body">
+            sobre nós
           </button>
-          <button onClick={() => scrollTo("services")} className="text-sm tracking-[0.15em] uppercase text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-            Serviços
-          </button>
-          <button onClick={() => scrollTo("faq")} className="text-sm tracking-[0.15em] uppercase text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-            FAQ
-          </button>
+          <div className="relative">
+            <button
+              onClick={() => setServicesOpen(!servicesOpen)}
+              className="flex items-center gap-1 text-sm tracking-[0.1em] lowercase text-foreground/80 hover:text-foreground transition-colors font-body"
+            >
+              serviços
+              <ChevronDown size={14} className={`transition-transform ${servicesOpen ? 'rotate-180' : ''}`} />
+            </button>
+            {servicesOpen && (
+              <div className="absolute top-full left-0 mt-2 bg-warm-white border border-border rounded-sm shadow-lg py-2 min-w-[200px]">
+                <a href="https://studiosal.com.br/consultoria-voo" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-sm text-foreground/80 hover:text-foreground hover:bg-beige transition-colors font-body">
+                  Consultoria Voo
+                </a>
+                <a href="https://studiosal.com.br/mentoria-salto" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-sm text-foreground/80 hover:text-foreground hover:bg-beige transition-colors font-body">
+                  Mentoria SALto
+                </a>
+                <a href="https://studiosal.com.br/contato" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-sm text-foreground/80 hover:text-foreground hover:bg-beige transition-colors font-body">
+                  Cursos
+                </a>
+              </div>
+            )}
+          </div>
         </div>
 
-        <Button
-          onClick={() => scrollTo("cta")}
-          className="hidden md:inline-flex bg-cream text-forest hover:bg-warm-white tracking-[0.15em] text-xs uppercase font-body rounded-none px-6"
+        <a
+          href="https://form.respondi.app/ttqcWIpe"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hidden md:inline-flex border border-foreground text-foreground px-6 py-2 text-xs tracking-[0.15em] uppercase font-body hover:bg-foreground hover:text-primary-foreground transition-colors rounded-sm"
         >
-          Quero Saltar
-        </Button>
+          QUERO SALTAR
+        </a>
 
         {/* Mobile toggle */}
-        <button onClick={() => setIsOpen(!isOpen)} className="md:hidden text-primary-foreground">
+        <button onClick={() => setIsOpen(!isOpen)} className="md:hidden text-foreground">
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
 
       {/* Mobile menu */}
       {isOpen && (
-        <div className="md:hidden bg-forest border-t border-forest-light px-6 pb-6 space-y-4">
-          <button onClick={() => scrollTo("hero")} className="block w-full text-left text-sm tracking-[0.15em] uppercase text-primary-foreground/80 py-2">Início</button>
-          <button onClick={() => scrollTo("about")} className="block w-full text-left text-sm tracking-[0.15em] uppercase text-primary-foreground/80 py-2">Sobre Nós</button>
-          <button onClick={() => scrollTo("services")} className="block w-full text-left text-sm tracking-[0.15em] uppercase text-primary-foreground/80 py-2">Serviços</button>
-          <button onClick={() => scrollTo("faq")} className="block w-full text-left text-sm tracking-[0.15em] uppercase text-primary-foreground/80 py-2">FAQ</button>
-          <Button onClick={() => scrollTo("cta")} className="bg-cream text-forest hover:bg-warm-white tracking-[0.15em] text-xs uppercase font-body rounded-none px-6 w-full">
-            Quero Saltar
-          </Button>
+        <div className="md:hidden bg-warm-white border-t border-border px-6 pb-6 space-y-4">
+          <button onClick={() => scrollTo("hero")} className="block w-full text-left text-sm tracking-[0.1em] lowercase text-foreground/80 py-2 font-body">início</button>
+          <button onClick={() => scrollTo("about")} className="block w-full text-left text-sm tracking-[0.1em] lowercase text-foreground/80 py-2 font-body">sobre nós</button>
+          <button onClick={() => scrollTo("services")} className="block w-full text-left text-sm tracking-[0.1em] lowercase text-foreground/80 py-2 font-body">serviços</button>
+          <a
+            href="https://form.respondi.app/ttqcWIpe"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block border border-foreground text-foreground px-6 py-2 text-xs tracking-[0.15em] uppercase font-body hover:bg-foreground hover:text-primary-foreground transition-colors rounded-sm"
+          >
+            QUERO SALTAR
+          </a>
         </div>
       )}
     </nav>

@@ -1,37 +1,37 @@
 const QuoteSection = () => {
   return (
-    <section id="about" className="bg-forest py-24 md:py-32">
+    <section id="about" className="bg-warm-white py-24 md:py-32">
       <div className="container mx-auto px-6 max-w-4xl">
         <div className="text-center mb-16">
-          <p className="text-cream/50 text-sm tracking-[0.3em] uppercase mb-6 font-body">Por que existimos</p>
-          <h2 className="font-serif text-3xl md:text-5xl lg:text-6xl text-cream leading-tight">
-            em um mundo com 8 bilhões,
-            <br />
-            <span className="italic text-gold">só você é você.</span>
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground leading-tight">
+            "em um mundo com 8 bilhões<span className="font-bold">,</span> só você é você e isso não é mero acaso."
           </h2>
         </div>
 
-        <div className="mt-16 grid md:grid-cols-3 gap-12 text-cream/80">
-          <div className="space-y-4">
-            <div className="w-8 h-px bg-gold" />
-            <h3 className="font-serif text-lg text-cream">Jornada personalizada</h3>
-            <p className="font-body text-sm leading-relaxed">
-              Cada mulher tem uma história única. Criamos estratégias sob medida para traduzir sua essência em uma marca pessoal poderosa.
-            </p>
-          </div>
-          <div className="space-y-4">
-            <div className="w-8 h-px bg-gold" />
-            <h3 className="font-serif text-lg text-cream">Olhar sensível</h3>
-            <p className="font-body text-sm leading-relaxed">
-              Unimos sensibilidade e estratégia para criar posicionamentos que respeitam quem você é e potencializam onde você quer chegar.
-            </p>
-          </div>
-          <div className="space-y-4">
-            <div className="w-8 h-px bg-gold" />
-            <h3 className="font-serif text-lg text-cream">Equilíbrio como ferramenta</h3>
-            <p className="font-body text-sm leading-relaxed">
-              Acreditamos que sucesso profissional e bem-estar caminham juntos. Seu brilho não precisa custar sua paz.
-            </p>
+        <div className="mt-16">
+          <h3 className="font-serif text-xl md:text-2xl text-foreground text-center mb-12">
+            Você é única, sua marca também precisa ser. Por isso nós:
+          </h3>
+          
+          <div className="space-y-8 max-w-3xl mx-auto">
+            <div className="flex gap-4">
+              <div className="w-1 h-auto bg-foreground/20 flex-shrink-0 mt-1" />
+              <p className="font-body text-sm md:text-base text-foreground/80 leading-relaxed">
+                <span className="font-bold text-foreground">Oferecemos uma jornada personalizada e de autoconhecimento</span> para que você não só pareça, mas também seja verdadeiramente autêntica.
+              </p>
+            </div>
+            <div className="flex gap-4">
+              <div className="w-1 h-auto bg-foreground/20 flex-shrink-0 mt-1" />
+              <p className="font-body text-sm md:text-base text-foreground/80 leading-relaxed">
+                <span className="font-bold text-foreground">Cultivamos um olhar sensível</span> para que o mundo te veja com o mesmo encanto e a mesma riqueza que nós enxergamos.
+              </p>
+            </div>
+            <div className="flex gap-4">
+              <div className="w-1 h-auto bg-foreground/20 flex-shrink-0 mt-1" />
+              <p className="font-body text-sm md:text-base text-foreground/80 leading-relaxed">
+                <span className="font-bold text-foreground">Trabalhamos o equilíbrio como ferramenta para o sucesso,</span> transformando em realidade a força de vontade daquelas que nos procuram.
+              </p>
+            </div>
           </div>
         </div>
       </div>
