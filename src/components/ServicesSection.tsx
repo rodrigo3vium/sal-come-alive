@@ -32,25 +32,29 @@ const ServicesSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 max-w-6xl mx-auto">
           {services.map((service) => (
             <a
               key={service.title}
               href={service.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="group cursor-pointer block"
+              className="group cursor-pointer block relative overflow-hidden"
             >
-              <div className="overflow-hidden mb-6 rounded-sm">
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105"
-                  loading="lazy"
-                />
+              <img
+                src={service.image}
+                alt={service.title}
+                className="w-full h-[500px] object-cover transition-transform duration-700 group-hover:scale-105"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-black/30" />
+              <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-8">
+                <h3 className="font-serif text-2xl md:text-3xl text-white mb-3">{service.title}</h3>
+                {service.subtitle && (
+                  <p className="text-white/90 text-sm tracking-widest mb-3">{service.subtitle}</p>
+                )}
+                <p className="font-body text-sm text-white/90 leading-relaxed max-w-xs">{service.description}</p>
               </div>
-              <h3 className="font-serif text-lg text-foreground mb-3 font-bold">{service.title}</h3>
-              <p className="font-body text-sm text-muted-foreground leading-relaxed">{service.description}</p>
             </a>
           ))}
         </div>
