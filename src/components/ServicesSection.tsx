@@ -34,8 +34,9 @@ const ServicesSection = () => {
             Conheça os <em><strong>caminhos</strong></em> que oferecemos para seu <em><strong>crescimento</strong></em>
           </p>
         </div>
+      </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3">
           {services.map((service) => (
             <a
               key={service.title}
@@ -61,7 +62,6 @@ const ServicesSection = () => {
             </a>
           ))}
         </div>
-      </div>
     </section>
   );
 };
