@@ -35,7 +35,7 @@ const ServicesSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 -mx-6 md:-mx-[calc((100vw-100%)/2+1.5rem)]">
           {services.map((service) => (
             <a
               key={service.title}
