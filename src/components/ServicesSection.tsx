@@ -34,8 +34,9 @@ const ServicesSection = () => {
             Conheça os <em><strong>caminhos</strong></em> que oferecemos para seu <em><strong>crescimento</strong></em>
           </p>
         </div>
+      </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 -mx-6 md:-mx-[calc((100vw-100%)/2+1.5rem)]">
+        <div className="grid grid-cols-1 md:grid-cols-3">
           {services.map((service) => (
             <a
               key={service.title}
