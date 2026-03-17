@@ -34,7 +34,6 @@ export default {
         "warm-white": "hsl(var(--warm-white))",
         gold: "hsl(var(--gold))",
         beige: "hsl(var(--beige))",
-        "bright-red": "hsl(var(--bright-red))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
