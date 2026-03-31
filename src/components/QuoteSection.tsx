@@ -30,7 +30,7 @@ const QuoteSection = () => {
                 </p>
               </div>
               <div className="flex gap-4 items-start">
-                <span className="text-foreground/30 text-2xl leading-none mt-1 flex-shrink-0 tracking-[0.15em]">•••</span>
+                <span className="text-foreground text-sm leading-none mt-1.5 flex-shrink-0">...</span>
                 <p className="font-body text-sm md:text-base text-foreground/80 leading-relaxed">
                   <span className="font-bold text-foreground">Trabalhamos o equilíbrio como ferramenta para o sucesso,</span> transformando em realidade a força de vontade daquelas que nos procuram.
                 </p>
