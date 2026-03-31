@@ -4,8 +4,8 @@ const QuoteSection = () => {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-start">
           {/* Left side - Quote */}
-          <div>
-            <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground leading-tight">
+          <div className="flex items-center">
+            <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground leading-tight text-center">
               "em um mundo com 8 bilhões<span className="font-bold">,</span> só você é você e isso não é mero acaso."
             </h2>
           </div>
