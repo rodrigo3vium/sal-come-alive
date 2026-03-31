@@ -18,7 +18,7 @@ const QuoteSection = () => {
             
             <div className="space-y-8">
               <div className="flex gap-4 items-start">
-                <span className="text-foreground text-sm leading-none mt-1.5 flex-shrink-0">...</span>
+                <span className="text-foreground text-xl leading-none mt-0.5 flex-shrink-0 font-bold">...</span>
                 <p className="font-body text-sm md:text-base text-foreground/80 leading-relaxed">
                   <span className="font-bold text-foreground">Oferecemos uma jornada personalizada e de autoconhecimento</span> para que você não só pareça, mas também seja verdadeiramente autêntica.
                 </p>
