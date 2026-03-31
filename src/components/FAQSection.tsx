@@ -27,14 +27,14 @@ const faqs = [
 const FAQSection = () => {
   return (
     <section id="faq" className="bg-beige py-24 md:py-32">
-      <div className="container mx-auto px-6 max-w-2xl">
+      <div className="container mx-auto px-6 max-w-3xl">
         <div className="text-center mb-16">
           <h2 className="font-serif text-3xl md:text-4xl text-foreground">Perguntas Frequentes</h2>
         </div>
 
-        <Accordion type="single" collapsible className="space-y-2">
+        <Accordion type="single" collapsible className="space-y-4">
           {faqs.map((faq, index) => (
-            <AccordionItem key={index} value={`item-${index}`} className="border-b border-foreground/10">
+            <AccordionItem key={index} value={`item-${index}`} className="border border-foreground/10 rounded-sm px-6 bg-warm-white">
               <AccordionTrigger className="font-serif text-left text-base text-foreground hover:no-underline py-5">
                 {faq.question}
               </AccordionTrigger>
@@ -50,9 +50,10 @@ const FAQSection = () => {
             href="https://wa.me/5511975404650"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-foreground text-sm tracking-[0.1em] uppercase font-body border-b border-foreground/30 pb-1 hover:border-foreground transition-colors"
+            className="inline-block border border-foreground/30 px-8 py-4 text-center hover:border-foreground transition-colors"
           >
-            RESTOU ALGUMA DÚVIDA? clique aqui para falar conosco
+            <span className="block font-body text-sm tracking-[0.1em] uppercase text-foreground">RESTOU ALGUMA DÚVIDA?</span>
+            <span className="block font-body text-sm text-foreground/70">clique aqui para falar conosco</span>
           </a>
         </div>
       </div>
