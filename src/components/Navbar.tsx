@@ -1,10 +1,12 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 import logoStudioSal from "@/assets/logo-studio-sal.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
+  const navigate = useNavigate();
 
   const scrollTo = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
@@ -24,7 +26,7 @@ const Navbar = () => {
           <button onClick={() => scrollTo("hero")} className="text-sm tracking-[0.1em] lowercase text-foreground/80 hover:text-foreground transition-colors font-body">
             início
           </button>
-          <button onClick={() => scrollTo("about")} className="text-sm tracking-[0.1em] lowercase text-foreground/80 hover:text-foreground transition-colors font-body">
+          <button onClick={() => { navigate("/sobre-nos"); setIsOpen(false); }} className="text-sm tracking-[0.1em] lowercase text-foreground/80 hover:text-foreground transition-colors font-body">
             sobre nós
           </button>
           <div className="relative">
@@ -70,7 +72,7 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden bg-warm-white border-t border-border px-6 pb-6 space-y-4">
           <button onClick={() => scrollTo("hero")} className="block w-full text-left text-sm tracking-[0.1em] lowercase text-foreground/80 py-2 font-body">início</button>
-          <button onClick={() => scrollTo("about")} className="block w-full text-left text-sm tracking-[0.1em] lowercase text-foreground/80 py-2 font-body">sobre nós</button>
+          <button onClick={() => { navigate("/sobre-nos"); setIsOpen(false); }} className="block w-full text-left text-sm tracking-[0.1em] lowercase text-foreground/80 py-2 font-body">sobre nós</button>
           <button onClick={() => scrollTo("services")} className="block w-full text-left text-sm tracking-[0.1em] lowercase text-foreground/80 py-2 font-body">serviços</button>
           <a
             href="https://form.respondi.app/ttqcWIpe"
