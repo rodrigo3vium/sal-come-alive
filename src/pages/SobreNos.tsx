@@ -54,6 +54,37 @@ const SobreNos = () => {
         </div>
       </section>
 
+      {/* Third Section - do propósito, uma profissão */}
+      <section className="bg-beige py-24 md:py-32">
+        <div className="container mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
+            {/* Left - Text */}
+            <div className="md:text-right">
+              <img
+                src={conexaoIcon}
+                alt="Ícone conexão"
+                className="w-16 h-16 mb-8 md:ml-auto"
+              />
+              <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl text-foreground mb-6 lowercase">
+                do propósito, uma profissão.
+              </h2>
+              <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed md:ml-auto max-w-lg">
+                Convidada por mulheres próximas, ela começou de forma espontânea a sua carreira como estrategista de marcas pessoais.
+              </p>
+            </div>
+
+            {/* Right - Image */}
+            <div className="flex justify-end">
+              <img
+                src={aboutCoffee}
+                alt="Café e livro"
+                className="w-full max-w-md aspect-[4/5] object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Footer />
       <WhatsAppButton />
     </div>
