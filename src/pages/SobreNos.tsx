@@ -120,6 +120,37 @@ const SobreNos = () => {
         </div>
       </section>
 
+      {/* Fifth Section - da dor, fez-se o sonho */}
+      <section className="bg-warm-white py-24 md:py-32">
+        <div className="container mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
+            {/* Left - Image */}
+            <div>
+              <img
+                src={aboutHandWater}
+                alt="Mão na água"
+                className="w-full max-w-md aspect-[4/5] object-cover"
+              />
+            </div>
+
+            {/* Right - Text */}
+            <div className="md:text-right">
+              <img
+                src={evolucaoIcon}
+                alt="Ícone evolução"
+                className="w-16 h-16 mb-8 md:ml-auto"
+              />
+              <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl text-foreground mb-6 lowercase">
+                da dor, fez-se o sonho
+              </h2>
+              <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed md:ml-auto max-w-lg">
+                Da dor percebida, veio a motivação para criar um projeto capaz de trazer autoconhecimento e confiança para que as mulheres possam reconhecer, e comunicar para o mundo, quem verdadeiramente são.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Footer />
       <WhatsAppButton />
     </div>
