@@ -2,7 +2,9 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import aboutBeach from "@/assets/about-beach.jpeg";
+import aboutCoffee from "@/assets/about-coffee.jpeg";
 import reencontroIcon from "@/assets/reencontro-icon.png";
+import conexaoIcon from "@/assets/conexao-icon.png";
 
 const SobreNos = () => {
   return (
