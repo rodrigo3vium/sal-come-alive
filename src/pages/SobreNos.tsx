@@ -5,6 +5,8 @@ import aboutBeach from "@/assets/about-beach.jpeg";
 import aboutCoffee from "@/assets/about-coffee.jpeg";
 import reencontroIcon from "@/assets/reencontro-icon.png";
 import conexaoIcon from "@/assets/conexao-icon.png";
+import aboutShell from "@/assets/about-shell.jpeg";
+import olharsensivelIcon from "@/assets/olharsensivel-icon.png";
 
 const SobreNos = () => {
   return (
