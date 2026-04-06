@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 import logoStudioSal from "@/assets/logo-studio-sal.png";
 
