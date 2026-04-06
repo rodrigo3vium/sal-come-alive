@@ -7,6 +7,8 @@ import reencontroIcon from "@/assets/reencontro-icon.png";
 import conexaoIcon from "@/assets/conexao-icon.png";
 import aboutShell from "@/assets/about-shell.jpeg";
 import olharsensivelIcon from "@/assets/olharsensivel-icon.png";
+import aboutHandWater from "@/assets/about-hand-water.jpeg";
+import evolucaoIcon from "@/assets/evolucao-icon.png";
 
 const SobreNos = () => {
   return (
