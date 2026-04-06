@@ -72,7 +72,7 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden bg-warm-white border-t border-border px-6 pb-6 space-y-4">
           <button onClick={() => scrollTo("hero")} className="block w-full text-left text-sm tracking-[0.1em] lowercase text-foreground/80 py-2 font-body">início</button>
-          <button onClick={() => scrollTo("about")} className="block w-full text-left text-sm tracking-[0.1em] lowercase text-foreground/80 py-2 font-body">sobre nós</button>
+          <button onClick={() => { navigate("/sobre-nos"); setIsOpen(false); }} className="block w-full text-left text-sm tracking-[0.1em] lowercase text-foreground/80 py-2 font-body">sobre nós</button>
           <button onClick={() => scrollTo("services")} className="block w-full text-left text-sm tracking-[0.1em] lowercase text-foreground/80 py-2 font-body">serviços</button>
           <a
             href="https://form.respondi.app/ttqcWIpe"
