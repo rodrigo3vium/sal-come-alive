@@ -26,7 +26,7 @@ const Navbar = () => {
           <button onClick={() => scrollTo("hero")} className="text-sm tracking-[0.1em] lowercase text-foreground/80 hover:text-foreground transition-colors font-body">
             início
           </button>
-          <button onClick={() => scrollTo("about")} className="text-sm tracking-[0.1em] lowercase text-foreground/80 hover:text-foreground transition-colors font-body">
+          <button onClick={() => { navigate("/sobre-nos"); setIsOpen(false); }} className="text-sm tracking-[0.1em] lowercase text-foreground/80 hover:text-foreground transition-colors font-body">
             sobre nós
           </button>
           <div className="relative">
