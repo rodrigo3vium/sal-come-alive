@@ -87,6 +87,37 @@ const SobreNos = () => {
         </div>
       </section>
 
+      {/* Fourth Section - o olhar para uma dor comum */}
+      <section className="bg-warm-white py-24 md:py-32">
+        <div className="container mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
+            {/* Left - Text */}
+            <div>
+              <img
+                src={olharsensivelIcon}
+                alt="Ícone olhar sensível"
+                className="w-16 h-16 mb-8"
+              />
+              <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl text-foreground mb-6 lowercase">
+                o olhar para uma dor comum
+              </h2>
+              <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed max-w-lg">
+                Durante a sua jornada, Giu percebeu a existência de uma dor, comum a muitas mulheres
+              </p>
+            </div>
+
+            {/* Right - Image */}
+            <div className="flex justify-end">
+              <img
+                src={aboutShell}
+                alt="Mulher com concha"
+                className="w-full max-w-lg aspect-[4/5] object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Footer />
       <WhatsAppButton />
     </div>
