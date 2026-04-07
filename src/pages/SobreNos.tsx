@@ -12,6 +12,8 @@ import evolucaoIcon from "@/assets/evolucao-icon.png";
 import aboutHero from "@/assets/about-hero.jpeg";
 import corpoMenteAlmaIcon from "@/assets/corpo-mente-alma-icon.png";
 import aboutLeaves from "@/assets/about-leaves.jpg";
+import aboutShadowHands from "@/assets/about-shadow-hands.jpeg";
+import logoComFrase from "@/assets/logo-com-frase.png";
 
 const SobreNos = () => {
   return (
