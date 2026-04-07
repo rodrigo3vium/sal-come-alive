@@ -238,7 +238,8 @@ const MentoriaSalto = () => {
                     className="w-full object-cover"
                   />
                 </div>
-                <p className="font-body text-sm text-foreground mt-3">{dep.name}</p>
+                <p className="font-body text-sm text-foreground font-medium mt-3">{dep.name}</p>
+                <p className="font-body text-sm text-foreground/70 mt-2 leading-relaxed">{dep.desc}</p>
               </div>
             ))}
           </div>
