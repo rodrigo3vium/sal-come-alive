@@ -340,13 +340,13 @@ const ConsultoriaVoo = () => {
               },
               {
                 title: "PROPÓSITO",
-                subtitle: "O que te move para além do lucro?",
-                text: "É aquilo que te faz levantar da cama todos os dias, a causa maior que você defende e que conecta pessoas ao seu redor. Quando você tem clareza do seu propósito, atrai as pessoas certas.",
+                subtitle: "O que te move a levantar da cama todos os dias?",
+                text: "É o seu porquê. A razão pela qual você decide levantar todos os dias da cama para fazer o seu trabalho. Quando temos uma motivação forte, não só é mais fácil acreditarmos naquilo que fazemos, como também inspirar os outros a acreditarem também. Simon Sinek, autor e especialista em liderança, diz que as pessoas não compram o quê você faz e sim o porquê você faz. Para nós, muito além de comprar, as pessoas se conectam por propósito.",
               },
               {
                 title: "FRASE SÍNTESE",
-                subtitle: "Como traduzir tudo isso em uma frase?",
-                text: "A síntese de tudo aquilo que você é e representa, condensada em uma frase poderosa que guiará toda a sua comunicação e posicionamento.",
+                subtitle: "Como resumir em poucas palavras quem você é e o que agrega para o mundo?",
+                text: "Também chamamos de mensagem central, a síntese de todo o seu posicionamento. O grão que carrega em si todo o significado de tudo que estruturamos nos outros pilares e que tem o objetivo de, em poucas palavras, deixar uma marca poderosa. A sua marca.",
               },
             ].map((pilar, i) => (
               <div key={pilar.title} className={`border-t border-foreground/20 ${i === 4 ? "border-b" : ""}`}>
