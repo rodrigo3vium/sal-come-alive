@@ -247,6 +247,37 @@ const MentoriaSalto = () => {
         </div>
       </section>
 
+      {/* Tudo que vai estar ao seu alcance */}
+      <section className="bg-beige py-20 md:py-28">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="font-serif text-3xl md:text-4xl text-foreground leading-relaxed mb-6">
+              Tudo que vai estar<br />ao seu alcance
+            </h2>
+            <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed max-w-2xl mx-auto">
+              Caso você seja aprovada, muito mais do que conhecimento, trazemos um ecossistema que transforma sua força de vontade em realidade.
+            </p>
+          </div>
+
+          {/* 6 Meses */}
+          <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-8 md:gap-12 items-center mb-16">
+            <div>
+              <h3 className="font-serif text-xl md:text-2xl text-foreground mb-4">6 Meses de Acompanhamento</h3>
+              <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed">
+                Esse é o tempo que nós estaremos com você para cuidar com todo o carinho e sensibilidade da marca que você veio deixar no mundo.
+              </p>
+            </div>
+            <div>
+              <img
+                src={mentoriaMaoAgua}
+                alt="Mão na água"
+                className="w-full aspect-[16/9] object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Footer />
       <WhatsAppButton />
     </div>
