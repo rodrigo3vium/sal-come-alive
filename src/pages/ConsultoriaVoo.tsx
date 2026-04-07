@@ -129,7 +129,9 @@ const ConsultoriaVoo = () => {
           </div>
         </div>
       </section>
-
+      <Footer />
+      <WhatsAppButton />
+    </div>
   );
 };
 
