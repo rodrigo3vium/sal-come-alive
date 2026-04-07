@@ -38,16 +38,34 @@ const Navbar = () => {
               <ChevronDown size={14} className={`transition-transform ${servicesOpen ? 'rotate-180' : ''}`} />
             </button>
             {servicesOpen && (
-              <div className="absolute top-full left-0 mt-2 bg-warm-white border border-border rounded-sm shadow-lg py-2 min-w-[200px]">
-                <a href="https://studiosal.com.br/consultoria-voo" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-sm text-foreground/80 hover:text-foreground hover:bg-beige transition-colors font-body">
-                  Consultoria Voo
-                </a>
-                <a href="https://studiosal.com.br/mentoria-salto" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-sm text-foreground/80 hover:text-foreground hover:bg-beige transition-colors font-body">
-                  Mentoria SALto
-                </a>
-                <a href="https://studiosal.com.br/contato" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-sm text-foreground/80 hover:text-foreground hover:bg-beige transition-colors font-body">
-                  Cursos
-                </a>
+              <div className="fixed left-0 right-0 top-full mt-0 bg-warm-white border-t border-border shadow-lg z-50">
+                <div className="container mx-auto grid grid-cols-3 divide-x divide-border">
+                  {/* Consultoria Voo */}
+                  <a href="https://studiosal.com.br/consultoria-voo" target="_blank" rel="noopener noreferrer" className="p-8 hover:bg-beige/50 transition-colors group">
+                    <h3 className="font-serif text-lg text-foreground mb-3">Consultoria Voo</h3>
+                    <div className="w-full h-px bg-foreground/20 mb-4" />
+                    <p className="font-body text-sm text-foreground/70 leading-relaxed">
+                      Um trabalho individual e exclusivo, feito por nós, do início ao fim. Indicada para quem quer ter sua marca pessoal estruturada com profundidade, estratégia e um olhar dedicado só para si.
+                    </p>
+                  </a>
+                  {/* Mentoria SALto */}
+                  <a href="https://studiosal.com.br/mentoria-salto" target="_blank" rel="noopener noreferrer" className="p-8 hover:bg-beige/50 transition-colors group">
+                    <h3 className="font-serif text-lg text-foreground mb-3">Mentoria SALto</h3>
+                    <div className="w-full h-px bg-foreground/20 mb-4" />
+                    <p className="font-body text-sm text-foreground/70 leading-relaxed">
+                      Uma jornada de autoconhecimento e expressão, guiada em grupo e vivida de forma individual. Ideal para quem quer aprender a se comunicar com mais verdade, clareza e consistência — com apoio no processo, mas construindo com as próprias mãos.
+                    </p>
+                  </a>
+                  {/* Cursos */}
+                  <div className="p-8 bg-beige/30">
+                    <h3 className="font-serif text-lg text-foreground mb-3">Cursos</h3>
+                    <div className="w-full h-px bg-foreground/20 mb-4" />
+                    <p className="font-body text-sm font-semibold text-foreground/80 mb-2">[EM BREVE]</p>
+                    <p className="font-body text-sm text-foreground/70 leading-relaxed">
+                      Você poderá aprender tudo sobre o nosso método para estruturar a comunicação que traduz profundamente aquilo que temos de único para nós e para o mundo.
+                    </p>
+                  </div>
+                </div>
               </div>
             )}
           </div>
