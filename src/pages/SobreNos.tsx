@@ -217,6 +217,31 @@ const SobreNos = () => {
         </div>
       </section>
 
+      {/* Eighth Section - logo com imagem */}
+      <section className="bg-warm-white py-24 md:py-32">
+        <div className="container mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
+            {/* Left - Image */}
+            <div>
+              <img
+                src={aboutShadowHands}
+                alt="Sombra de mãos"
+                className="w-full max-w-md aspect-[4/5] object-cover"
+              />
+            </div>
+
+            {/* Right - Logo */}
+            <div className="flex justify-center md:justify-end">
+              <img
+                src={logoComFrase}
+                alt="Studio Sal - traduzimos mulheres que marcam o mundo"
+                className="w-full max-w-md"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Footer />
       <WhatsAppButton />
     </div>
