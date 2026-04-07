@@ -204,6 +204,47 @@ const MentoriaSalto = () => {
         </div>
       </section>
 
+      {/* Depoimentos */}
+      <section className="bg-warm-white py-20 md:py-28">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+            <h2 className="font-serif text-3xl md:text-4xl text-foreground leading-relaxed">
+              O que aconteceu com quem já SALtou:
+            </h2>
+            <a
+              href="https://form.respondi.app/ttqcWIpe"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 md:mt-0 inline-block border border-foreground text-foreground px-8 py-3 text-sm tracking-[0.15em] uppercase font-body hover:bg-foreground hover:text-primary-foreground transition-colors whitespace-nowrap"
+            >
+              Quero SALtar
+            </a>
+          </div>
+          <p className="font-body text-sm md:text-base text-foreground/70 mb-12">
+            Cada jornada é única, mas é sempre maravilhoso podermos nos inspirar na transformação de mulheres incríveis:
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              { img: depoimentoIsabela, name: "Isabela Piratininga | Psicóloga" },
+              { img: depoimentoInara, name: "Inara Menezes | Psicóloga" },
+              { img: depoimentoGiovanna, name: "Giovanna Gusmão | Terapeuta Cognitivo-Comportamental" },
+            ].map((dep, i) => (
+              <div key={i}>
+                <div className="bg-beige rounded-sm overflow-hidden">
+                  <img
+                    src={dep.img}
+                    alt={`Depoimento de ${dep.name}`}
+                    className="w-full object-cover"
+                  />
+                </div>
+                <p className="font-body text-sm text-foreground mt-3">{dep.name}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <Footer />
       <WhatsAppButton />
     </div>
