@@ -83,7 +83,29 @@ const ConsultoriaVoo = () => {
         </div>
       </section>
 
-      <WhatsAppButton />
+      {/* Boa notícia */}
+      <section className="bg-beige py-20 md:py-28">
+        <div className="container mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
+            <div>
+              <img
+                src={consultoriaHands}
+                alt="Mãos"
+                className="w-full max-w-md aspect-[4/5] object-cover"
+              />
+            </div>
+            <div>
+              <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl text-foreground leading-snug mb-6">
+                A boa notícia é que você não está sozinha e tem um jeito de mudar esse cenário.
+              </h2>
+              <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed max-w-lg">
+                A onda do marketing digital e seus tem quês nos fez acreditar que todas as respostas estavam nas redes sociais e em conteúdos mirabolantes que te limitam a um personagem forçado. A verdade é que isso até pode dar certo, mas dura pouco.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </div>
   );
 };
