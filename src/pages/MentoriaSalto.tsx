@@ -277,8 +277,8 @@ const MentoriaSalto = () => {
               />
             </div>
           </div>
-        {/* Encontros Quinzenais */}
-        <div className="max-w-6xl mx-auto px-6">
+
+          {/* Encontros Quinzenais */}
           <div className="grid grid-cols-1 md:grid-cols-[1.2fr_1fr] gap-8 md:gap-12 items-center mb-20">
             <div>
               <img
