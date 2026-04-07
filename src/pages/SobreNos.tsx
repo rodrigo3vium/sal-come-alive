@@ -242,6 +242,23 @@ const SobreNos = () => {
         </div>
       </section>
 
+      {/* CTA Section */}
+      <section className="bg-warm-white py-24 md:py-32">
+        <div className="container mx-auto px-6 text-center">
+          <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl text-foreground mb-10 lowercase">
+            chegou a sua vez de <span className="uppercase">SAL</span>tar!
+          </h2>
+          <a
+            href="https://wa.me/5500000000000"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block border border-foreground/40 px-8 py-3 font-body text-sm text-foreground hover:bg-foreground hover:text-white transition-colors lowercase"
+          >
+            quero SALtar agora
+          </a>
+        </div>
+      </section>
+
       <Footer />
       <WhatsAppButton />
     </div>
