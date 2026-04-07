@@ -286,6 +286,42 @@ const ConsultoriaVoo = () => {
         </div>
       </section>
 
+      {/* Mente - Detalhamento */}
+      <section className="bg-warm-white py-20 md:py-28">
+        <div className="container mx-auto px-6">
+          <div className="flex items-center justify-center gap-6 mb-16">
+            <div className="h-px bg-foreground/30 flex-1 max-w-[200px]" />
+            <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground">mente</h2>
+            <div className="h-px bg-foreground/30 flex-1 max-w-[200px]" />
+          </div>
+
+          <div className="text-center max-w-3xl mx-auto mb-20">
+            <h3 className="font-serif text-xl md:text-2xl text-foreground mb-4">
+              Nessa etapa, estruturamos os pilares do seu posicionamento.
+            </h3>
+            <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed">
+              Imagine que a sua marca pessoal é um templo. Antes de pensarmos nos adornos e acabamentos, precisamos de um alicerce sólido e profundo que irá sustentar e inspirar tudo aquilo que vier como expressão da sua marca no mundo.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
+            <div>
+              <h3 className="font-body text-sm tracking-[0.15em] uppercase text-foreground mb-4">O QUE SUSTENTA SUA MARCA PARA ALÉM DA SUPERFÍCIE?</h3>
+              <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed max-w-lg">
+                Muitos pensam que trabalhar branding é pensar no logo e conteúdo, mas começar por aí é como querer construir uma casa especial apenas com um papel de parede. Os formatos de conteúdo mudam, nossos gostoso estéticos também, mas quando estruturamos pilares sólidos (e profundos como gostamos de fazer aqui) nos fortalecemos para além das efemeridades do mundo. Aqui trabalhamos os pilares abaixo, clique e saiba mais sobre cada um.
+              </p>
+            </div>
+            <div>
+              <img
+                src={mentePedras}
+                alt="Mão tocando pedras"
+                className="w-full aspect-[16/9] object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Footer />
       <WhatsAppButton />
     </div>
