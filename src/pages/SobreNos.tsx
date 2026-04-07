@@ -11,6 +11,7 @@ import aboutHandWater from "@/assets/about-hand-water.jpeg";
 import evolucaoIcon from "@/assets/evolucao-icon.png";
 import aboutHero from "@/assets/about-hero.jpeg";
 import corpoMenteAlmaIcon from "@/assets/corpo-mente-alma-icon.png";
+import aboutLeaves from "@/assets/about-leaves.jpg";
 
 const SobreNos = () => {
   return (
@@ -183,6 +184,32 @@ const SobreNos = () => {
               <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed md:ml-auto max-w-lg">
                 nossos 3 pilares fundamentais alinhados em uma única jornada...
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Seventh Section - assim, nasce a marca */}
+      <section className="bg-warm-white py-24 md:py-32">
+        <div className="container mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
+            {/* Left - Text */}
+            <div>
+              <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl text-foreground mb-6 lowercase">
+                assim, nasce a marca
+              </h2>
+              <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed max-w-lg">
+                Studio Sal, agência boutique de branding pessoal que promove um reencontro com a essência e a autenticidade. Mudando o mundo uma mulher e uma marca pessoal por vez.
+              </p>
+            </div>
+
+            {/* Right - Image */}
+            <div className="flex justify-end">
+              <img
+                src={aboutLeaves}
+                alt="Folhas verdes"
+                className="w-full max-w-sm aspect-square object-cover"
+              />
             </div>
           </div>
         </div>
