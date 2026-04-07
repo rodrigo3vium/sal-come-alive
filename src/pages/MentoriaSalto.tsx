@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import mentoriaHero from "@/assets/mentoria-salto-hero.jpeg";
 import giuliaMentora from "@/assets/giulia-mentora.png";
+import mentoriaPraia from "@/assets/mentoria-praia.jpg";
 import mentoriaChapeu from "@/assets/mentoria-chapeu.jpeg";
 import instagramAntes from "@/assets/instagram-antes.png";
 import instagramDepois from "@/assets/instagram-depois.png";
@@ -407,6 +408,37 @@ const MentoriaSalto = () => {
             <p className="font-serif text-base md:text-lg text-foreground/70 leading-relaxed">
               Na Mentoria SALto, te ajudamos a encontrar essa chave e abrir as portas para um posicionamento que te representa de verdade. Vamos?
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Final - Sente o chamado */}
+      <section className="bg-beige py-20 md:py-28">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-8 md:gap-12 items-center">
+            <div>
+              <img
+                src={mentoriaPraia}
+                alt="Correndo na praia"
+                className="w-full aspect-[4/5] object-cover"
+              />
+            </div>
+            <div>
+              <h2 className="font-serif text-3xl md:text-4xl text-foreground leading-relaxed mb-6">
+                Sente o chamado para SALtar?
+              </h2>
+              <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed mb-8">
+                Clique abaixo para fazer sua aplicação. Analisamos com muito carinho cada caso para entendermos se faz sentido trabalharmos juntas. Você nos escolhe e nós escolhemos você!
+              </p>
+              <a
+                href="https://form.respondi.app/ttqcWIpe"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block border border-foreground bg-foreground text-primary-foreground px-10 py-4 text-sm tracking-[0.15em] uppercase font-body hover:bg-transparent hover:text-foreground transition-colors"
+              >
+                Quero SALtar
+              </a>
+            </div>
           </div>
         </div>
       </section>
