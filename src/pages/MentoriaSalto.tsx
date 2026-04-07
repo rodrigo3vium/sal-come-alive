@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import mentoriaHero from "@/assets/mentoria-salto-hero.jpeg";
 import giuliaMentora from "@/assets/giulia-mentora.png";
+import mentoriaPraia from "@/assets/mentoria-praia.jpg";
 import mentoriaChapeu from "@/assets/mentoria-chapeu.jpeg";
 import instagramAntes from "@/assets/instagram-antes.png";
 import instagramDepois from "@/assets/instagram-depois.png";
