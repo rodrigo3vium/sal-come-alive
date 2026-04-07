@@ -158,7 +158,7 @@ const SobreNos = () => {
         </div>
       </section>
       {/* Sixth Section - alma, mente e corpo */}
-      <section className="bg-beige py-24 md:py-32">
+      <section className="bg-warm-white py-24 md:py-32">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
             {/* Left - Image */}
