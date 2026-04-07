@@ -432,16 +432,16 @@ const ConsultoriaVoo = () => {
 
       {/* CTA Voar */}
       <section className="bg-warm-white py-20 md:py-28">
-        <div className="container mx-auto px-6 max-w-6xl">
-          <div className="grid grid-cols-1 md:grid-cols-2">
-            <div>
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-[55%_45%]">
+            <div className="relative">
               <img
                 src={ctaVoar}
                 alt="Mulher correndo na praia"
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="bg-beige p-10 md:p-16 flex flex-col justify-center">
+            <div className="bg-beige p-10 md:p-14 flex flex-col justify-center">
               <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">
                 sente o chamado para VOAR?
               </h2>
