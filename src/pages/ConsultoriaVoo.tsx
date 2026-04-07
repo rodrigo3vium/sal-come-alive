@@ -144,20 +144,20 @@ const ConsultoriaVoo = () => {
             Ninguém melhor do que quem já viveu essa transformação para falar sobre nosso trabalho.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-end">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               { image: depoimentoIsabella, name: "Isabella Franklin", role: "Advogada e Mentora de Mulheres" },
               { image: depoimentoNathalia, name: "Nathalia Bovolon", role: "Empresária e Especialista em HOF" },
               { image: depoimentoLeticia, name: "Letícia Madeira", role: "Empresária e Mentora Executiva" },
-            ].map((dep, i) => (
-              <div key={dep.name} className={`flex flex-col ${i === 1 ? 'md:mt-16' : i === 2 ? 'md:mt-8' : ''}`}>
+            ].map((dep) => (
+              <div key={dep.name} className="flex flex-col items-center text-center">
                 <img
                   src={dep.image}
                   alt={`Depoimento de ${dep.name}`}
-                  className="w-full rounded-lg mb-6"
+                  className="w-full max-w-sm rounded-lg mb-6"
                 />
                 <h3 className="font-serif text-lg text-foreground">{dep.name}</h3>
-                <p className="font-body text-sm text-foreground/60 mt-1">{dep.role}</p>
+                <p className="font-body text-sm text-foreground/60">{dep.role}</p>
               </div>
             ))}
           </div>
