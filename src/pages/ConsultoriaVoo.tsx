@@ -11,6 +11,7 @@ import depoimentoNathalia from "@/assets/depoimento-nathalia.jpeg";
 import depoimentoLeticia from "@/assets/depoimento-leticia.png";
 import almaEntrevista from "@/assets/alma-entrevista.jpeg";
 import folhas from "@/assets/folhas.webp";
+import mentePedras from "@/assets/mente-pedras.jpeg";
 
 const talvezVoceItems = [
   {
