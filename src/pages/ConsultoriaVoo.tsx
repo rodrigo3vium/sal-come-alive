@@ -263,6 +263,7 @@ const ConsultoriaVoo = () => {
             </div>
           </div>
         </div>
+      </section>
 
       <Footer />
       <WhatsAppButton />
