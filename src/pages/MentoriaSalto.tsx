@@ -313,8 +313,6 @@ const MentoriaSalto = () => {
               />
             </div>
           </div>
-        </div>
-
           {/* Peixaria */}
           <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-8 md:gap-12 items-center mb-20">
             <div>
