@@ -4,6 +4,25 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import consultoriaHero from "@/assets/consultoria-voo-hero.png";
 
+const talvezVoceItems = [
+  {
+    title: "SEJA UMA EXCELENTE PROFISSIONAL",
+    description: "Mas sente que só quem conhece seu trabalho ao vivo sabe disso. Na internet é mais difícil mostrar.",
+  },
+  {
+    title: "SINTA QUE TEM ALGO ESPECIAL PARA DAR AO MUNDO",
+    description: 'Mas não consiga nomear e nem "empacotar" de um jeito que os outros também sintam.',
+  },
+  {
+    title: "ESTEJA SONHANDO COM VOOS MAIORES",
+    description: "Mas retrai com insegurança de não saber se sobreviveria sozinha a eles.",
+  },
+  {
+    title: "TENHA ANOS DE EXPERIÊNCIA",
+    description: "E veja pessoas com metade da sua ganhando o dobro porque se comunicam melhor (principalmente no digital).",
+  },
+];
+
 const ConsultoriaVoo = () => {
   return (
     <div className="min-h-screen">
