@@ -5,6 +5,9 @@ import mentoriaHero from "@/assets/mentoria-salto-hero.jpeg";
 import mentoriaChapeu from "@/assets/mentoria-chapeu.jpeg";
 import instagramAntes from "@/assets/instagram-antes.png";
 import instagramDepois from "@/assets/instagram-depois.png";
+import iconIsi from "@/assets/icon-isi.jpeg";
+import iconGo from "@/assets/icon-go.jpeg";
+import iconEye from "@/assets/icon-eye.jpeg";
 
 const MentoriaSalto = () => {
   return (
