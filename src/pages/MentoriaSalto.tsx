@@ -277,6 +277,40 @@ const MentoriaSalto = () => {
               />
             </div>
           </div>
+        {/* Encontros Quinzenais */}
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-[1.2fr_1fr] gap-8 md:gap-12 items-center mb-20">
+            <div>
+              <img
+                src={mentoriaEncontros}
+                alt="Encontros quinzenais"
+                className="w-full"
+              />
+            </div>
+            <div>
+              <h3 className="font-serif text-xl md:text-2xl text-foreground mb-4">Encontros Quinzenais</h3>
+              <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed">
+                Semana sim, semana não, estaremos juntas em grupo para mergulhar, lapidar e potencializar a sua comunicação trabalhando temas como conteúdo, visual, estratégia e oratória.
+              </p>
+            </div>
+          </div>
+
+          {/* Acesso ao Método Sal */}
+          <div className="grid grid-cols-1 md:grid-cols-[1fr_1.2fr] gap-8 md:gap-12 items-center">
+            <div>
+              <h3 className="font-serif text-xl md:text-2xl text-foreground mb-4">Acesso ao Método Sal</h3>
+              <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed">
+                Todo o nosso conhecimento sobre como descobrir aquilo que você tem de único e potencializar isso para o mundo vai estar em uma área exclusiva, tipo a Netflix da sua Marca Pessoal.
+              </p>
+            </div>
+            <div>
+              <img
+                src={mentoriaMetodo}
+                alt="Método Sal - plataforma"
+                className="w-full"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
