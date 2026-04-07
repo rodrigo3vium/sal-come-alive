@@ -14,6 +14,8 @@ import depoimentoGiovanna from "@/assets/depoimento-giovanna.jpeg";
 import mentoriaMaoAgua from "@/assets/mentoria-mao-agua.jpeg";
 import mentoriaEncontros from "@/assets/mentoria-encontros.png";
 import mentoriaMetodo from "@/assets/mentoria-metodo.png";
+import peixariaTemplates from "@/assets/peixaria-templates.png";
+import mentoriaCafe from "@/assets/mentoria-cafe.jpg";
 
 const MentoriaSalto = () => {
   return (
@@ -308,6 +310,39 @@ const MentoriaSalto = () => {
                 src={mentoriaMetodo}
                 alt="Método Sal - plataforma"
                 className="w-full"
+              />
+            </div>
+          </div>
+          {/* Peixaria */}
+          <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-8 md:gap-12 items-center mb-20">
+            <div>
+              <img
+                src={peixariaTemplates}
+                alt="Templates da Peixaria"
+                className="w-full"
+              />
+            </div>
+            <div>
+              <h3 className="font-serif text-xl md:text-2xl text-foreground mb-4">Acesso à "Peixaria"</h3>
+              <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed">
+                Aqui na Sal nós ensinamos a pescar, mas também gostamos de dar o peixe porque sabemos como <strong className="text-foreground">fica mais fácil quando temos algo "mastigadinho"</strong>. A peixaria é o nosso acervo de templates lindos que facilitam sua vida. Templates, de posts, apresentações, sites e muito mais.
+              </p>
+            </div>
+          </div>
+
+          {/* Grupo de Conexão */}
+          <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-8 md:gap-12 items-center">
+            <div>
+              <h3 className="font-serif text-xl md:text-2xl text-foreground mb-4">Grupo de Conexão e Apoio</h3>
+              <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed">
+                Todas as mentoradas são recebidas com carinho em um grupo no qual acontece muita troca, suporte e networking.
+              </p>
+            </div>
+            <div>
+              <img
+                src={mentoriaCafe}
+                alt="Café e caderno"
+                className="w-full aspect-[16/9] object-cover"
               />
             </div>
           </div>
