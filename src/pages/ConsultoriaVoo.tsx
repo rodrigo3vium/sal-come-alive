@@ -134,7 +134,7 @@ const ConsultoriaVoo = () => {
       </section>
 
       {/* Depoimentos */}
-      <section className="bg-warm-white py-20 md:py-28">
+      <section className="bg-beige py-20 md:py-28">
         <div className="container mx-auto px-6">
           <div className="w-16 h-px bg-foreground mb-8" />
           <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl text-foreground mb-4">
