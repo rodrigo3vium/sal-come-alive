@@ -49,7 +49,7 @@ const Navbar = () => {
                     </p>
                   </a>
                   {/* Mentoria SALto */}
-                  <a href="https://studiosal.com.br/mentoria-salto" target="_blank" rel="noopener noreferrer" className="p-8 hover:bg-beige/50 transition-colors group">
+                  <a href="/mentoria-salto" className="p-8 hover:bg-beige/50 transition-colors group">
                     <h3 className="font-serif text-lg text-foreground mb-3">Mentoria SALto</h3>
                     <div className="w-full h-px bg-foreground/20 mb-4" />
                     <p className="font-body text-sm text-foreground/70 leading-relaxed">
