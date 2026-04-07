@@ -165,6 +165,63 @@ const ConsultoriaVoo = () => {
         </div>
       </section>
 
+      {/* Etapas da Jornada */}
+      <section className="bg-warm-white py-20 md:py-28">
+        <div className="container mx-auto px-6">
+          <h2 className="font-body text-center text-lg md:text-xl tracking-[0.25em] uppercase text-foreground mb-16">
+            conheça cada etapa da sua jornada conosco
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              {
+                icon: "○",
+                label: "alma",
+                etapa: "ETAPA 1 | AUTOCONHECIMENTO",
+                desc: "Esse momento da sua jornada trabalha os aspectos mais profundos e internos de quem você é. No qual nós te conhecemos a fundo e você se reconhece enquanto potência.",
+              },
+              {
+                icon: "◎",
+                label: "mente",
+                etapa: "ETAPA 2 | ESTRATÉGIA",
+                desc: "É a hora da estratégia. Mais do que mudar sua visão sobre o quão única e especial você é, pensamos a forma como você irá traduzir tudo isso para que o mundo também tenha essa certeza.",
+              },
+              {
+                icon: "⚇",
+                label: "corpo",
+                etapa: "ETAPA 3 | PRESENÇA",
+                desc: "Te damos as ferramentas para comunicar a sua marca e despertar a percepção que você deseja. Nessa etapa tangibilizamos tudo aquilo que estruturamos. É quando a visão dos outros sobre você começa a mudar.",
+              },
+            ].map((item) => (
+              <div key={item.etapa} className="flex flex-col">
+                {/* Card image */}
+                <div className="relative aspect-square overflow-hidden">
+                  <img
+                    src={aboutBeach}
+                    alt={item.label}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-brown/30" />
+                  <div className="absolute inset-0 flex items-center justify-center gap-4">
+                    <span className="text-white text-5xl font-light">{item.icon}</span>
+                    <span className="font-serif text-4xl md:text-5xl text-white">{item.label}</span>
+                  </div>
+                </div>
+                {/* Card text */}
+                <div className="bg-beige/40 p-6 flex-1">
+                  <h3 className="font-body text-sm tracking-[0.1em] uppercase text-foreground/70 mb-4">
+                    {item.etapa}
+                  </h3>
+                  <p className="font-body text-sm text-foreground/70 leading-relaxed">
+                    {item.desc}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <Footer />
       <WhatsAppButton />
     </div>
