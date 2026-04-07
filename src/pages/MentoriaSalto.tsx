@@ -226,9 +226,9 @@ const MentoriaSalto = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { img: depoimentoIsabela, name: "Isabela Piratininga | Psicóloga" },
-              { img: depoimentoInara, name: "Inara Menezes | Psicóloga" },
-              { img: depoimentoGiovanna, name: "Giovanna Gusmão | Terapeuta Cognitivo-Comportamental" },
+              { img: depoimentoIsabela, name: "Isabela Piratininga | Psicóloga", desc: "Além de conseguir atingir sua meta de pacientes, a Isa também recebeu de uma pessoa que admira muito o reconhecimento por seu conteúdo de qualidade." },
+              { img: depoimentoInara, name: "Inara Menezes | Psicóloga", desc: "A Inara viu sua vida mudar da água para o vinho, deixando para trás pacientes que não reconheciam o valor de seu trabalho e abrindo espaço para quem valoriza e enxerga a pessoa e profissional ímpar que ela é." },
+              { img: depoimentoGiovanna, name: "Giovanna Gusmão | Terapeuta Cognitivo Sexual", desc: "A Gi finalmente conseguiu trazer seu trabalho para o digital e comunicar quem ela é de verdade, com orgulho da forma como se apresenta agora." },
             ].map((dep, i) => (
               <div key={i}>
                 <div className="bg-beige rounded-sm overflow-hidden">
