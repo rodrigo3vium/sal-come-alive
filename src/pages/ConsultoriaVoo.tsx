@@ -263,6 +263,25 @@ const ConsultoriaVoo = () => {
               />
             </div>
           </div>
+          {/* A Pesquisa */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center mt-20">
+            <div>
+              <img
+                src={folhas}
+                alt="A Pesquisa"
+                className="w-full aspect-[16/9] object-cover"
+              />
+            </div>
+            <div>
+              <p className="font-body text-sm tracking-[0.15em] uppercase text-foreground/60 mb-2">A PESQUISA</p>
+              <h3 className="font-serif text-2xl md:text-3xl text-foreground leading-snug mb-6">
+                Mergulhamos no seu nicho e na percepção que você tem hoje.
+              </h3>
+              <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed max-w-lg">
+                Depois de mergulharmos no seu universo, começaremos a olhar para fora com uma análise do seu nicho e um diagnóstico de como está sua comunicação hoje.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
