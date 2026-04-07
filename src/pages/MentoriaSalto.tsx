@@ -83,6 +83,33 @@ const MentoriaSalto = () => {
         <div className="h-16 md:h-20" />
       </section>
 
+      {/* Mas sabe o que é verdade */}
+      <section className="bg-warm-white py-20 md:py-28">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl text-foreground text-center mb-12">
+            Mas sabe o que é verdade, mesmo?
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-8 md:gap-12 items-center">
+            <div>
+              <p className="font-serif text-xl md:text-2xl text-foreground leading-relaxed">
+                <strong>Você não precisa de mais um "tem que" limitante.</strong>
+              </p>
+              <p className="font-serif text-xl md:text-2xl text-foreground/70 leading-relaxed mt-2">
+                Precisa ter acesso ao método que te liberta e te guia pra{" "}
+                <strong className="text-foreground">sua autenticidade.</strong>
+              </p>
+            </div>
+            <div>
+              <img
+                src={mentoriaChapeu}
+                alt="Chapéu de palha"
+                className="w-full aspect-[16/9] object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Footer />
       <WhatsAppButton />
     </div>
