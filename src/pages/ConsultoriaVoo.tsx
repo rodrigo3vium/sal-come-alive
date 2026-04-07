@@ -319,10 +319,29 @@ const ConsultoriaVoo = () => {
               />
             </div>
           </div>
+
+          {/* Pilares - Accordion */}
+          <div className="max-w-3xl mx-auto mt-16">
+            {["HISTÓRIA", "PERSONALIDADE", "PODERES", "PROPÓSITO", "FRASE SÍNTESE"].map((pilar, i) => (
+              <div key={pilar} className={`border-t border-foreground/20 ${i === 4 ? "border-b" : ""}`}>
+                <details className="group">
+                  <summary className="flex items-center gap-4 py-6 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                    <svg className="w-4 h-4 text-foreground/60 transition-transform group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                      <path d="M19 9l-7 7-7-7" />
+                    </svg>
+                    <span className="font-body text-sm md:text-base tracking-[0.15em] uppercase text-foreground">{pilar}</span>
+                  </summary>
+                  <div className="pb-6 pl-8">
+                    <p className="font-body text-sm text-foreground/70 leading-relaxed">
+                      Conteúdo sobre {pilar.toLowerCase()} será adicionado em breve.
+                    </p>
+                  </div>
+                </details>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
-
-      <Footer />
       <WhatsAppButton />
     </div>
   );
