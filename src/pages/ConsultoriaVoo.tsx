@@ -322,19 +322,50 @@ const ConsultoriaVoo = () => {
 
           {/* Pilares - Accordion */}
           <div className="max-w-3xl mx-auto mt-16">
-            {["HISTÓRIA", "PERSONALIDADE", "PODERES", "PROPÓSITO", "FRASE SÍNTESE"].map((pilar, i) => (
-              <div key={pilar} className={`border-t border-foreground/20 ${i === 4 ? "border-b" : ""}`}>
-                <details className="group">
+            {[
+              {
+                title: "HISTÓRIA",
+                subtitle: "O que aconteceu com você que moldou?",
+                text: "É a narrativa que irá te conectar com o seu público, o recorte de sua trajetória com os pontos mais marcantes que justificam o seu trabalho e geram um território proprietário.\nA sua história só você tem, chegou a hora de contá-la.",
+              },
+              {
+                title: "PERSONALIDADE",
+                subtitle: "Qual é o fio condutor da sua singularidade?",
+                text: "De todos os seus traços, descobriremos quais são os mais marcantes e relevantes para gerar a percepção que verdadeira de quem você é e de que forma eles devem ser percebidos em você. São eles que guiam todo o resto, inclusive suas decisões mais importantes.",
+              },
+              {
+                title: "PODERES",
+                subtitle: 'Qual o diferencial do "como" você faz o que faz?',
+                text: 'O que você entrega para o mundo de uma forma muito própria, são os diferenciais tangíveis do seu trabalho e da sua forma de atuar no mundo.\nÉ aqui que você enxerga o seu "como" de uma forma autêntica.',
+              },
+              {
+                title: "PROPÓSITO",
+                subtitle: "O que te move para além do lucro?",
+                text: "É aquilo que te faz levantar da cama todos os dias, a causa maior que você defende e que conecta pessoas ao seu redor. Quando você tem clareza do seu propósito, atrai as pessoas certas.",
+              },
+              {
+                title: "FRASE SÍNTESE",
+                subtitle: "Como traduzir tudo isso em uma frase?",
+                text: "A síntese de tudo aquilo que você é e representa, condensada em uma frase poderosa que guiará toda a sua comunicação e posicionamento.",
+              },
+            ].map((pilar, i) => (
+              <div key={pilar.title} className={`border-t border-foreground/20 ${i === 4 ? "border-b" : ""}`}>
+                <details className="group" open>
                   <summary className="flex items-center gap-4 py-6 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
                     <svg className="w-4 h-4 text-foreground/60 transition-transform group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                       <path d="M19 9l-7 7-7-7" />
                     </svg>
-                    <span className="font-body text-sm md:text-base tracking-[0.15em] uppercase text-foreground">{pilar}</span>
+                    <span className="font-body text-sm md:text-base tracking-[0.15em] uppercase text-foreground">{pilar.title}</span>
                   </summary>
-                  <div className="pb-6 pl-8">
-                    <p className="font-body text-sm text-foreground/70 leading-relaxed">
-                      Conteúdo sobre {pilar.toLowerCase()} será adicionado em breve.
+                  <div className="pb-6 pl-0 md:pl-8">
+                    <p className="font-body text-sm md:text-base font-semibold italic text-foreground mb-2">
+                      {pilar.subtitle}
                     </p>
+                    {pilar.text.split("\n").map((line, j) => (
+                      <p key={j} className="font-body text-sm md:text-base text-foreground/70 leading-relaxed">
+                        {line}
+                      </p>
+                    ))}
                   </div>
                 </details>
               </div>
