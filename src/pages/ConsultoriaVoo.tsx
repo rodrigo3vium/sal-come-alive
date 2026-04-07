@@ -12,6 +12,7 @@ import depoimentoLeticia from "@/assets/depoimento-leticia.png";
 import almaEntrevista from "@/assets/alma-entrevista.jpeg";
 import folhas from "@/assets/folhas.webp";
 import mentePedras from "@/assets/mente-pedras.jpeg";
+import corpoVerbal from "@/assets/corpo-verbal.png";
 
 const talvezVoceItems = [
   {
@@ -373,6 +374,61 @@ const ConsultoriaVoo = () => {
           </div>
         </div>
       </section>
+
+      {/* Corpo - Detalhamento */}
+      <section className="bg-warm-white py-20 md:py-28">
+        <div className="container mx-auto px-6">
+          <div className="flex items-center justify-center gap-6 mb-16">
+            <div className="h-px bg-foreground/30 flex-1 max-w-[200px]" />
+            <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground">corpo</h2>
+            <div className="h-px bg-foreground/30 flex-1 max-w-[200px]" />
+          </div>
+
+          <div className="text-center max-w-3xl mx-auto mb-20">
+            <h3 className="font-serif text-xl md:text-2xl text-foreground mb-4">
+              Na etapa final, cuidaremos dos pontos de maior contato da sua marca com o mundo.
+            </h3>
+            <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed">
+              Uma vez que a base sólida da sua marca está clara, podemos partir para a parte mais tangível da sua comunicação, aquilo que é percebido de forma mais concreta pelas pessoas.
+            </p>
+          </div>
+
+          {/* Identidade Verbal */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center mb-20">
+            <div>
+              <h3 className="font-body text-sm md:text-base tracking-[0.15em] uppercase text-foreground mb-4">IDENTIDADE VERBAL</h3>
+              <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed max-w-lg">
+                A forma como você se expressa através da fala e da escrita on e offline. Nessa etapa olharemos para sua linha editorial, seus conteúdos, mensagens e como instruir equipe e IA para garantir a coerência do tom de voz que te marca.
+              </p>
+            </div>
+            <div>
+              <img
+                src={corpoVerbal}
+                alt="Identidade Verbal"
+                className="w-full aspect-[16/9] object-cover"
+              />
+            </div>
+          </div>
+
+          {/* Identidade Visual */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
+            <div className="order-2 md:order-1">
+              <img
+                src={consultoriaGiulia}
+                alt="Identidade Visual"
+                className="w-full aspect-[3/4] object-cover object-top"
+              />
+            </div>
+            <div className="order-1 md:order-2">
+              <h3 className="font-body text-sm md:text-base tracking-[0.15em] uppercase text-foreground mb-4">IDENTIDADE VISUAL</h3>
+              <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed max-w-lg">
+                A forma como a sua estética traduz a marca que você quer deixar. Aqui, é importante entendermos que uma identidade visual vai muito além de um logo bonito. Ela precisa comunicar quem você é de forma coerente em todos os pontos de contato.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <WhatsAppButton />
     </div>
   );
