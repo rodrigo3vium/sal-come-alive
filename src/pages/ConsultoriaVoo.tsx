@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import consultoriaHero from "@/assets/consultoria-voo-hero.png";
 import consultoriaHands from "@/assets/consultoria-hands.jpeg";
+import consultoriaGiulia from "@/assets/consultoria-giulia.jpg";
 
 const talvezVoceItems = [
   {
@@ -106,6 +107,30 @@ const ConsultoriaVoo = () => {
         </div>
       </section>
 
+      {/* Marca pessoal */}
+      <section className="bg-warm-white py-20 md:py-28">
+        <div className="container mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
+            <div>
+              <img
+                src={consultoriaGiulia}
+                alt="Giulia Salvatore"
+                className="w-full max-w-md aspect-[3/4] object-cover object-top"
+              />
+            </div>
+            <div>
+              <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl text-foreground leading-snug mb-6">
+                Existe algo muito mais perene do que qualquer trend ou rede social, algo que você jamais vai perder: sua marca pessoal.
+              </h2>
+              <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed max-w-lg">
+                E é essa marca que vamos potencializar nessa jornada, nesse VOO.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <Footer />
+      <WhatsAppButton />
     </div>
   );
 };
