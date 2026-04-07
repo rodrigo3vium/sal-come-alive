@@ -8,6 +8,9 @@ import instagramDepois from "@/assets/instagram-depois.png";
 import iconIsi from "@/assets/icon-isi.jpeg";
 import iconGo from "@/assets/icon-go.jpeg";
 import iconEye from "@/assets/icon-eye.jpeg";
+import depoimentoIsabela from "@/assets/depoimento-isabela.png";
+import depoimentoInara from "@/assets/depoimento-inara.jpeg";
+import depoimentoGiovanna from "@/assets/depoimento-giovanna.jpeg";
 
 const MentoriaSalto = () => {
   return (
