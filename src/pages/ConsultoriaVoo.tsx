@@ -430,6 +430,38 @@ const ConsultoriaVoo = () => {
         </div>
       </section>
 
+      {/* CTA Voar */}
+      <section className="bg-warm-white py-20 md:py-28">
+        <div className="container mx-auto px-6 max-w-6xl">
+          <div className="grid grid-cols-1 md:grid-cols-2">
+            <div>
+              <img
+                src={ctaVoar}
+                alt="Mulher correndo na praia"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="bg-beige p-10 md:p-16 flex flex-col justify-center">
+              <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">
+                sente o chamado para VOAR?
+              </h2>
+              <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed mb-10">
+                Clique abaixo para fazer sua aplicação e receber um orçamento. Analisamos com muito carinho cada caso para entendermos se faz sentido trabalharmos juntos. Você nos escolhe e nós escolhemos você!
+              </p>
+              <a
+                href="https://form.respondi.app/ttqcWIpe"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full text-center bg-foreground text-primary-foreground py-4 text-sm tracking-[0.15em] uppercase font-body hover:bg-foreground/90 transition-colors"
+              >
+                Quero VOAR
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
       <WhatsAppButton />
     </div>
   );
