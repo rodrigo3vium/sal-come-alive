@@ -9,6 +9,7 @@ import aboutShell from "@/assets/about-shell.jpeg";
 import olharsensivelIcon from "@/assets/olharsensivel-icon.png";
 import aboutHandWater from "@/assets/about-hand-water.jpeg";
 import evolucaoIcon from "@/assets/evolucao-icon.png";
+import aboutHero from "@/assets/about-hero.jpeg";
 
 const SobreNos = () => {
   return (
@@ -16,7 +17,12 @@ const SobreNos = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center bg-foreground/70">
+      <section className="relative h-screen flex items-center justify-center">
+        <img
+          src={aboutHero}
+          alt="Mulher na praia"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
         <div className="text-center px-6">
           <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-white font-light tracking-wide lowercase">
             tudo começa com um <span className="font-normal">SAL</span>to
