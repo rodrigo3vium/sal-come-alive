@@ -346,6 +346,24 @@ const MentoriaSalto = () => {
               />
             </div>
           </div>
+      </div>
+      </section>
+
+      {/* CTA Final */}
+      <section className="bg-warm-white py-20 md:py-28">
+        <div className="max-w-4xl mx-auto px-6 flex flex-col items-center">
+          <a
+            href="https://form.respondi.app/ttqcWIpe"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-8 group"
+          >
+            <span className="hidden md:block h-px w-32 bg-foreground/30" />
+            <span className="font-body text-sm tracking-[0.2em] uppercase text-foreground hover:opacity-70 transition-opacity">
+              Quero SALtar
+            </span>
+            <span className="hidden md:block h-px w-32 bg-foreground/30" />
+          </a>
         </div>
       </section>
 
