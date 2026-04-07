@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import mentoriaHero from "@/assets/mentoria-salto-hero.jpeg";
+import mentoriaChapeu from "@/assets/mentoria-chapeu.jpeg";
 
 const MentoriaSalto = () => {
   return (
