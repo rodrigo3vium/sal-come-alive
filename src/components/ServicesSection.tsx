@@ -1,16 +1,18 @@
+import { Link } from "react-router-dom";
+
 const services = [
   {
     title: "Consultoria Voo",
     description: "Um trabalho individual e exclusivo, feito por nós, do início ao fim. Indicada para quem pode investir em ter sua marca pessoal estruturada com profundidade, estratégia e um olhar dedicado só para si.",
     image: "/images/consultoria-voo.jpeg",
-    link: "https://studiosal.com.br/consultoria-voo",
+    link: "/consultoria-voo",
     subtitle: "",
   },
   {
     title: "Mentoria SALto",
     description: "Uma jornada guiada em grupo, mas vivida de forma individual. Ideal para quem quer aprender a se comunicar com mais verdade, clareza e consistência — com apoio no processo, mas construindo com as próprias mãos.",
     image: "/images/mentoria-salto.jpeg",
-    link: "https://studiosal.com.br/mentoria-salto",
+    link: "/mentoria-salto",
     subtitle: "",
   },
   {
@@ -19,6 +21,7 @@ const services = [
     image: "/images/cursos.jpeg",
     link: "https://studiosal.com.br/contato",
     subtitle: "| EM BREVE |",
+    external: true,
   },
 ];
 
@@ -37,30 +40,37 @@ const ServicesSection = () => {
       </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3">
-          {services.map((service) => (
-            <a
-              key={service.title}
-              href={service.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group cursor-pointer block relative overflow-hidden"
-            >
-              <img
-                src={service.image}
-                alt={service.title}
-                className="w-full h-[500px] object-cover transition-transform duration-700 group-hover:scale-105"
-                loading="lazy"
-              />
-              <div className="absolute inset-0 bg-black/30" />
-              <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-8">
-                <h3 className="font-serif text-2xl md:text-3xl text-white mb-3">{service.title}</h3>
-                {service.subtitle && (
-                  <p className="text-white/90 text-sm tracking-widest mb-3">{service.subtitle}</p>
-                )}
-                <p className="font-body text-sm text-white/90 leading-relaxed max-w-xs">{service.description}</p>
-              </div>
-            </a>
-          ))}
+          {services.map((service) => {
+            const content = (
+              <>
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="w-full h-[500px] object-cover transition-transform duration-700 group-hover:scale-105"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-black/30" />
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-8">
+                  <h3 className="font-serif text-2xl md:text-3xl text-white mb-3">{service.title}</h3>
+                  {service.subtitle && (
+                    <p className="text-white/90 text-sm tracking-widest mb-3">{service.subtitle}</p>
+                  )}
+                  <p className="font-body text-sm text-white/90 leading-relaxed max-w-xs">{service.description}</p>
+                </div>
+              </>
+            );
+            const className = "group cursor-pointer block relative overflow-hidden";
+
+            return service.external ? (
+              <a key={service.title} href={service.link} target="_blank" rel="noopener noreferrer" className={className}>
+                {content}
+              </a>
+            ) : (
+              <Link key={service.title} to={service.link} className={className}>
+                {content}
+              </Link>
+            );
+          })}
         </div>
     </section>
   );
