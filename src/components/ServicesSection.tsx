@@ -1,16 +1,18 @@
+import { Link } from "react-router-dom";
+
 const services = [
   {
     title: "Consultoria Voo",
     description: "Um trabalho individual e exclusivo, feito por nós, do início ao fim. Indicada para quem pode investir em ter sua marca pessoal estruturada com profundidade, estratégia e um olhar dedicado só para si.",
     image: "/images/consultoria-voo.jpeg",
-    link: "https://studiosal.com.br/consultoria-voo",
+    link: "/consultoria-voo",
     subtitle: "",
   },
   {
     title: "Mentoria SALto",
     description: "Uma jornada guiada em grupo, mas vivida de forma individual. Ideal para quem quer aprender a se comunicar com mais verdade, clareza e consistência — com apoio no processo, mas construindo com as próprias mãos.",
     image: "/images/mentoria-salto.jpeg",
-    link: "https://studiosal.com.br/mentoria-salto",
+    link: "/mentoria-salto",
     subtitle: "",
   },
   {
@@ -19,6 +21,7 @@ const services = [
     image: "/images/cursos.jpeg",
     link: "https://studiosal.com.br/contato",
     subtitle: "| EM BREVE |",
+    external: true,
   },
 ];
 
