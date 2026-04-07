@@ -158,6 +158,49 @@ const MentoriaSalto = () => {
         </div>
       </section>
 
+      {/* É por isso que na Mentoria SALto */}
+      <section className="bg-beige py-20 md:py-28">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="font-serif text-3xl md:text-4xl text-foreground leading-relaxed mb-16">
+            É por isso que na Mentoria SALto você vai...
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            {[
+              {
+                bold: "Ser valorizada por seus diferenciais sem precisar recorrer a discursos agressivos.",
+                text: "Nosso método te guia para encontrar e potencializar o que há de mais único em você.",
+                icon: iconIsi,
+              },
+              {
+                bold: "Superar a dor de depender de hacks e fórmulas rasas que não geram vendas nem reconhecimento real.",
+                text: "Te damos acesso a um entendimento mais profundo sobre comunicação, algo que você vai levar pra vida.",
+                icon: iconGo,
+              },
+              {
+                bold: "Ter acesso a um ecossistema que transforma a sua força de vontade em realidade.",
+                text: "Além de todo o conhecimento compartilhado, também te damos acesso a diversas ferramentas que facilitam o seu dia a dia de forma prática.",
+                icon: iconEye,
+              },
+            ].map((item, i) => (
+              <div key={i} className="flex flex-col">
+                <p className="font-body text-sm md:text-base text-foreground leading-relaxed mb-4">
+                  {item.bold}
+                </p>
+                <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed mb-8">
+                  {item.text}
+                </p>
+                <img
+                  src={item.icon}
+                  alt=""
+                  className="w-16 h-16 rounded-full mt-auto"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <Footer />
       <WhatsAppButton />
     </div>
