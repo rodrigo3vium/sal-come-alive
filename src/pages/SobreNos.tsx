@@ -157,6 +157,36 @@ const SobreNos = () => {
           </div>
         </div>
       </section>
+      {/* Sixth Section - alma, mente e corpo */}
+      <section className="bg-beige py-24 md:py-32">
+        <div className="container mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
+            {/* Left - Image */}
+            <div>
+              <img
+                src={aboutHero}
+                alt="Mulher na praia"
+                className="w-full max-w-md aspect-[4/5] object-cover"
+              />
+            </div>
+
+            {/* Right - Text */}
+            <div className="md:text-right">
+              <img
+                src={corpoMenteAlmaIcon}
+                alt="Alma, mente e corpo"
+                className="w-40 h-auto mb-8 md:ml-auto"
+              />
+              <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl text-foreground mb-6 lowercase">
+                alma, mente e corpo
+              </h2>
+              <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed md:ml-auto max-w-lg">
+                nossos 3 pilares fundamentais alinhados em uma única jornada...
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <Footer />
       <WhatsAppButton />
