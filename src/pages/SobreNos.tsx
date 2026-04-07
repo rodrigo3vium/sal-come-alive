@@ -23,7 +23,7 @@ const SobreNos = () => {
           alt="Mulher na praia"
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="text-center px-6">
+        <div className="relative z-10 text-center px-6">
           <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-white font-light tracking-wide lowercase">
             tudo começa com um <span className="font-normal">SAL</span>to
           </h1>
