@@ -41,7 +41,7 @@ const Navbar = () => {
               <div className="fixed left-0 right-0 top-full mt-0 bg-warm-white border-t border-border shadow-lg z-50">
                 <div className="container mx-auto grid grid-cols-3 divide-x divide-border">
                   {/* Consultoria Voo */}
-                  <a href="https://studiosal.com.br/consultoria-voo" target="_blank" rel="noopener noreferrer" className="p-8 hover:bg-beige/50 transition-colors group">
+                  <a href="/consultoria-voo" className="p-8 hover:bg-beige/50 transition-colors group">
                     <h3 className="font-serif text-lg text-foreground mb-3">Consultoria Voo</h3>
                     <div className="w-full h-px bg-foreground/20 mb-4" />
                     <p className="font-body text-sm text-foreground/70 leading-relaxed">
