@@ -5,6 +5,9 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import consultoriaHero from "@/assets/consultoria-voo-hero.png";
 import consultoriaHands from "@/assets/consultoria-hands.jpeg";
 import consultoriaGiulia from "@/assets/consultoria-giulia.jpg";
+import depoimentoIsabella from "@/assets/depoimento-isabella.png";
+import depoimentoNathalia from "@/assets/depoimento-nathalia.jpeg";
+import depoimentoLeticia from "@/assets/depoimento-leticia.png";
 
 const talvezVoceItems = [
   {
