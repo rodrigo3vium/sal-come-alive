@@ -41,6 +41,47 @@ const MentoriaSalto = () => {
         </div>
       </section>
 
+      {/* Frase + Cards */}
+      <section className="bg-beige">
+        <div className="py-16 md:py-20 px-6">
+          <p className="font-serif text-xl md:text-2xl lg:text-3xl text-foreground text-center max-w-5xl mx-auto leading-relaxed">
+            A verdade é que te fizeram acreditar que você precisava se moldar a um jeito "certo" de se comunicar.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-border max-w-6xl mx-auto">
+          {[
+            {
+              title: "QUE SE VOCÊ QUISESSE PASSAR AUTORIDADE...",
+              text: "Deveria falar sempre sobre suas conquistas materiais ou acadêmicas.",
+            },
+            {
+              title: 'QUE SE QUISESSE UMA IMAGEM DE "ALTO VALOR"...',
+              text: "O jeito é aparecer sempre com acessórios dourados, cabelo muito bem escovado e blazer, de preferência.",
+            },
+            {
+              title: "QUE SE VOCÊ NÃO ESTIVER NO DIGITAL...",
+              text: 'Está "deixando dinheiro na mesa", perdendo oportunidades e abrindo mão da melhor forma de alcançar o sucesso.',
+            },
+            {
+              title: "E PARA CRESCER NO DIGITAL...",
+              text: "Você precisaria abrir mão de quem você é para seguir as regras do jogo que sequer são claras para você.",
+            },
+          ].map((card, i) => (
+            <div key={i} className="bg-warm-white p-10 md:p-12">
+              <p className="font-body text-xl font-bold text-foreground mb-2">...</p>
+              <h3 className="font-body text-sm md:text-base tracking-[0.05em] uppercase text-foreground font-semibold mb-4 leading-relaxed">
+                {card.title}
+              </h3>
+              <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed">
+                {card.text}
+              </p>
+            </div>
+          ))}
+        </div>
+        <div className="h-16 md:h-20" />
+      </section>
+
       <Footer />
       <WhatsAppButton />
     </div>
