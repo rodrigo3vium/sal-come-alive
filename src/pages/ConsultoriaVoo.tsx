@@ -223,6 +223,47 @@ const ConsultoriaVoo = () => {
         </div>
       </section>
 
+      {/* Alma - Detalhamento */}
+      <section className="bg-warm-white py-20 md:py-28">
+        <div className="container mx-auto px-6">
+          {/* Header com linha e título */}
+          <div className="flex items-center justify-center gap-6 mb-16">
+            <div className="h-px bg-foreground/30 flex-1 max-w-[200px]" />
+            <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground">alma</h2>
+            <div className="h-px bg-foreground/30 flex-1 max-w-[200px]" />
+          </div>
+
+          {/* Subtítulo */}
+          <div className="text-center max-w-3xl mx-auto mb-20">
+            <h3 className="font-serif text-xl md:text-2xl text-foreground mb-4">
+              Começaremos mergulhando na profundidade que é você.
+            </h3>
+            <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed">
+              Seria impossível criarmos uma marca verdadeiramente autêntica se não estivéssemos dispostas e te olhar por inteiro. Por isso, nessa etapa fazemos...
+            </p>
+          </div>
+
+          {/* A Entrevista */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
+            <div>
+              <p className="font-body text-sm tracking-[0.15em] uppercase text-foreground/60 mb-2">A ENTREVISTA</p>
+              <h3 className="font-serif text-2xl md:text-3xl text-foreground leading-snug mb-6">
+                O quanto você se conhece antes do mundo te conhecer?
+              </h3>
+              <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed max-w-lg">
+                Nossas clientes brincam que é quase uma sessão de terapia. Trata-se uma conversa bastante profunda na qual faremos perguntas essenciais para o nosso trabalho, mas também para a sua jornada de autoconhecimento.
+              </p>
+            </div>
+            <div>
+              <img
+                src={almaEntrevista}
+                alt="A Entrevista"
+                className="w-full aspect-[4/3] object-cover"
+              />
+            </div>
+          </div>
+        </div>
+
       <Footer />
       <WhatsAppButton />
     </div>
