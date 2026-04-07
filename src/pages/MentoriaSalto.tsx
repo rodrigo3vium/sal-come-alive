@@ -140,6 +140,21 @@ const MentoriaSalto = () => {
         </div>
       </section>
 
+      {/* Não é sobre caber */}
+      <section className="bg-warm-white py-20 md:py-28">
+        <div className="max-w-4xl mx-auto px-6">
+          <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl text-foreground leading-relaxed mb-8">
+            Não é sobre caber em uma fórmula pronta. É sobre finalmente encontrar o <strong>seu</strong> jeito de fazer.
+          </h2>
+          <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed max-w-3xl">
+            Varios gurus do marketing vendem fórmulas prontas porque é isso que a maioria busca: soluções fáceis e rápidas. Mas essa dinâmica criou um problema gigante: todo mundo está ficando igual. Abrimos nosso feed e nos deparamos com os mesmos tipos de conteúdo, os mesmos tipos de identidade visual. Como se agora tudo fosse um grande copia e cola.
+          </p>
+        </div>
+        <div className="max-w-6xl mx-auto mt-12">
+          <hr className="border-border" />
+        </div>
+      </section>
+
       <Footer />
       <WhatsAppButton />
     </div>
