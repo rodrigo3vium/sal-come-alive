@@ -14,6 +14,8 @@ import depoimentoGiovanna from "@/assets/depoimento-giovanna.jpeg";
 import mentoriaMaoAgua from "@/assets/mentoria-mao-agua.jpeg";
 import mentoriaEncontros from "@/assets/mentoria-encontros.png";
 import mentoriaMetodo from "@/assets/mentoria-metodo.png";
+import peixariaTemplates from "@/assets/peixaria-templates.png";
+import mentoriaCafe from "@/assets/mentoria-cafe.jpg";
 
 const MentoriaSalto = () => {
   return (
