@@ -11,6 +11,7 @@ import aboutHandWater from "@/assets/about-hand-water.jpeg";
 import evolucaoIcon from "@/assets/evolucao-icon.png";
 import aboutHero from "@/assets/about-hero.jpeg";
 import corpoMenteAlmaIcon from "@/assets/corpo-mente-alma-icon.png";
+import aboutLeaves from "@/assets/about-leaves.jpg";
 
 const SobreNos = () => {
   return (
