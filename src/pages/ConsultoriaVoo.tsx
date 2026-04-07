@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import consultoriaHero from "@/assets/consultoria-voo-hero.png";
 import consultoriaHands from "@/assets/consultoria-hands.jpeg";
+import aboutBeach from "@/assets/about-beach.jpeg";
 import consultoriaGiulia from "@/assets/consultoria-giulia.jpg";
 import depoimentoIsabella from "@/assets/depoimento-isabella.png";
 import depoimentoNathalia from "@/assets/depoimento-nathalia.jpeg";
