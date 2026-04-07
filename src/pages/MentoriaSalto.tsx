@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import mentoriaHero from "@/assets/mentoria-salto-hero.jpeg";
+import giuliaMentora from "@/assets/giulia-mentora.png";
 import mentoriaChapeu from "@/assets/mentoria-chapeu.jpeg";
 import instagramAntes from "@/assets/instagram-antes.png";
 import instagramDepois from "@/assets/instagram-depois.png";
@@ -364,6 +365,49 @@ const MentoriaSalto = () => {
             </span>
             <span className="hidden md:block h-px w-32 bg-foreground/30" />
           </a>
+        </div>
+      </section>
+
+      {/* Conheça a sua mentora */}
+      <section className="bg-warm-white">
+        <div className="grid grid-cols-1 md:grid-cols-2">
+          <div>
+            <img
+              src={giuliaMentora}
+              alt="Giulia Salvatore"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="flex flex-col justify-center px-8 md:px-16 lg:px-20 py-16 md:py-20">
+            <p className="font-serif text-lg md:text-xl text-foreground/70 mb-2">Conheça a sua mentora,</p>
+            <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground mb-6">Giulia Salvatore.</h2>
+            <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed mb-10">
+              A Giu entendeu na prática que autenticidade não se compra. Se constrói.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+              <div>
+                <p className="font-serif text-base md:text-lg text-foreground leading-relaxed mb-3">
+                  Antes de compartilhar o que aprendeu e viveu na pele, ela consolidou seu conhecimento.
+                </p>
+                <p className="font-body text-sm text-foreground/70 leading-relaxed">
+                  Com uma formação em Comunicação Social, certificação em Marketing Digital na UCLA (University Of California Los Angeles) e uma trajetória que a fez crescer no digital de forma 100% orgânica.
+                </p>
+              </div>
+              <div>
+                <p className="font-serif text-base md:text-lg text-foreground leading-relaxed mb-3">
+                  Hoje, ela transforma toda essa experiência em método.
+                </p>
+                <p className="font-body text-sm text-foreground/70 leading-relaxed">
+                  Acredita que o autoconhecimento é a base da comunicação, e que comunicar bem é a chave para ser valorizada pelo que você realmente tem a oferecer.
+                </p>
+              </div>
+            </div>
+
+            <p className="font-serif text-base md:text-lg text-foreground/70 leading-relaxed">
+              Na Mentoria SALto, te ajudamos a encontrar essa chave e abrir as portas para um posicionamento que te representa de verdade. Vamos?
+            </p>
+          </div>
         </div>
       </section>
 
