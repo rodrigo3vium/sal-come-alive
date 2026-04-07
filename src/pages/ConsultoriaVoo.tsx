@@ -60,7 +60,28 @@ const ConsultoriaVoo = () => {
         </div>
       </section>
 
-      <Footer />
+      {/* Talvez você... */}
+      <section className="bg-warm-white py-20 md:py-28">
+        <div className="container mx-auto px-6">
+          <h2 className="font-serif text-2xl md:text-3xl text-foreground text-center tracking-[0.3em] uppercase mb-12">
+            talvez você...
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {talvezVoceItems.map((item) => (
+              <div key={item.title} className="bg-beige/60 p-8 flex flex-col">
+                <Check className="text-foreground/60 mb-4" size={20} strokeWidth={1.5} />
+                <h3 className="font-body text-sm font-bold tracking-[0.05em] uppercase text-foreground mb-4 leading-snug">
+                  {item.title}
+                </h3>
+                <p className="font-body text-sm text-foreground/70 leading-relaxed">
+                  {item.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <WhatsAppButton />
     </div>
   );
