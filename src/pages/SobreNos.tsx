@@ -10,6 +10,7 @@ import olharsensivelIcon from "@/assets/olharsensivel-icon.png";
 import aboutHandWater from "@/assets/about-hand-water.jpeg";
 import evolucaoIcon from "@/assets/evolucao-icon.png";
 import aboutHero from "@/assets/about-hero.jpeg";
+import corpoMenteAlmaIcon from "@/assets/corpo-mente-alma-icon.png";
 
 const SobreNos = () => {
   return (
