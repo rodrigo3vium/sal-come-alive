@@ -112,6 +112,34 @@ const MentoriaSalto = () => {
         </div>
       </section>
 
+      {/* Crescimento Instagram */}
+      <section className="bg-warm-white py-20 md:py-28">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-12 items-center">
+            <div>
+              <h2 className="font-serif text-2xl md:text-3xl text-foreground leading-relaxed mb-6">
+                O mesmo conhecimento que trouxe sua mentora até aqui...
+              </h2>
+              <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed">
+                Com um crescimento completamente orgânico, sem investir um centavo em publicidade e um mundo de oportunidades que aparecem por conta de sua marca pessoal.
+              </p>
+            </div>
+            <div className="flex gap-6 justify-center items-start">
+              <img
+                src={instagramAntes}
+                alt="Perfil Instagram antes"
+                className="w-[45%] rounded-lg shadow-lg"
+              />
+              <img
+                src={instagramDepois}
+                alt="Perfil Instagram depois"
+                className="w-[45%] rounded-lg shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Footer />
       <WhatsAppButton />
     </div>
