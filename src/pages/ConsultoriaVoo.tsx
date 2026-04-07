@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import consultoriaHero from "@/assets/consultoria-voo-hero.png";
 import consultoriaHands from "@/assets/consultoria-hands.jpeg";
+import consultoriaGiulia from "@/assets/consultoria-giulia.jpg";
 
 const talvezVoceItems = [
   {
