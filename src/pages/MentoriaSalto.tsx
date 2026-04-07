@@ -12,6 +12,8 @@ import depoimentoIsabela from "@/assets/depoimento-isabela.png";
 import depoimentoInara from "@/assets/depoimento-inara.jpeg";
 import depoimentoGiovanna from "@/assets/depoimento-giovanna.jpeg";
 import mentoriaMaoAgua from "@/assets/mentoria-mao-agua.jpeg";
+import mentoriaEncontros from "@/assets/mentoria-encontros.png";
+import mentoriaMetodo from "@/assets/mentoria-metodo.png";
 
 const MentoriaSalto = () => {
   return (
