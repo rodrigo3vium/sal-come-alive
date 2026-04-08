@@ -43,7 +43,7 @@ const Navbar = () => {
                   {/* Consultoria Voo */}
                   <a href="/consultoria-voo" className="p-10 hover:bg-beige/50 transition-colors group">
                     <h3 className="font-serif text-lg text-foreground mb-4">Consultoria Voo</h3>
-                    <div className="w-full h-px bg-foreground/30 mb-6" />
+                    <div className="w-full h-[2px] bg-foreground/50 mb-6" />
                     <p className="font-body text-sm text-foreground/70 leading-relaxed">
                       Um trabalho individual e exclusivo, feito por nós, do início ao fim. Indicada para quem quer ter sua marca pessoal estruturada com profundidade, estratégia e um olhar dedicado só para si.
                     </p>
@@ -51,7 +51,7 @@ const Navbar = () => {
                   {/* Mentoria SALto */}
                   <a href="/mentoria-salto" className="p-10 hover:bg-beige/50 transition-colors group">
                     <h3 className="font-serif text-lg text-foreground mb-4">Mentoria SALto</h3>
-                    <div className="w-full h-px bg-foreground/30 mb-6" />
+                    <div className="w-full h-[2px] bg-foreground/50 mb-6" />
                     <p className="font-body text-sm text-foreground/70 leading-relaxed">
                       Uma jornada de autoconhecimento e expressão, guiada em grupo e vivida de forma individual. Ideal para quem quer aprender a se comunicar com mais verdade, clareza e consistência — com apoio no processo, mas construindo com as próprias mãos.
                     </p>
@@ -59,7 +59,7 @@ const Navbar = () => {
                   {/* Cursos */}
                   <div className="p-10 bg-beige/40">
                     <h3 className="font-serif text-lg text-foreground mb-4">Cursos</h3>
-                    <div className="w-full h-px bg-foreground/30 mb-6" />
+                    <div className="w-full h-[2px] bg-foreground/50 mb-6" />
                     <p className="font-body text-sm font-semibold text-foreground/80 mb-1">[EM BREVE]</p>
                     <p className="font-body text-sm text-foreground/70 leading-relaxed">
                       Você poderá aprender tudo sobre o nosso método para estruturar a comunicação que traduz profundamente aquilo que temos de único para nós e para o mundo.
