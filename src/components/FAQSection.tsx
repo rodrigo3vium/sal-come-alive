@@ -34,7 +34,7 @@ const FAQSection = () => {
 
         <Accordion type="single" collapsible className="space-y-4">
           {faqs.map((faq, index) => (
-            <AccordionItem key={index} value={`item-${index}`} className="border border-foreground/10 rounded-sm px-6 bg-beige">
+            <AccordionItem key={index} value={`item-${index}`} className="border border-foreground/30 rounded-sm px-6 bg-beige">
               <AccordionTrigger className="font-serif text-left text-base text-foreground hover:no-underline py-5">
                 {faq.question}
               </AccordionTrigger>
