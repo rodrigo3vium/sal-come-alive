@@ -26,16 +26,16 @@ const faqs = [
 
 const FAQSection = () => {
   return (
-    <section id="faq" className="bg-beige py-20 md:py-28">
-      <div className="container mx-auto px-6 max-w-4xl">
-        <div className="text-center mb-14">
+    <section id="faq" className="bg-beige py-16 md:py-20">
+      <div className="container mx-auto px-6 max-w-3xl">
+        <div className="text-center mb-8">
           <h2 className="font-serif text-2xl md:text-3xl text-foreground font-normal">Perguntas Frequentes</h2>
         </div>
 
-        <Accordion type="single" collapsible className="space-y-5">
+        <Accordion type="single" collapsible className="space-y-4">
           {faqs.map((faq, index) => (
             <AccordionItem key={index} value={`item-${index}`} className="border border-foreground/20 rounded-none px-6 bg-transparent">
-              <AccordionTrigger className="font-body text-left text-[15px] text-foreground/70 hover:no-underline py-5 font-normal tracking-wide">
+              <AccordionTrigger className="font-body text-left text-[15px] text-foreground/70 hover:no-underline py-4 font-normal tracking-wide">
                 {faq.question}
               </AccordionTrigger>
               <AccordionContent className="font-body text-sm text-muted-foreground leading-relaxed pb-5 whitespace-pre-line">
@@ -45,12 +45,12 @@ const FAQSection = () => {
           ))}
         </Accordion>
 
-        <div className="mt-14 text-center">
+        <div className="mt-8 text-center">
           <a
             href="https://wa.me/5511975404650"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block border border-foreground/20 px-10 py-5 text-center hover:border-foreground/40 transition-colors"
+            className="inline-block border border-foreground/20 px-10 py-4 text-center hover:border-foreground/40 transition-colors"
           >
             <span className="block font-body text-xs tracking-[0.15em] uppercase text-foreground/80">RESTOU ALGUMA DÚVIDA?</span>
             <span className="block font-body text-xs text-foreground/50 mt-1">clique aqui para falar conosco</span>
