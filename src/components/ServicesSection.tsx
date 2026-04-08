@@ -27,15 +27,21 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section id="services" className="bg-beige py-16 md:py-20">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-4">
-          <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-4 font-body">SERVIÇOS</p>
-        </div>
-        <div className="text-center mb-16">
-          <p className="font-serif text-xl md:text-2xl text-foreground">
-            Conheça os <em><strong>caminhos</strong></em> que oferecemos para seu <em><strong>crescimento</strong></em>
-          </p>
+    <section id="services">
+      <div className="bg-white py-16 md:py-20">
+        <div className="container mx-auto px-6">
+          <div className="flex items-center gap-6 mb-8">
+            <div className="flex-1 h-px bg-foreground/20" />
+            <p className="text-foreground text-lg md:text-xl tracking-[0.15em] uppercase font-serif">SERVIÇOS</p>
+            <div className="flex-1 h-px bg-foreground/20" />
+          </div>
+          <div className="flex items-center gap-6">
+            <div className="flex-1 h-px bg-foreground/20" />
+            <p className="font-serif text-lg md:text-xl text-foreground whitespace-nowrap">
+              Conheça os <em>caminhos</em> que oferecemos para seu <em>crescimento</em>
+            </p>
+            <div className="flex-1 h-px bg-foreground/20" />
+          </div>
         </div>
       </div>
 
