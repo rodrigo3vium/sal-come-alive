@@ -15,7 +15,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-warm-white/95 backdrop-blur-sm">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-warm-white/95 backdrop-blur-sm border-b border-foreground/10">
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
         <button onClick={() => scrollTo("hero")}>
           <img src={logoStudioSal} alt="Studio SAL" className="h-8" />
