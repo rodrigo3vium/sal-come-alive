@@ -59,7 +59,7 @@ const Navbar = () => {
                   {/* Cursos */}
                   <div className="p-10 bg-beige/40">
                     <h3 className="font-serif text-lg text-foreground mb-4">Cursos</h3>
-                    <div className="w-full h-px bg-foreground/30 mb-6" />
+                    <div className="w-full h-[2px] bg-foreground/50 mb-6" />
                     <p className="font-body text-sm font-semibold text-foreground/80 mb-1">[EM BREVE]</p>
                     <p className="font-body text-sm text-foreground/70 leading-relaxed">
                       Você poderá aprender tudo sobre o nosso método para estruturar a comunicação que traduz profundamente aquilo que temos de único para nós e para o mundo.
