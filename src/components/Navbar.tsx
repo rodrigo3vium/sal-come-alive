@@ -43,7 +43,7 @@ const Navbar = () => {
                   {/* Consultoria Voo */}
                   <a href="/consultoria-voo" className="p-10 hover:bg-beige/50 transition-colors group">
                     <h3 className="font-serif text-lg text-foreground mb-4">Consultoria Voo</h3>
-                    <div className="w-full h-px bg-foreground/30 mb-6" />
+                    <div className="w-full h-[2px] bg-foreground/50 mb-6" />
                     <p className="font-body text-sm text-foreground/70 leading-relaxed">
                       Um trabalho individual e exclusivo, feito por nós, do início ao fim. Indicada para quem quer ter sua marca pessoal estruturada com profundidade, estratégia e um olhar dedicado só para si.
                     </p>
