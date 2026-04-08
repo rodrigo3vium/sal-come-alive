@@ -67,11 +67,15 @@ const ServicesSection = () => {
             );
             const className = "group cursor-pointer block relative overflow-hidden";
 
-            return service.external ? (
-              <a key={service.title} href={service.link} target="_blank" rel="noopener noreferrer" className={className}>
-                {content}
-              </a>
-            ) : (
+            if (service.external) {
+              return (
+                <div key={service.title} className="relative overflow-hidden">
+                  {content}
+                </div>
+              );
+            }
+
+            return (
               <Link key={service.title} to={service.link} className={className}>
                 {content}
               </Link>
