@@ -28,7 +28,7 @@ const SobreNos = () => {
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="relative z-10 text-center px-6">
-          <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-white font-light tracking-wide lowercase">
+          <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl text-white font-light tracking-wide lowercase">
             tudo começa com um <span className="font-normal">SAL</span>to
           </h1>
           <p className="font-body text-sm md:text-base text-white/80 mt-6 italic">
