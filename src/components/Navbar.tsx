@@ -38,7 +38,7 @@ const Navbar = () => {
               <ChevronDown size={14} className={`transition-transform ${servicesOpen ? 'rotate-180' : ''}`} />
             </button>
             {servicesOpen && (
-              <div className="fixed left-0 right-0 top-[65px] bg-warm-white border-t border-foreground/10 shadow-lg z-50">
+              <div className="fixed left-0 right-0 top-[65px] bg-white border-t border-foreground/10 shadow-lg z-50">
                 <div className="container mx-auto grid grid-cols-3 divide-x divide-foreground/15">
                   {/* Consultoria Voo */}
                   <a href="/consultoria-voo" className="p-10 hover:bg-beige/50 transition-colors group">
