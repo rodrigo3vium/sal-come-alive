@@ -38,29 +38,29 @@ const Navbar = () => {
               <ChevronDown size={14} className={`transition-transform ${servicesOpen ? 'rotate-180' : ''}`} />
             </button>
             {servicesOpen && (
-              <div className="fixed left-0 right-0 top-full mt-0 bg-warm-white border-t border-border shadow-lg z-50">
-                <div className="container mx-auto grid grid-cols-3 divide-x divide-border">
+              <div className="fixed left-0 right-0 top-[65px] bg-warm-white border-t border-foreground/10 shadow-lg z-50">
+                <div className="container mx-auto grid grid-cols-3 divide-x divide-foreground/15">
                   {/* Consultoria Voo */}
-                  <a href="/consultoria-voo" className="p-8 hover:bg-beige/50 transition-colors group">
-                    <h3 className="font-serif text-lg text-foreground mb-3">Consultoria Voo</h3>
-                    <div className="w-full h-px bg-foreground/20 mb-4" />
+                  <a href="/consultoria-voo" className="p-10 hover:bg-beige/50 transition-colors group">
+                    <h3 className="font-serif text-lg text-foreground mb-4">Consultoria Voo</h3>
+                    <div className="w-full h-px bg-foreground/30 mb-6" />
                     <p className="font-body text-sm text-foreground/70 leading-relaxed">
                       Um trabalho individual e exclusivo, feito por nós, do início ao fim. Indicada para quem quer ter sua marca pessoal estruturada com profundidade, estratégia e um olhar dedicado só para si.
                     </p>
                   </a>
                   {/* Mentoria SALto */}
-                  <a href="/mentoria-salto" className="p-8 hover:bg-beige/50 transition-colors group">
-                    <h3 className="font-serif text-lg text-foreground mb-3">Mentoria SALto</h3>
-                    <div className="w-full h-px bg-foreground/20 mb-4" />
+                  <a href="/mentoria-salto" className="p-10 hover:bg-beige/50 transition-colors group">
+                    <h3 className="font-serif text-lg text-foreground mb-4">Mentoria SALto</h3>
+                    <div className="w-full h-px bg-foreground/30 mb-6" />
                     <p className="font-body text-sm text-foreground/70 leading-relaxed">
                       Uma jornada de autoconhecimento e expressão, guiada em grupo e vivida de forma individual. Ideal para quem quer aprender a se comunicar com mais verdade, clareza e consistência — com apoio no processo, mas construindo com as próprias mãos.
                     </p>
                   </a>
                   {/* Cursos */}
-                  <div className="p-8 bg-beige/30">
-                    <h3 className="font-serif text-lg text-foreground mb-3">Cursos</h3>
-                    <div className="w-full h-px bg-foreground/20 mb-4" />
-                    <p className="font-body text-sm font-semibold text-foreground/80 mb-2">[EM BREVE]</p>
+                  <div className="p-10 bg-beige/40">
+                    <h3 className="font-serif text-lg text-foreground mb-4">Cursos</h3>
+                    <div className="w-full h-px bg-foreground/30 mb-6" />
+                    <p className="font-body text-sm font-semibold text-foreground/80 mb-1">[EM BREVE]</p>
                     <p className="font-body text-sm text-foreground/70 leading-relaxed">
                       Você poderá aprender tudo sobre o nosso método para estruturar a comunicação que traduz profundamente aquilo que temos de único para nós e para o mundo.
                     </p>
