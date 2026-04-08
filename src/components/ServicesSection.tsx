@@ -58,9 +58,9 @@ const ServicesSection = () => {
                 <div className="absolute inset-0 bg-black/30" />
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-8">
                   <h3 className="font-serif text-2xl md:text-3xl text-white mb-3">{service.title}</h3>
-                  {service.subtitle && (
-                    <p className="text-white/90 text-sm tracking-widest mb-3">{service.subtitle}</p>
-                  )}
+                  <p className={`text-white/90 text-sm tracking-widest mb-3 ${service.subtitle ? '' : 'invisible'}`}>
+                    {service.subtitle || '&nbsp;'}
+                  </p>
                   <p className="font-body text-sm text-white/90 leading-relaxed max-w-xs">{service.description}</p>
                 </div>
               </>
