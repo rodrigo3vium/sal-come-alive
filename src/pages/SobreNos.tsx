@@ -210,7 +210,7 @@ const SobreNos = () => {
               <img
                 src={aboutLeaves}
                 alt="Folhas verdes"
-                className="w-full max-w-lg aspect-[4/3] object-cover"
+                className="w-full max-w-xl aspect-[2/1] object-cover"
               />
             </div>
           </div>
