@@ -234,12 +234,6 @@ const SobreNos = () => {
             <div className="relative flex min-h-[260px] items-center justify-center md:justify-start md:pl-4">
               <img
                 src={logoComFrase}
-                alt=""
-                aria-hidden="true"
-                className="pointer-events-none absolute right-[-22%] top-1/2 hidden w-[160%] max-w-none -translate-y-1/2 opacity-10 md:block"
-              />
-              <img
-                src={logoComFrase}
                 alt="Studio Sal - traduzimos mulheres que marcam o mundo"
                 className="relative z-10 w-full max-w-[520px]"
               />
