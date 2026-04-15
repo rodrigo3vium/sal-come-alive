@@ -46,7 +46,7 @@ const SobreNos = () => {
               <img
                 src={aboutBeach}
                 alt="Ondas na praia"
-                className="w-full max-w-md aspect-[4/5] object-cover"
+                className="w-full max-w-lg aspect-[4/3] object-cover"
               />
             </div>
 
