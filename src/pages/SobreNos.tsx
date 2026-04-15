@@ -218,24 +218,30 @@ const SobreNos = () => {
       </section>
 
       {/* Eighth Section - logo com imagem */}
-      <section className="bg-warm-white py-24 md:py-32">
-        <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
+      <section className="bg-warm-white py-24 md:py-32 overflow-hidden">
+        <div className="mx-auto w-full max-w-[1400px] px-6 md:px-10">
+          <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-[0.95fr_1.2fr] md:gap-10">
             {/* Left - Image */}
             <div>
               <img
                 src={aboutShadowHands}
                 alt="Sombra de mãos"
-                className="w-full max-w-lg aspect-[4/3] object-cover"
+                className="w-full max-w-xl aspect-[2/1] object-cover"
               />
             </div>
 
             {/* Right - Logo */}
-            <div className="flex justify-center md:justify-end">
+            <div className="relative flex min-h-[260px] items-center justify-center md:justify-start md:pl-4">
+              <img
+                src={logoComFrase}
+                alt=""
+                aria-hidden="true"
+                className="pointer-events-none absolute right-[-22%] top-1/2 hidden w-[160%] max-w-none -translate-y-1/2 opacity-10 md:block"
+              />
               <img
                 src={logoComFrase}
                 alt="Studio Sal - traduzimos mulheres que marcam o mundo"
-                className="w-full max-w-md"
+                className="relative z-10 w-full max-w-[520px]"
               />
             </div>
           </div>
