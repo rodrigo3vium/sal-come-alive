@@ -92,7 +92,7 @@ const SobreNos = () => {
               <img
                 src={aboutCoffee}
                 alt="Café e livro"
-                className="w-full max-w-md aspect-[4/5] object-cover"
+                className="w-full max-w-lg aspect-[4/3] object-cover"
               />
             </div>
           </div>
