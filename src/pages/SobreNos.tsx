@@ -13,7 +13,7 @@ import aboutHero from "@/assets/about-hero.jpeg";
 import corpoMenteAlmaIcon from "@/assets/corpo-mente-alma-icon.png";
 import aboutLeaves from "@/assets/about-leaves.jpg";
 import aboutShadowHands from "@/assets/about-shadow-hands.jpeg";
-import logoComFrase from "@/assets/logo-com-frase.png";
+import logoComFrase from "@/assets/logo-com-frase-transparente.png";
 
 const SobreNos = () => {
   return (
@@ -226,7 +226,7 @@ const SobreNos = () => {
               <img
                 src={aboutShadowHands}
                 alt="Sombra de mãos"
-                className="w-full max-w-lg aspect-[3/2] object-cover"
+                className="w-full max-w-lg aspect-[4/3] object-cover"
               />
             </div>
 
