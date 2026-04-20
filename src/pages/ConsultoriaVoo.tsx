@@ -52,10 +52,10 @@ const ConsultoriaVoo = () => {
 
         {/* Right - Text */}
         <div className="flex flex-col px-8 md:px-16 lg:px-20 py-16 md:py-0 bg-warm-white md:pt-[35vh] lg:pt-[40vh]">
-          <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground leading-snug mb-8 lowercase">
+          <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground leading-snug mb-4 lowercase">
             traduza sua autenticidade para o mundo e tenha a marca com o valor que você merece.
           </h1>
-          <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed max-w-lg mb-10">
+          <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed max-w-lg mb-6">
             Nessa jornada, nosso time trabalha exclusivamente para dar vida à marca que traduz tudo aquilo que muitas vezes nem você enxerga sobre si – com estratégia, autenticidade e leveza.
           </p>
           <div>
