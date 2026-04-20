@@ -42,7 +42,7 @@ const ConsultoriaVoo = () => {
       {/* Hero Section */}
       <section className="min-h-screen grid grid-cols-1 md:grid-cols-2">
         {/* Left - Image */}
-        <div className="h-[50vh] md:h-screen">
+        <div className="h-[50vh] md:h-auto md:min-h-screen">
           <img
             src={consultoriaHero}
             alt="Mulher na praia"
@@ -51,7 +51,7 @@ const ConsultoriaVoo = () => {
         </div>
 
         {/* Right - Text */}
-        <div className="flex flex-col px-8 md:px-16 lg:px-20 py-16 md:py-0 bg-warm-white md:pt-[28vh] lg:pt-[30vh]">
+        <div className="flex flex-col px-8 md:px-16 lg:px-20 py-16 md:py-0 bg-warm-white md:pt-[28vh] lg:pt-[30vh] md:pb-16">
           <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground leading-snug mb-6 lowercase">
             traduza sua autenticidade para o mundo e tenha a marca com o valor que você merece.
           </h1>
