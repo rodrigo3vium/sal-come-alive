@@ -51,7 +51,7 @@ const ConsultoriaVoo = () => {
         </div>
 
         {/* Right - Text */}
-        <div className="flex flex-col justify-end px-8 md:px-16 lg:px-20 py-16 md:pb-20 lg:pb-24 bg-warm-white">
+        <div className="flex flex-col px-8 md:px-16 lg:px-20 py-16 md:py-0 bg-warm-white md:pt-[55vh] lg:pt-[60vh]">
           <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground leading-snug mb-8 lowercase">
             traduza sua autenticidade para o mundo e tenha a marca com o valor que você merece.
           </h1>
