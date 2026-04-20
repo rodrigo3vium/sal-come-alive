@@ -262,7 +262,7 @@ const ConsultoriaVoo = () => {
               <img
                 src={almaEntrevista}
                 alt="A Entrevista"
-                className="w-full aspect-[4/3] object-cover"
+                className="w-full aspect-[7/4] object-cover"
               />
             </div>
           </div>
