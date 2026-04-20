@@ -101,7 +101,7 @@ const ConsultoriaVoo = () => {
               <img
                 src={consultoriaHands}
                 alt="Mãos"
-                className="w-full max-w-md aspect-[4/5] object-cover"
+                className="w-full max-w-xl aspect-[3/2] object-cover"
               />
             </div>
             <div>
