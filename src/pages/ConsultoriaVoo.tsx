@@ -124,7 +124,7 @@ const ConsultoriaVoo = () => {
               <img
                 src={consultoriaGiulia}
                 alt="Giulia Salvatore"
-                className="w-full max-w-xl aspect-[3/2] object-cover object-[center_38%]"
+                className="w-full max-w-xl aspect-[3/2] object-cover"
               />
             </div>
             <div>
