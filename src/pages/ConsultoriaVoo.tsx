@@ -5,7 +5,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import consultoriaHero from "@/assets/consultoria-voo-hero.png";
 import consultoriaHands from "@/assets/consultoria-hands.jpeg";
 import aboutBeach from "@/assets/about-beach.jpeg";
-import consultoriaGiulia from "@/assets/consultoria-giulia.jpg";
+import consultoriaGiulia from "@/assets/consultoria-marca-pessoal.jpg";
 import depoimentoIsabella from "@/assets/depoimento-isabella.png";
 import depoimentoNathalia from "@/assets/depoimento-nathalia.jpeg";
 import depoimentoLeticia from "@/assets/depoimento-leticia.png";
@@ -124,7 +124,7 @@ const ConsultoriaVoo = () => {
               <img
                 src={consultoriaGiulia}
                 alt="Giulia Salvatore"
-                className="w-full max-w-md aspect-[3/4] object-cover object-top"
+                className="w-full max-w-xl aspect-[3/2] object-cover object-top"
               />
             </div>
             <div>
