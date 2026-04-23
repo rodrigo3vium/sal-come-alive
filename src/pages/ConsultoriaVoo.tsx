@@ -434,9 +434,9 @@ const ConsultoriaVoo = () => {
       {/* CTA Voar */}
       <section className="bg-warm-white py-20 md:py-28">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="relative md:min-h-[520px] flex flex-col gap-8 md:block">
+          <div className="relative md:min-h-[600px] flex flex-col gap-8 md:block">
             {/* Card bege (direita, mais alto) */}
-            <div className="md:absolute md:top-0 md:right-0 md:w-[58%] bg-beige p-10 md:p-14 md:pl-32 lg:pl-40 flex flex-col justify-center order-2 md:order-none">
+            <div className="md:absolute md:top-0 md:right-0 md:w-[62%] bg-beige p-10 md:p-14 md:pl-12 lg:pl-16 flex flex-col justify-center order-2 md:order-none">
               <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">
                 sente o chamado para VOAR?
               </h2>
@@ -454,11 +454,11 @@ const ConsultoriaVoo = () => {
             </div>
 
             {/* Imagem (esquerda, mais baixa, sobreposta) */}
-            <div className="md:absolute md:left-0 md:top-20 md:w-[50%] md:z-10 order-1 md:order-none">
+            <div className="md:absolute md:left-0 md:top-16 md:w-[45%] md:z-10 order-1 md:order-none">
               <img
                 src={ctaVoar}
                 alt="Mulher correndo na praia"
-                className="w-full aspect-[3/2] object-cover"
+                className="w-full aspect-[4/5] object-cover"
               />
             </div>
           </div>
