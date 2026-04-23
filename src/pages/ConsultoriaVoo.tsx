@@ -14,6 +14,7 @@ import folhas from "@/assets/folhas.webp";
 import mentePedras from "@/assets/mente-pedras.jpeg";
 import corpoVerbal from "@/assets/corpo-verbal.png";
 import ctaVoar from "@/assets/cta-voar.png";
+import corpoIdentidadeVisual from "@/assets/corpo-identidade-visual.jpg";
 
 const talvezVoceItems = [
   {
@@ -415,9 +416,9 @@ const ConsultoriaVoo = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
             <div className="order-2 md:order-1">
               <img
-                src={consultoriaGiulia}
+                src={corpoIdentidadeVisual}
                 alt="Identidade Visual"
-                className="w-full aspect-[3/4] object-cover object-top"
+                className="w-full aspect-[16/9] object-cover"
               />
             </div>
             <div className="order-1 md:order-2">
