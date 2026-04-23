@@ -454,11 +454,11 @@ const ConsultoriaVoo = () => {
             </div>
 
             {/* Imagem (esquerda, mais baixa, sobreposta) */}
-            <div className="md:absolute md:left-0 md:top-20 md:w-[50%] md:z-10 order-1 md:order-none">
+            <div className="md:absolute md:left-0 md:top-16 md:w-[45%] md:z-10 order-1 md:order-none">
               <img
                 src={ctaVoar}
                 alt="Mulher correndo na praia"
-                className="w-full aspect-[3/2] object-cover"
+                className="w-full aspect-[4/5] object-cover"
               />
             </div>
           </div>
