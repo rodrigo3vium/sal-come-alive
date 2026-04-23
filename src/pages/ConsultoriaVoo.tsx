@@ -14,6 +14,7 @@ import folhas from "@/assets/folhas.webp";
 import mentePedras from "@/assets/mente-pedras.jpeg";
 import corpoVerbal from "@/assets/corpo-verbal.png";
 import ctaVoar from "@/assets/cta-voar.png";
+import corpoIdentidadeVisual from "@/assets/corpo-identidade-visual.jpg";
 
 const talvezVoceItems = [
   {
