@@ -323,7 +323,7 @@ const ConsultoriaVoo = () => {
           </div>
 
           {/* Pilares - Accordion */}
-          <div className="max-w-3xl mx-auto mt-16">
+          <div className="max-w-3xl mx-auto mt-16 space-y-5">
             {[
               {
                 title: "HISTÓRIA",
@@ -350,16 +350,16 @@ const ConsultoriaVoo = () => {
                 subtitle: "Como resumir em poucas palavras quem você é e o que agrega para o mundo?",
                 text: "Também chamamos de mensagem central, a síntese de todo o seu posicionamento. O grão que carrega em si todo o significado de tudo que estruturamos nos outros pilares e que tem o objetivo de, em poucas palavras, deixar uma marca poderosa. A sua marca.",
               },
-            ].map((pilar, i) => (
-              <div key={pilar.title} className={`border-t border-foreground/20 ${i === 4 ? "border-b" : ""}`}>
+            ].map((pilar) => (
+              <div key={pilar.title} className="border border-foreground/15 rounded-sm bg-warm-white">
                 <details className="group" open>
-                  <summary className="flex items-center gap-4 py-6 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                  <summary className="flex items-center gap-4 px-6 py-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
                     <svg className="w-4 h-4 text-foreground/60 transition-transform group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                       <path d="M19 9l-7 7-7-7" />
                     </svg>
                     <span className="font-body text-sm md:text-base tracking-[0.15em] uppercase text-foreground">{pilar.title}</span>
                   </summary>
-                  <div className="pb-6 pl-0 md:pl-8">
+                  <div className="px-6 pb-6 pl-12 md:pl-14">
                     <p className="font-body text-sm md:text-base font-semibold italic text-foreground mb-2">
                       {pilar.subtitle}
                     </p>
