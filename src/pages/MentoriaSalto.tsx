@@ -28,11 +28,7 @@ const MentoriaSalto = () => {
       <section className="min-h-screen grid grid-cols-1 md:grid-cols-2">
         {/* Left - Image */}
         <div className="h-[60vh] md:h-screen">
-          <img
-            src={mentoriaHero}
-            alt="Mentoria SALto"
-            className="w-full h-full object-cover"
-          />
+          <img src={mentoriaHero} alt="Mentoria SALto" className="w-full h-full object-cover" />
         </div>
 
         {/* Right - Content */}
@@ -43,9 +39,8 @@ const MentoriaSalto = () => {
             </h1>
             <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed mb-10">
               Nessa jornada, vamos te guiar para que você aprenda a se comunicar{" "}
-              <strong className="text-foreground">sem fórmulas engessadas ou discursos forçados</strong>,
-              {" "}traduzindo a versão de você que{" "}
-              <strong className="text-foreground">te dá orgulho on e offline.</strong>
+              <strong className="text-foreground">sem fórmulas engessadas ou discursos forçados</strong>, traduzindo a
+              versão de você que <strong className="text-foreground">te dá orgulho on e offline.</strong>
             </p>
             <a
               href="https://form.respondi.app/ttqcWIpe"
@@ -91,9 +86,7 @@ const MentoriaSalto = () => {
               <h3 className="font-body text-sm md:text-base tracking-[0.05em] uppercase text-foreground font-semibold mb-4 leading-relaxed">
                 {card.title}
               </h3>
-              <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed">
-                {card.text}
-              </p>
+              <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed">{card.text}</p>
             </div>
           ))}
         </div>
@@ -117,11 +110,7 @@ const MentoriaSalto = () => {
               </p>
             </div>
             <div>
-              <img
-                src={mentoriaChapeu}
-                alt="Chapéu de palha"
-                className="w-full aspect-[16/9] object-cover"
-              />
+              <img src={mentoriaChapeu} alt="Chapéu de palha" className="w-full aspect-[3/2] object-cover" />
             </div>
           </div>
         </div>
@@ -136,20 +125,13 @@ const MentoriaSalto = () => {
                 O mesmo conhecimento que trouxe sua mentora até aqui...
               </h2>
               <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed">
-                Com um crescimento completamente orgânico, sem investir um centavo em publicidade e um mundo de oportunidades que aparecem por conta de sua marca pessoal.
+                Com um crescimento completamente orgânico, sem investir um centavo em publicidade e um mundo de
+                oportunidades que aparecem por conta de sua marca pessoal.
               </p>
             </div>
             <div className="flex gap-6 justify-center items-start">
-              <img
-                src={instagramAntes}
-                alt="Perfil Instagram antes"
-                className="w-[45%] rounded-lg shadow-lg"
-              />
-              <img
-                src={instagramDepois}
-                alt="Perfil Instagram depois"
-                className="w-[45%] rounded-lg shadow-lg"
-              />
+              <img src={instagramAntes} alt="Perfil Instagram antes" className="w-[45%] rounded-lg shadow-lg" />
+              <img src={instagramDepois} alt="Perfil Instagram depois" className="w-[45%] rounded-lg shadow-lg" />
             </div>
           </div>
         </div>
@@ -162,7 +144,10 @@ const MentoriaSalto = () => {
             Não é sobre caber em uma fórmula pronta. É sobre finalmente encontrar o <strong>seu</strong> jeito de fazer.
           </h2>
           <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed max-w-3xl">
-            Varios gurus do marketing vendem fórmulas prontas porque é isso que a maioria busca: soluções fáceis e rápidas. Mas essa dinâmica criou um problema gigante: todo mundo está ficando igual. Abrimos nosso feed e nos deparamos com os mesmos tipos de conteúdo, os mesmos tipos de identidade visual. Como se agora tudo fosse um grande copia e cola.
+            Varios gurus do marketing vendem fórmulas prontas porque é isso que a maioria busca: soluções fáceis e
+            rápidas. Mas essa dinâmica criou um problema gigante: todo mundo está ficando igual. Abrimos nosso feed e
+            nos deparamos com os mesmos tipos de conteúdo, os mesmos tipos de identidade visual. Como se agora tudo
+            fosse um grande copia e cola.
           </p>
         </div>
         <div className="max-w-6xl mx-auto mt-12">
@@ -196,17 +181,9 @@ const MentoriaSalto = () => {
               },
             ].map((item, i) => (
               <div key={i} className="flex flex-col">
-                <p className="font-body text-sm md:text-base text-foreground leading-relaxed mb-4">
-                  {item.bold}
-                </p>
-                <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed mb-8">
-                  {item.text}
-                </p>
-                <img
-                  src={item.icon}
-                  alt=""
-                  className="w-16 h-16 rounded-full mt-auto"
-                />
+                <p className="font-body text-sm md:text-base text-foreground leading-relaxed mb-4">{item.bold}</p>
+                <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed mb-8">{item.text}</p>
+                <img src={item.icon} alt="" className="w-16 h-16 rounded-full mt-auto" />
               </div>
             ))}
           </div>
@@ -235,17 +212,25 @@ const MentoriaSalto = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { img: depoimentoIsabela, name: "Isabela Piratininga | Psicóloga", desc: "Além de conseguir atingir sua meta de pacientes, a Isa também recebeu de uma pessoa que admira muito o reconhecimento por seu conteúdo de qualidade." },
-              { img: depoimentoInara, name: "Inara Menezes | Psicóloga", desc: "A Inara viu sua vida mudar da água para o vinho, deixando para trás pacientes que não reconheciam o valor de seu trabalho e abrindo espaço para quem valoriza e enxerga a pessoa e profissional ímpar que ela é." },
-              { img: depoimentoGiovanna, name: "Giovanna Gusmão | Terapeuta Cognitivo Sexual", desc: "A Gi finalmente conseguiu trazer seu trabalho para o digital e comunicar quem ela é de verdade, com orgulho da forma como se apresenta agora." },
+              {
+                img: depoimentoIsabela,
+                name: "Isabela Piratininga | Psicóloga",
+                desc: "Além de conseguir atingir sua meta de pacientes, a Isa também recebeu de uma pessoa que admira muito o reconhecimento por seu conteúdo de qualidade.",
+              },
+              {
+                img: depoimentoInara,
+                name: "Inara Menezes | Psicóloga",
+                desc: "A Inara viu sua vida mudar da água para o vinho, deixando para trás pacientes que não reconheciam o valor de seu trabalho e abrindo espaço para quem valoriza e enxerga a pessoa e profissional ímpar que ela é.",
+              },
+              {
+                img: depoimentoGiovanna,
+                name: "Giovanna Gusmão | Terapeuta Cognitivo Sexual",
+                desc: "A Gi finalmente conseguiu trazer seu trabalho para o digital e comunicar quem ela é de verdade, com orgulho da forma como se apresenta agora.",
+              },
             ].map((dep, i) => (
               <div key={i}>
                 <div className="bg-beige rounded-sm overflow-hidden">
-                  <img
-                    src={dep.img}
-                    alt={`Depoimento de ${dep.name}`}
-                    className="w-full object-cover"
-                  />
+                  <img src={dep.img} alt={`Depoimento de ${dep.name}`} className="w-full object-cover" />
                 </div>
                 <p className="font-body text-sm text-foreground font-medium mt-3">{dep.name}</p>
                 <p className="font-body text-sm text-foreground/70 mt-2 leading-relaxed">{dep.desc}</p>
@@ -260,10 +245,13 @@ const MentoriaSalto = () => {
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="font-serif text-3xl md:text-4xl text-foreground leading-relaxed mb-6">
-              Tudo que vai estar<br />ao seu alcance
+              Tudo que vai estar
+              <br />
+              ao seu alcance
             </h2>
             <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed max-w-2xl mx-auto">
-              Caso você seja aprovada, muito mais do que conhecimento, trazemos um ecossistema que transforma sua força de vontade em realidade.
+              Caso você seja aprovada, muito mais do que conhecimento, trazemos um ecossistema que transforma sua força
+              de vontade em realidade.
             </p>
           </div>
 
@@ -272,31 +260,25 @@ const MentoriaSalto = () => {
             <div>
               <h3 className="font-serif text-xl md:text-2xl text-foreground mb-4">6 Meses de Acompanhamento</h3>
               <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed">
-                Esse é o tempo que nós estaremos com você para cuidar com todo o carinho e sensibilidade da marca que você veio deixar no mundo.
+                Esse é o tempo que nós estaremos com você para cuidar com todo o carinho e sensibilidade da marca que
+                você veio deixar no mundo.
               </p>
             </div>
             <div>
-              <img
-                src={mentoriaMaoAgua}
-                alt="Mão na água"
-                className="w-full aspect-[16/9] object-cover"
-              />
+              <img src={mentoriaMaoAgua} alt="Mão na água" className="w-full aspect-[16/9] object-cover" />
             </div>
           </div>
 
           {/* Encontros Quinzenais */}
           <div className="grid grid-cols-1 md:grid-cols-[1.2fr_1fr] gap-8 md:gap-12 items-center mb-20">
             <div>
-              <img
-                src={mentoriaEncontros}
-                alt="Encontros quinzenais"
-                className="w-full"
-              />
+              <img src={mentoriaEncontros} alt="Encontros quinzenais" className="w-full" />
             </div>
             <div>
               <h3 className="font-serif text-xl md:text-2xl text-foreground mb-4">Encontros Quinzenais</h3>
               <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed">
-                Semana sim, semana não, estaremos juntas em grupo para mergulhar, lapidar e potencializar a sua comunicação trabalhando temas como conteúdo, visual, estratégia e oratória.
+                Semana sim, semana não, estaremos juntas em grupo para mergulhar, lapidar e potencializar a sua
+                comunicação trabalhando temas como conteúdo, visual, estratégia e oratória.
               </p>
             </div>
           </div>
@@ -306,30 +288,26 @@ const MentoriaSalto = () => {
             <div>
               <h3 className="font-serif text-xl md:text-2xl text-foreground mb-4">Acesso ao Método Sal</h3>
               <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed">
-                Todo o nosso conhecimento sobre como descobrir aquilo que você tem de único e potencializar isso para o mundo vai estar em uma área exclusiva, tipo a Netflix da sua Marca Pessoal.
+                Todo o nosso conhecimento sobre como descobrir aquilo que você tem de único e potencializar isso para o
+                mundo vai estar em uma área exclusiva, tipo a Netflix da sua Marca Pessoal.
               </p>
             </div>
             <div>
-              <img
-                src={mentoriaMetodo}
-                alt="Método Sal - plataforma"
-                className="w-full"
-              />
+              <img src={mentoriaMetodo} alt="Método Sal - plataforma" className="w-full" />
             </div>
           </div>
           {/* Peixaria */}
           <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-8 md:gap-12 items-center mb-20">
             <div>
-              <img
-                src={peixariaTemplates}
-                alt="Templates da Peixaria"
-                className="w-full"
-              />
+              <img src={peixariaTemplates} alt="Templates da Peixaria" className="w-full" />
             </div>
             <div>
               <h3 className="font-serif text-xl md:text-2xl text-foreground mb-4">Acesso à "Peixaria"</h3>
               <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed">
-                Aqui na Sal nós ensinamos a pescar, mas também gostamos de dar o peixe porque sabemos como <strong className="text-foreground">fica mais fácil quando temos algo "mastigadinho"</strong>. A peixaria é o nosso acervo de templates lindos que facilitam sua vida. Templates, de posts, apresentações, sites e muito mais.
+                Aqui na Sal nós ensinamos a pescar, mas também gostamos de dar o peixe porque sabemos como{" "}
+                <strong className="text-foreground">fica mais fácil quando temos algo "mastigadinho"</strong>. A
+                peixaria é o nosso acervo de templates lindos que facilitam sua vida. Templates, de posts,
+                apresentações, sites e muito mais.
               </p>
             </div>
           </div>
@@ -339,18 +317,15 @@ const MentoriaSalto = () => {
             <div>
               <h3 className="font-serif text-xl md:text-2xl text-foreground mb-4">Grupo de Conexão e Apoio</h3>
               <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed">
-                Todas as mentoradas são recebidas com carinho em um grupo no qual acontece muita troca, suporte e networking.
+                Todas as mentoradas são recebidas com carinho em um grupo no qual acontece muita troca, suporte e
+                networking.
               </p>
             </div>
             <div>
-              <img
-                src={mentoriaCafe}
-                alt="Café e caderno"
-                className="w-full aspect-[16/9] object-cover"
-              />
+              <img src={mentoriaCafe} alt="Café e caderno" className="w-full aspect-[16/9] object-cover" />
             </div>
           </div>
-      </div>
+        </div>
       </section>
 
       {/* CTA Final */}
@@ -375,11 +350,7 @@ const MentoriaSalto = () => {
       <section className="bg-warm-white">
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div>
-            <img
-              src={giuliaMentora}
-              alt="Giulia Salvatore"
-              className="w-full h-full object-cover"
-            />
+            <img src={giuliaMentora} alt="Giulia Salvatore" className="w-full h-full object-cover" />
           </div>
           <div className="flex flex-col justify-center px-8 md:px-16 lg:px-20 py-16 md:py-20">
             <p className="font-serif text-lg md:text-xl text-foreground/70 mb-2">Conheça a sua mentora,</p>
@@ -394,7 +365,8 @@ const MentoriaSalto = () => {
                   Antes de compartilhar o que aprendeu e viveu na pele, ela consolidou seu conhecimento.
                 </p>
                 <p className="font-body text-sm text-foreground/70 leading-relaxed">
-                  Com uma formação em Comunicação Social, certificação em Marketing Digital na UCLA (University Of California Los Angeles) e uma trajetória que a fez crescer no digital de forma 100% orgânica.
+                  Com uma formação em Comunicação Social, certificação em Marketing Digital na UCLA (University Of
+                  California Los Angeles) e uma trajetória que a fez crescer no digital de forma 100% orgânica.
                 </p>
               </div>
               <div>
@@ -402,13 +374,15 @@ const MentoriaSalto = () => {
                   Hoje, ela transforma toda essa experiência em método.
                 </p>
                 <p className="font-body text-sm text-foreground/70 leading-relaxed">
-                  Acredita que o autoconhecimento é a base da comunicação, e que comunicar bem é a chave para ser valorizada pelo que você realmente tem a oferecer.
+                  Acredita que o autoconhecimento é a base da comunicação, e que comunicar bem é a chave para ser
+                  valorizada pelo que você realmente tem a oferecer.
                 </p>
               </div>
             </div>
 
             <p className="font-serif text-base md:text-lg text-foreground/70 leading-relaxed">
-              Na Mentoria SALto, te ajudamos a encontrar essa chave e abrir as portas para um posicionamento que te representa de verdade. Vamos?
+              Na Mentoria SALto, te ajudamos a encontrar essa chave e abrir as portas para um posicionamento que te
+              representa de verdade. Vamos?
             </p>
           </div>
         </div>
@@ -419,18 +393,15 @@ const MentoriaSalto = () => {
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-8 md:gap-12 items-center">
             <div>
-              <img
-                src={mentoriaPraia}
-                alt="Correndo na praia"
-                className="w-full aspect-[4/5] object-cover"
-              />
+              <img src={mentoriaPraia} alt="Correndo na praia" className="w-full aspect-[4/5] object-cover" />
             </div>
             <div>
               <h2 className="font-serif text-3xl md:text-4xl text-foreground leading-relaxed mb-6">
                 Sente o chamado para SALtar?
               </h2>
               <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed mb-8">
-                Clique abaixo para fazer sua aplicação. Analisamos com muito carinho cada caso para entendermos se faz sentido trabalharmos juntas. Você nos escolhe e nós escolhemos você!
+                Clique abaixo para fazer sua aplicação. Analisamos com muito carinho cada caso para entendermos se faz
+                sentido trabalharmos juntas. Você nos escolhe e nós escolhemos você!
               </p>
               <a
                 href="https://form.respondi.app/ttqcWIpe"
