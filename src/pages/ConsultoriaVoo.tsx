@@ -434,15 +434,9 @@ const ConsultoriaVoo = () => {
       {/* CTA Voar */}
       <section className="bg-warm-white py-20 md:py-28">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-[55%_45%]">
-            <div className="relative">
-              <img
-                src={ctaVoar}
-                alt="Mulher correndo na praia"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="bg-beige p-10 md:p-14 flex flex-col justify-center">
+          <div className="relative md:min-h-[520px] flex flex-col gap-8 md:block">
+            {/* Card bege (direita, mais alto) */}
+            <div className="md:absolute md:top-0 md:right-0 md:w-[58%] bg-beige p-10 md:p-14 md:pl-32 lg:pl-40 flex flex-col justify-center order-2 md:order-none">
               <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">
                 sente o chamado para VOAR?
               </h2>
@@ -457,6 +451,15 @@ const ConsultoriaVoo = () => {
               >
                 Quero VOAR
               </a>
+            </div>
+
+            {/* Imagem (esquerda, mais baixa, sobreposta) */}
+            <div className="md:absolute md:left-0 md:top-20 md:w-[50%] md:z-10 order-1 md:order-none">
+              <img
+                src={ctaVoar}
+                alt="Mulher correndo na praia"
+                className="w-full aspect-[3/2] object-cover"
+              />
             </div>
           </div>
         </div>
