@@ -1,40 +1,48 @@
 
 
-## Objetivo
-Transformar a seção "sente o chamado para VOAR?" em **duas caixinhas separadas e sobrepostas**, exatamente como na referência: imagem à esquerda e card bege à direita, ligeiramente desalinhados em altura, com a imagem invadindo o card.
+## Problema
+Na implementação atual, a imagem está desproporcionalmente grande (`aspect-[3/2]` em 50% de largura, mas com `top-20` e altura natural enorme), enquanto o card bege fica espremido com padding-esquerdo exagerado (`pl-32 lg:pl-40`). O resultado não bate com a referência, onde as duas caixinhas têm peso visual semelhante e a sobreposição é sutil.
 
-## Mudanças (apenas em `src/pages/ConsultoriaVoo.tsx`, seção CTA Voar)
+## Ajustes (apenas em `src/pages/ConsultoriaVoo.tsx`, seção CTA Voar — linhas 434-466)
 
-1. **Container externo**: trocar o grid colado por um wrapper `relative` que permita posicionamento sobreposto.
-2. **Caixinha da imagem (esquerda)**:
-   - Largura ~55%, altura própria com `aspect-[3/2]`.
-   - Posicionada à esquerda, deslocada um pouco para baixo (`mt-12 md:mt-20`) para criar o degrau vertical visto na referência.
-   - `z-10` para ficar por cima do card bege na área de sobreposição.
-3. **Caixinha do card bege (direita)**:
-   - Largura ~55%, alinhada à direita (`ml-auto`), com `-mt-X` no desktop para sobrepor verticalmente à imagem.
-   - Padding interno generoso (`p-10 md:p-14`), conteúdo (título, parágrafo, botão "Quero VOAR") inalterado.
-4. **Responsivo (mobile)**: abaixo de `md`, voltar ao empilhamento vertical natural — imagem em cima, card embaixo, sem sobreposição (mais legível em telas estreitas).
-5. **Espaçamentos**: ajustar `py` da seção e margens internas para acomodar a sobreposição sem cortar conteúdo.
+### 1. Reequilibrar tamanhos das caixinhas
+- **Card bege**: aumentar de `w-[58%]` para `w-[62%]`, mantendo alinhado à direita.
+- **Imagem**: reduzir de `w-[50%]` para `w-[45%]`, ainda alinhada à esquerda.
+- A sobreposição passa a ser de ~7%, mais sutil e fiel à referência.
 
-## Esquema visual
+### 2. Igualar alturas visualmente
+- Trocar `aspect-[3/2]` da imagem por `aspect-[4/5]` (formato mais vertical, próximo ao retrato da referência onde a mulher aparece em pé).
+- Remover `min-h-[520px]` do wrapper e deixar a altura ser ditada pela imagem.
+
+### 3. Corrigir padding do card
+- Reduzir o padding-esquerdo de `pl-32 lg:pl-40` para `pl-12 md:pl-16` — apenas o suficiente para o texto não colidir com a imagem na faixa de sobreposição (que agora é menor).
+- Manter `p-10 md:p-14` como base.
+
+### 4. Ajustar deslocamento vertical (degrau)
+- Card bege: `md:top-0` (mantém topo).
+- Imagem: trocar `md:top-20` por `md:top-16` para um degrau mais discreto, como na referência.
+
+### 5. Reservar altura do wrapper
+- Adicionar `md:min-h-[600px]` no wrapper para acomodar a imagem mais vertical sem cortes.
+
+## Resultado esperado
 ```text
 desktop:
-┌───────────────────────────┐
-│      [card bege  ──────]  │ ← topo do card mais alto
-│ [── imagem ──][card bege] │ ← imagem sobrepõe o card
-│ [── imagem ──]            │ ← imagem termina mais embaixo
-└───────────────────────────┘
-
-mobile:
-[── imagem ──]
-[── card bege ──]
+┌──────────────────────────────────┐
+│        ┌─────────────────────┐   │
+│  ┌─────│  card bege  ────────│   │ ← card maior, à direita
+│  │ img │  título             │   │
+│  │     │  texto              │   │
+│  │     │  [QUERO VOAR]       │   │
+│  │     └─────────────────────┘   │
+│  └─────┘                         │ ← imagem ultrapassa um pouco embaixo
+└──────────────────────────────────┘
 ```
 
 ## Detalhes técnicos
-- Substituir o `grid grid-cols-[55%_45%]` por:
-  - `relative` no wrapper
-  - Imagem: `md:absolute md:left-0 md:top-12 md:w-[55%]` + `aspect-[3/2] object-cover`
-  - Card: `md:ml-auto md:w-[55%] relative z-0 bg-beige p-10 md:p-14`
-  - Wrapper recebe `md:min-h-[480px]` para reservar a altura da composição sobreposta.
-- Nada muda em conteúdo (texto, link do formulário, cores).
+- Linha 437: manter `relative flex flex-col gap-8 md:block`, adicionar `md:min-h-[600px]`.
+- Linha 439: `md:w-[58%]` → `md:w-[62%]`; `md:pl-32 lg:pl-40` → `md:pl-12 lg:pl-16`.
+- Linha 457: `md:w-[50%]` → `md:w-[45%]`; `md:top-20` → `md:top-16`.
+- Linha 461: `aspect-[3/2]` → `aspect-[4/5]`.
+- Mobile: comportamento empilhado preservado pelo `flex flex-col gap-8` + `order-1/order-2`.
 
