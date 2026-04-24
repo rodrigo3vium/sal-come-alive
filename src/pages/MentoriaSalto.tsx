@@ -315,7 +315,7 @@ const MentoriaSalto = () => {
           {/* Grupo de Conexão */}
           <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-8 md:gap-12 items-center">
             <div>
-              <h3 className="font-serif text-xl md:text-2xl text-foreground mb-4">Grupo de Conexão e Apoio</h3>
+              <h3 className="font-serif font-bold text-xl md:text-2xl text-foreground mb-4">Grupo de Conexão e Apoio</h3>
               <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed">
                 Todas as mentoradas são recebidas com carinho em um grupo no qual acontece muita troca, suporte e
                 networking.
