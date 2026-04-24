@@ -258,7 +258,7 @@ const MentoriaSalto = () => {
           {/* 6 Meses */}
           <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-8 md:gap-12 items-center mb-16">
             <div>
-              <h3 className="font-serif text-xl md:text-2xl text-foreground mb-4">6 Meses de Acompanhamento</h3>
+              <h3 className="font-serif font-bold text-xl md:text-2xl text-foreground mb-4">6 Meses de Acompanhamento</h3>
               <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed">
                 Esse é o tempo que nós estaremos com você para cuidar com todo o carinho e sensibilidade da marca que
                 você veio deixar no mundo.
