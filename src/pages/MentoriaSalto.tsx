@@ -302,7 +302,7 @@ const MentoriaSalto = () => {
               <img src={peixariaTemplates} alt="Templates da Peixaria" className="w-full" />
             </div>
             <div>
-              <h3 className="font-serif text-xl md:text-2xl text-foreground mb-4">Acesso à "Peixaria"</h3>
+              <h3 className="font-serif font-bold text-xl md:text-2xl text-foreground mb-4">Acesso à "Peixaria"</h3>
               <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed">
                 Aqui na Sal nós ensinamos a pescar, mas também gostamos de dar o peixe porque sabemos como{" "}
                 <strong className="text-foreground">fica mais fácil quando temos algo "mastigadinho"</strong>. A
