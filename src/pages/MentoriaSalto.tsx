@@ -275,7 +275,7 @@ const MentoriaSalto = () => {
               <img src={mentoriaEncontros} alt="Encontros quinzenais" className="w-full" />
             </div>
             <div>
-              <h3 className="font-serif text-xl md:text-2xl text-foreground mb-4">Encontros Quinzenais</h3>
+              <h3 className="font-serif font-bold text-xl md:text-2xl text-foreground mb-4">Encontros Quinzenais</h3>
               <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed">
                 Semana sim, semana não, estaremos juntas em grupo para mergulhar, lapidar e potencializar a sua
                 comunicação trabalhando temas como conteúdo, visual, estratégia e oratória.
