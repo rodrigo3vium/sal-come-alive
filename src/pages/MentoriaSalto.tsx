@@ -286,7 +286,7 @@ const MentoriaSalto = () => {
           {/* Acesso ao Método Sal */}
           <div className="grid grid-cols-1 md:grid-cols-[1fr_1.2fr] gap-8 md:gap-12 items-center">
             <div>
-              <h3 className="font-serif text-xl md:text-2xl text-foreground mb-4">Acesso ao Método Sal</h3>
+              <h3 className="font-serif font-bold text-xl md:text-2xl text-foreground mb-4">Acesso ao Método Sal</h3>
               <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed">
                 Todo o nosso conhecimento sobre como descobrir aquilo que você tem de único e potencializar isso para o
                 mundo vai estar em uma área exclusiva, tipo a Netflix da sua Marca Pessoal.
