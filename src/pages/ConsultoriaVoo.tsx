@@ -430,36 +430,55 @@ const ConsultoriaVoo = () => {
       </section>
 
       {/* CTA Voar */}
-      <section className="bg-warm-white py-20 md:py-28">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="relative md:min-h-[600px] flex flex-col gap-8 md:block">
-            {/* Card bege (direita, mais alto) */}
-            <div className="md:absolute md:top-0 md:right-0 md:w-[62%] bg-beige p-10 md:p-14 md:pl-12 lg:pl-16 flex flex-col justify-center order-2 md:order-none">
-              <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">
-                sente o chamado para VOAR?
-              </h2>
-              <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed mb-10">
-                Clique abaixo para fazer sua aplicação e receber um orçamento. Analisamos com muito carinho cada caso para entendermos se faz sentido trabalharmos juntos. Você nos escolhe e nós escolhemos você!
-              </p>
-              <a
-                href="https://form.respondi.app/ttqcWIpe"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block w-full text-center bg-foreground text-primary-foreground py-4 text-sm tracking-[0.15em] uppercase font-body hover:bg-foreground/90 transition-colors"
-              >
-                Quero VOAR
-              </a>
-            </div>
-
-            {/* Imagem (esquerda, mais baixa, sobreposta) */}
-            <div className="md:absolute md:left-0 md:top-16 md:w-[45%] md:z-10 order-1 md:order-none">
-              <img
-                src={ctaVoar}
-                alt="Mulher correndo na praia"
-                className="w-full aspect-[4/5] object-cover"
-              />
-            </div>
+      <section className="bg-warm-white py-20 md:py-28 overflow-hidden">
+        {/* Mobile: empilhado */}
+        <div className="md:hidden px-6">
+          <img
+            src={ctaVoar}
+            alt="Mulher correndo na praia"
+            className="w-full aspect-[16/10] object-cover"
+          />
+          <div className="bg-beige p-8 rounded-b-sm">
+            <h2 className="font-serif text-3xl text-foreground mb-6">
+              sente o chamado para VOAR?
+            </h2>
+            <p className="font-body text-sm text-foreground/70 leading-relaxed mb-8">
+              Clique abaixo para fazer sua aplicação e receber um orçamento. Analisamos com muito carinho cada caso para entendermos se faz sentido trabalharmos juntos. Você nos escolhe e nós escolhemos você!
+            </p>
+            <a
+              href="https://form.respondi.app/ttqcWIpe"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full text-center bg-foreground text-primary-foreground py-4 text-sm tracking-[0.15em] uppercase font-body hover:bg-foreground/90 transition-colors"
+            >
+              Quero VOAR
+            </a>
           </div>
+        </div>
+
+        {/* Desktop: imagem full-bleed à esquerda sobrepondo card full-bleed à direita */}
+        <div className="hidden md:block relative">
+          <div className="w-[72%] ml-auto bg-beige rounded-l-sm py-16 lg:py-20 pl-[26%] pr-12 lg:pr-20">
+            <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground mb-6">
+              sente o chamado para VOAR?
+            </h2>
+            <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed mb-10 max-w-xl">
+              Clique abaixo para fazer sua aplicação e receber um orçamento. Analisamos com muito carinho cada caso para entendermos se faz sentido trabalharmos juntos. Você nos escolhe e nós escolhemos você!
+            </p>
+            <a
+              href="https://form.respondi.app/ttqcWIpe"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full max-w-xl text-center bg-foreground text-primary-foreground py-4 text-sm tracking-[0.15em] uppercase font-body hover:bg-foreground/90 transition-colors"
+            >
+              Quero VOAR
+            </a>
+          </div>
+          <img
+            src={ctaVoar}
+            alt="Mulher correndo na praia"
+            className="absolute left-0 top-1/2 -translate-y-1/2 w-[44%] aspect-[16/10] object-cover z-10"
+          />
         </div>
       </section>
 
