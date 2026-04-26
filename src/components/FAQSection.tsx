@@ -16,7 +16,7 @@ const faqs = [
   },
   {
     question: "Como contratar a Sal?",
-    answer: 'Para SALtar conosco, basta clicar em um dos botões "QUERO SALTAR" ou "QUERO VOAR" dentro da página do serviço selecionado ou entrar em contato pelo WhatsApp +55 11 97540-4650 ou e-mail atendimento@studiosal.com.br. Com esse primeiro contato, iremos te conhecer melhor para entender se de fato faz sentido trabalharmos juntas. Somos uma agência boutique, comprometida com um atendimento personalizado, próximo e artesanal. Devido à alta demanda, precisamos selecionar com carinho os projetos que melhor se alinham com a transformação que podemos promover. Acreditamos que você nos escolhe, mas nós também escolhemos você! Por isso, ressaltamos que nem todos os projetos que recebemos poderão ser aprovados para fazerem parte da Sal.',
+    answer: 'Para SALtar conosco, basta clicar em um dos botões "QUERO SALTAR" ou "QUERO VOAR" dentro da página do serviço selecionado ou entrar em contato pelo WhatsApp +55 11 99949-4500 ou e-mail atendimento@studiosal.com.br. Com esse primeiro contato, iremos te conhecer melhor para entender se de fato faz sentido trabalharmos juntas. Somos uma agência boutique, comprometida com um atendimento personalizado, próximo e artesanal. Devido à alta demanda, precisamos selecionar com carinho os projetos que melhor se alinham com a transformação que podemos promover. Acreditamos que você nos escolhe, mas nós também escolhemos você! Por isso, ressaltamos que nem todos os projetos que recebemos poderão ser aprovados para fazerem parte da Sal.',
   },
   {
     question: "Qual a diferença entre branding e social media?",
@@ -47,7 +47,7 @@ const FAQSection = () => {
 
         <div className="mt-8 text-center">
           <a
-            href="https://wa.me/5511975404650"
+            href="https://wa.me/5511999494500"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block border border-foreground/20 px-10 py-4 text-center hover:border-foreground/40 transition-colors"

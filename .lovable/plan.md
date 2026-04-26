@@ -1,19 +1,18 @@
-## Plano: Redesign da seção CTA Final em /mentoria-salto
+## Atualização do número de WhatsApp
 
-**Arquivo**: `src/pages/MentoriaSalto.tsx` (linhas 391–417)
+Vou substituir o número antigo (`+55 11 97540-4650`) pelo novo (`+55 11 99949-4500`) em todos os pontos de direcionamento ao WhatsApp do projeto.
 
-### Mudanças
-1. **Fundo externo**: trocar `bg-beige` por `bg-warm-white` na `<section>`.
-2. **Caixa interna escura**: envolver o grid em um container com:
-   - `bg-beige` (bege escuro/esverdeado da paleta)
-   - `p-8 md:p-16` para respiro interno
-   - `rounded-sm` para cantos sutilmente arredondados
-   - `max-w-6xl mx-auto`
-3. **Imagem dentro da caixa**: manter `mentoriaPraia` mas:
-   - Mudar de `aspect-[4/5]` (retrato) para `aspect-[4/3]` (paisagem), seguindo a referência
-   - Manter `object-cover w-full`
-4. **Texto e botão**: permanecem inalterados (título, parágrafo e CTA "Quero SALtar").
-5. **Grid**: manter 2 colunas no desktop, 1 no mobile.
+### Arquivos a serem alterados
 
-### Resultado esperado
-Seção com fundo branco quente externo e uma "caixa" bege escura central contendo a foto à esquerda e o texto + CTA à direita — replicando a referência enviada.
+**1. `src/components/WhatsAppButton.tsx`** (botão flutuante presente em todas as páginas)
+- `href="https://wa.me/5511975404650"` → `href="https://wa.me/5511999494500"`
+
+**2. `src/components/FAQSection.tsx`**
+- Linha 19 (texto da resposta da FAQ): `+55 11 97540-4650` → `+55 11 99949-4500`
+- Linha 50 (botão "RESTOU ALGUMA DÚVIDA?"): `href="https://wa.me/5511975404650"` → `href="https://wa.me/5511999494500"`
+
+**3. `src/pages/SobreNos.tsx`**
+- Linha 252: `href="https://wa.me/5500000000000"` (placeholder) → `href="https://wa.me/5511999494500"`
+
+### Observação
+Após a alteração, o número antigo deixará de aparecer em qualquer lugar do site, e todos os links/botões de WhatsApp passarão a apontar para o novo contato.
