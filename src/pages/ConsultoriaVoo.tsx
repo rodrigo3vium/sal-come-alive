@@ -456,9 +456,9 @@ const ConsultoriaVoo = () => {
           </div>
         </div>
 
-        {/* Desktop: imagem full-bleed à esquerda sobrepondo card full-bleed à direita */}
-        <div className="hidden md:block relative">
-          <div className="w-[72%] ml-auto bg-beige rounded-l-sm py-16 lg:py-20 pl-[26%] pr-12 lg:pr-20">
+        {/* Desktop: imagem à esquerda sobrepondo card à direita, com margem em ambos os lados */}
+        <div className="hidden md:block relative px-6 lg:px-12">
+          <div className="w-[72%] ml-auto bg-beige rounded-sm py-16 lg:py-20 pl-[26%] pr-10 lg:pr-16">
             <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground mb-6">
               sente o chamado para VOAR?
             </h2>
@@ -469,7 +469,7 @@ const ConsultoriaVoo = () => {
               href="https://form.respondi.app/ttqcWIpe"
               target="_blank"
               rel="noopener noreferrer"
-              className="block w-full max-w-xl text-center bg-foreground text-primary-foreground py-4 text-sm tracking-[0.15em] uppercase font-body hover:bg-foreground/90 transition-colors"
+              className="block w-full max-w-xl text-center bg-foreground text-primary-foreground py-4 text-sm tracking-[0.15em] uppercase font-body hover:bg-foreground/90 transition-colors rounded-sm"
             >
               Quero VOAR
             </a>
@@ -477,7 +477,7 @@ const ConsultoriaVoo = () => {
           <img
             src={ctaVoar}
             alt="Mulher correndo na praia"
-            className="absolute left-0 top-1/2 -translate-y-1/2 w-[44%] aspect-[16/10] object-cover z-10"
+            className="absolute left-6 lg:left-12 top-1/2 -translate-y-1/2 w-[42%] aspect-[16/10] object-cover z-10 rounded-sm"
           />
         </div>
       </section>
