@@ -15,6 +15,9 @@ import mentePedras from "@/assets/mente-pedras.jpeg";
 import corpoVerbal from "@/assets/corpo-verbal.png";
 import ctaVoar from "@/assets/cta-voar.png";
 import corpoIdentidadeVisual from "@/assets/corpo-identidade-visual.jpg";
+import etapaAlma from "@/assets/etapa-alma.jpg";
+import etapaMente from "@/assets/etapa-mente.jpg";
+import etapaCorpo from "@/assets/etapa-corpo.jpg";
 
 const talvezVoceItems = [
   {
@@ -181,19 +184,19 @@ const ConsultoriaVoo = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                icon: "○",
+                image: etapaAlma,
                 label: "alma",
                 etapa: "ETAPA 1 | AUTOCONHECIMENTO",
                 desc: "Esse momento da sua jornada trabalha os aspectos mais profundos e internos de quem você é. No qual nós te conhecemos a fundo e você se reconhece enquanto potência.",
               },
               {
-                icon: "◎",
+                image: etapaMente,
                 label: "mente",
                 etapa: "ETAPA 2 | ESTRATÉGIA",
                 desc: "É a hora da estratégia. Mais do que mudar sua visão sobre o quão única e especial você é, pensamos a forma como você irá traduzir tudo isso para que o mundo também tenha essa certeza.",
               },
               {
-                icon: "⚇",
+                image: etapaCorpo,
                 label: "corpo",
                 etapa: "ETAPA 3 | PRESENÇA",
                 desc: "Te damos as ferramentas para comunicar a sua marca e despertar a percepção que você deseja. Nessa etapa tangibilizamos tudo aquilo que estruturamos. É quando a visão dos outros sobre você começa a mudar.",
@@ -201,17 +204,12 @@ const ConsultoriaVoo = () => {
             ].map((item) => (
               <div key={item.etapa} className="flex flex-col">
                 {/* Card image */}
-                <div className="relative aspect-square overflow-hidden">
+                <div className="relative aspect-[4/3] overflow-hidden">
                   <img
-                    src={aboutBeach}
+                    src={item.image}
                     alt={item.label}
                     className="w-full h-full object-cover"
                   />
-                  <div className="absolute inset-0 bg-brown/30" />
-                  <div className="absolute inset-0 flex items-center justify-center gap-4">
-                    <span className="text-white text-5xl font-light">{item.icon}</span>
-                    <span className="font-serif text-4xl md:text-5xl text-white">{item.label}</span>
-                  </div>
                 </div>
                 {/* Card text */}
                 <div className="bg-beige/40 p-6 flex-1">
