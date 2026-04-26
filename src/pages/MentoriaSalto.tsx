@@ -389,11 +389,12 @@ const MentoriaSalto = () => {
       </section>
 
       {/* CTA Final - Sente o chamado */}
-      <section className="bg-beige py-20 md:py-28">
+      <section className="bg-warm-white py-20 md:py-28">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-8 md:gap-12 items-center">
+          <div className="bg-beige rounded-sm p-8 md:p-16">
+            <div className="grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-8 md:gap-12 items-center">
             <div>
-              <img src={mentoriaPraia} alt="Correndo na praia" className="w-full aspect-[4/5] object-cover" />
+              <img src={mentoriaPraia} alt="Correndo na praia" className="w-full aspect-[4/3] object-cover" />
             </div>
             <div>
               <h2 className="font-serif text-3xl md:text-4xl text-foreground leading-relaxed mb-6">
