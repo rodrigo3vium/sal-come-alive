@@ -249,7 +249,7 @@ const SobreNos = () => {
             chegou a sua vez de <span className="uppercase">SAL</span>tar!
           </h2>
           <a
-            href="https://wa.me/5500000000000"
+            href="https://wa.me/5511999494500"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block border border-foreground/40 px-8 py-3 font-body text-sm text-foreground hover:bg-foreground hover:text-white transition-colors lowercase"
