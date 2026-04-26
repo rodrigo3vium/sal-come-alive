@@ -413,6 +413,7 @@ const MentoriaSalto = () => {
                 Quero SALtar
               </a>
             </div>
+            </div>
           </div>
         </div>
       </section>
