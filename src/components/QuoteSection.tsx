@@ -1,7 +1,10 @@
+import DecorativePattern from "./DecorativePattern";
+
 const QuoteSection = () => {
   return (
-    <section id="about" className="bg-warm-white py-24 md:py-32">
-      <div className="container mx-auto px-6">
+    <section id="about" className="relative bg-warm-white py-24 md:py-32 overflow-hidden">
+      <DecorativePattern />
+      <div className="container mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
           {/* Left side - Quote */}
           <div>
