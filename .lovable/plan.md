@@ -1,40 +1,44 @@
-# Plano: Ajustar seção "Pronta para SALtar?" conforme referência
+## Adicionar padrão decorativo de símbolos manuscritos
 
-## O que muda visualmente
+A referência mostra um conjunto de símbolos desenhados à mão (curvas, círculos, ângulos, traços) em marrom, posicionados de forma esparsa no canto superior-esquerdo das seções, com opacidade reduzida — funcionando como uma assinatura visual sutil da marca.
 
-A seção deixa de ter o layout assimétrico (card bege + imagem ao lado) e passa a ser um **banner full-bleed** ocupando 100% da largura da tela, com a foto dos pés na água como fundo. Sobre a imagem:
+### Onde aplicar
 
-- **Título "Pronta para SALtar?"** em branco, centralizado horizontalmente, posicionado aproximadamente no centro vertical.
-- **Botão "Quero SALtar agora"** em branco (borda + texto brancos, fundo transparente), alinhado à **esquerda** e abaixo do título, com margem generosa do canto inferior esquerdo.
-- Sem card bege, sem padding lateral — a imagem encosta nas bordas da viewport.
+1. **Início (`src/components/QuoteSection.tsx`)** — seção da citação "em um mundo com 8 bilhões..."
+2. **Sobre Nós (`src/pages/SobreNos.tsx`)** — seção "o olhar para uma dor comum"
 
-## Arquivo afetado
+### O que será feito
 
-- `src/components/CTASection.tsx` — reescrita completa da estrutura.
+**1. Salvar o padrão como asset**
+- Copiar `user-uploads://sugestao-padrao.png` para `src/assets/decorative-pattern.png`.
 
-```text
-┌──────────────────────────────────────────────────┐
-│                                                  │
-│              Pronta para SALtar?  (branco)       │
-│                                                  │
-│                                                  │
-│  ┌──────────────────┐                            │
-│  │ Quero SALtar agora│ (branco, outline)         │
-│  └──────────────────┘                            │
-└──────────────────────────────────────────────────┘
-        (foto cta-saltar.jpg como background)
-```
+**2. Criar componente reutilizável `DecorativePattern`**
+- Novo arquivo: `src/components/DecorativePattern.tsx`
+- Componente leve que renderiza um `<img>` posicionado absolutamente no canto superior-esquerdo da seção pai.
+- Props para customizar posição (top/left), tamanho e opacidade quando necessário.
+- Estilo padrão: `absolute top-12 left-0 w-[280px] md:w-[420px] opacity-30 pointer-events-none select-none` (escala reduzida em mobile).
+- A imagem ocupa apenas o canto esquerdo — o conteúdo da seção continua à frente sem sobreposição (z-index controlado).
 
-## Detalhes técnicos
+**3. Integrar nas seções**
 
-- `<section>` com `relative w-full` e altura fixa (`h-[80vh] md:h-[90vh]` ou similar) para garantir presença visual do banner.
-- `<img>` posicionada `absolute inset-0 w-full h-full object-cover` como camada de fundo.
-- Container interno `relative z-10 h-full` com layout flex em coluna para posicionar título no centro e botão na base-esquerda.
-- Título usa `text-warm-white` (token existente) em vez de `text-foreground`.
-- Botão troca `border-foreground text-foreground` por `border-warm-white text-warm-white`, com hover invertendo para `bg-warm-white text-foreground`.
-- Manter a imagem `cta-saltar.jpg` já importada.
-- Mobile: mesma estrutura, apenas reduzir tamanhos tipográficos e ajustar paddings.
+*QuoteSection* (Início):
+- Adicionar `relative overflow-hidden` na `<section>` raiz.
+- Inserir `<DecorativePattern />` como primeiro filho, antes do `container`.
+- Garantir que o conteúdo (`container`) fique acima via `relative z-10`.
 
-## Observação
+*SobreNos — "o olhar para uma dor comum"* (4ª seção):
+- Adicionar `relative overflow-hidden` na `<section>`.
+- Inserir `<DecorativePattern />` no topo da seção.
+- Conteúdo com `relative z-10`.
 
-A versão mobile mantém o mesmo conceito (foto de fundo full-bleed + título centralizado + botão à esquerda na base), apenas com tamanhos proporcionais ao viewport menor.
+### Detalhes visuais
+
+- **Cor**: o PNG já é marrom escuro; aplicaremos `opacity-30` (≈ tom marrom claro como na referência). Ajustável se necessário.
+- **Posição**: encostado no canto esquerdo (`left-0`), começando no topo da seção (`top-12 md:top-16`), sem invadir a área central de conteúdo.
+- **Responsividade**: largura reduzida em mobile (`w-[280px]`), maior em desktop (`w-[420px]`) — apenas a parte esquerda do padrão fica visível, replicando o efeito da referência.
+- **Não-clicável**: `pointer-events-none` para não interferir em interações.
+
+### Resumo dos arquivos
+
+- **Criado**: `src/assets/decorative-pattern.png`, `src/components/DecorativePattern.tsx`
+- **Editado**: `src/components/QuoteSection.tsx`, `src/pages/SobreNos.tsx`

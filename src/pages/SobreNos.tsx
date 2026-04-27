@@ -14,6 +14,7 @@ import corpoMenteAlmaIcon from "@/assets/corpo-mente-alma-icon.png";
 import aboutLeaves from "@/assets/about-leaves.jpg";
 import aboutShadowHands from "@/assets/about-shadow-hands.jpeg";
 import logoComFrase from "@/assets/logo-com-frase-transparente.png";
+import DecorativePattern from "@/components/DecorativePattern";
 
 const SobreNos = () => {
   return (
@@ -100,8 +101,9 @@ const SobreNos = () => {
       </section>
 
       {/* Fourth Section - o olhar para uma dor comum */}
-      <section className="bg-warm-white py-24 md:py-32">
-        <div className="container mx-auto px-6">
+      <section className="relative bg-warm-white py-24 md:py-32 overflow-hidden">
+        <DecorativePattern />
+        <div className="container mx-auto px-6 relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
             {/* Left - Text */}
             <div>
