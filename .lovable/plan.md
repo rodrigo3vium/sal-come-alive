@@ -1,44 +1,17 @@
-## Adicionar padrão decorativo de símbolos manuscritos
+## Atualizar página Mentoria SALto
 
-A referência mostra um conjunto de símbolos desenhados à mão (curvas, círculos, ângulos, traços) em marrom, posicionados de forma esparsa no canto superior-esquerdo das seções, com opacidade reduzida — funcionando como uma assinatura visual sutil da marca.
+Substituir o conteúdo de `src/pages/MentoriaSalto.tsx` pela nova versão enviada no upload.
 
-### Onde aplicar
+### Mudanças incluídas
 
-1. **Início (`src/components/QuoteSection.tsx`)** — seção da citação "em um mundo com 8 bilhões..."
-2. **Sobre Nós (`src/pages/SobreNos.tsx`)** — seção "o olhar para uma dor comum"
+1. **Nova seção "É para quem:"** — adicionada entre Depoimentos e "Tudo que vai estar ao seu alcance", com grade 2x2 de 4 itens com marcador circular.
+2. **"Encontros Quinzenais" → "Encontros Semanais"** — texto reescrito com lista de bullets (Estratégias de conteúdo, Autoconhecimento, Imagem e Estilo Pessoal, Posicionamento, Roteiro para vídeos, Escada de produtos).
+3. **Nova seção "As 4 Etapas da Mentoria SALto"** — Alma, Mente, Corpo, Expansão (grade de 4 colunas centralizadas) entre Encontros Semanais e Método Sal.
+4. **Nova seção "Investimento"** — card branco sobre fundo bege com 3 blocos de preço: 6x R$1.700, até 12x R$882,80, total à vista R$8.828,00 (10% off no pix).
 
-### O que será feito
+### Detalhes técnicos
 
-**1. Salvar o padrão como asset**
-- Copiar `user-uploads://sugestao-padrao.png` para `src/assets/decorative-pattern.png`.
-
-**2. Criar componente reutilizável `DecorativePattern`**
-- Novo arquivo: `src/components/DecorativePattern.tsx`
-- Componente leve que renderiza um `<img>` posicionado absolutamente no canto superior-esquerdo da seção pai.
-- Props para customizar posição (top/left), tamanho e opacidade quando necessário.
-- Estilo padrão: `absolute top-12 left-0 w-[280px] md:w-[420px] opacity-30 pointer-events-none select-none` (escala reduzida em mobile).
-- A imagem ocupa apenas o canto esquerdo — o conteúdo da seção continua à frente sem sobreposição (z-index controlado).
-
-**3. Integrar nas seções**
-
-*QuoteSection* (Início):
-- Adicionar `relative overflow-hidden` na `<section>` raiz.
-- Inserir `<DecorativePattern />` como primeiro filho, antes do `container`.
-- Garantir que o conteúdo (`container`) fique acima via `relative z-10`.
-
-*SobreNos — "o olhar para uma dor comum"* (4ª seção):
-- Adicionar `relative overflow-hidden` na `<section>`.
-- Inserir `<DecorativePattern />` no topo da seção.
-- Conteúdo com `relative z-10`.
-
-### Detalhes visuais
-
-- **Cor**: o PNG já é marrom escuro; aplicaremos `opacity-30` (≈ tom marrom claro como na referência). Ajustável se necessário.
-- **Posição**: encostado no canto esquerdo (`left-0`), começando no topo da seção (`top-12 md:top-16`), sem invadir a área central de conteúdo.
-- **Responsividade**: largura reduzida em mobile (`w-[280px]`), maior em desktop (`w-[420px]`) — apenas a parte esquerda do padrão fica visível, replicando o efeito da referência.
-- **Não-clicável**: `pointer-events-none` para não interferir em interações.
-
-### Resumo dos arquivos
-
-- **Criado**: `src/assets/decorative-pattern.png`, `src/components/DecorativePattern.tsx`
-- **Editado**: `src/components/QuoteSection.tsx`, `src/pages/SobreNos.tsx`
+- Mesmos imports/assets já existentes — nenhum novo arquivo necessário.
+- Mantém Navbar, Footer, WhatsAppButton e todas as demais seções inalteradas.
+- Continua usando tokens semânticos (`bg-beige`, `bg-warm-white`, `text-foreground`, `font-serif`, `font-body`).
+- Operação: rewrite completo de `src/pages/MentoriaSalto.tsx` com o conteúdo do upload.
