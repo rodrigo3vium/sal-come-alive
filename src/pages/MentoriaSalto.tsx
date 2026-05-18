@@ -240,6 +240,28 @@ const MentoriaSalto = () => {
         </div>
       </section>
 
+      {/* É para quem */}
+      <section className="bg-warm-white py-20 md:py-28">
+        <div className="max-w-5xl mx-auto px-6">
+          <h2 className="font-serif text-3xl md:text-4xl text-foreground text-center mb-12">
+            É para quem:
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {[
+              "quer ter redes sociais atrativas que de fato te representem e destacam",
+              "deseja refletir no digital o valor que já têm no offline",
+              "quer aumentar a sua base de seguidores/clientes ou ser uma voz referência",
+              "criar conteúdos autênticos com mais leveza e estratégia"
+            ].map((item, i) => (
+              <div key={i} className="flex gap-4 items-start">
+                <div className="flex-shrink-0 w-6 h-6 rounded-full border-2 border-foreground mt-1" />
+                <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed">{item}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Tudo que vai estar ao seu alcance */}
       <section className="bg-beige py-20 md:py-28">
         <div className="max-w-6xl mx-auto px-6">
@@ -269,17 +291,56 @@ const MentoriaSalto = () => {
             </div>
           </div>
 
-          {/* Encontros Quinzenais */}
+          {/* Encontros Semanais */}
           <div className="grid grid-cols-1 md:grid-cols-[1.2fr_1fr] gap-8 md:gap-12 items-center mb-20">
             <div>
-              <img src={mentoriaEncontros} alt="Encontros quinzenais" className="w-full" />
+              <img src={mentoriaEncontros} alt="Encontros semanais" className="w-full" />
             </div>
             <div>
-              <h3 className="font-serif font-bold text-xl md:text-2xl text-foreground mb-4">Encontros Quinzenais</h3>
-              <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed">
-                Semana sim, semana não, estaremos juntas em grupo para mergulhar, lapidar e potencializar a sua
-                comunicação trabalhando temas como conteúdo, visual, estratégia e oratória.
+              <h3 className="font-serif font-bold text-xl md:text-2xl text-foreground mb-4">Encontros Semanais</h3>
+              <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed mb-4">
+                Toda semana você estará com a Giu e sua equipe maravilhosa para aprofundar, discutir e evoluir em temas como:
               </p>
+              <ul className="font-body text-sm md:text-base text-foreground/70 leading-relaxed space-y-2">
+                <li>• Estratégias de conteúdo</li>
+                <li>• Autoconhecimento</li>
+                <li>• Imagem e Estilo Pessoal</li>
+                <li>• Posicionamento</li>
+                <li>• Desenvolvimento de roteiro para vídeos</li>
+                <li>• Estrutura de escada de produtos</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* As 4 Etapas da Mentoria */}
+          <div className="my-20">
+            <h3 className="font-serif font-bold text-2xl md:text-3xl text-foreground text-center mb-12">
+              As 4 Etapas da Mentoria SALto
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+              {[
+                {
+                  title: "Alma",
+                  desc: "Encontro com a sua essência e propósito"
+                },
+                {
+                  title: "Mente",
+                  desc: "Desenvolvimento da estratégia e posicionamento"
+                },
+                {
+                  title: "Corpo",
+                  desc: "Lapidação da imagem e estilo pessoal"
+                },
+                {
+                  title: "Expansão",
+                  desc: "Estratégia de conteúdo, definição de público-alvo, canais e perfil nas redes"
+                }
+              ].map((etapa, i) => (
+                <div key={i} className="text-center">
+                  <h4 className="font-serif text-xl md:text-2xl text-foreground mb-3">{etapa.title}</h4>
+                  <p className="font-body text-sm text-foreground/70 leading-relaxed">{etapa.desc}</p>
+                </div>
+              ))}
             </div>
           </div>
 
@@ -323,6 +384,40 @@ const MentoriaSalto = () => {
             </div>
             <div>
               <img src={mentoriaCafe} alt="Café e caderno" className="w-full aspect-[16/9] object-cover" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Investimento */}
+      <section className="bg-beige py-20 md:py-28">
+        <div className="max-w-4xl mx-auto px-6">
+          <h2 className="font-serif text-3xl md:text-4xl text-foreground text-center mb-12">
+            Investimento
+          </h2>
+          <div className="bg-warm-white p-8 md:p-12 rounded-sm">
+            <h3 className="font-serif text-2xl md:text-3xl text-foreground mb-8 text-center">
+              Mentoria Completa
+            </h3>
+            <div className="space-y-6">
+              <div className="text-center">
+                <p className="font-serif text-4xl md:text-5xl text-foreground font-bold mb-2">
+                  6x de R$1.700
+                </p>
+                <p className="font-body text-sm text-foreground/70">sem usar o limite do cartão</p>
+              </div>
+              <div className="text-center border-t border-foreground/10 pt-6">
+                <p className="font-serif text-3xl md:text-4xl text-foreground font-bold mb-2">
+                  até 12x de R$882,80
+                </p>
+                <p className="font-body text-sm text-foreground/70">no cartão de crédito</p>
+              </div>
+              <div className="text-center border-t border-foreground/10 pt-6">
+                <p className="font-serif text-2xl md:text-3xl text-foreground font-bold mb-2">
+                  total à vista: R$8.828,00
+                </p>
+                <p className="font-body text-sm text-foreground/70">com 10% off no pix</p>
+              </div>
             </div>
           </div>
         </div>
