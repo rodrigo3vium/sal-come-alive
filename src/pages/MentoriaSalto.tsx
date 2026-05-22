@@ -313,35 +313,74 @@ const MentoriaSalto = () => {
 
           {/* As 4 Etapas da Mentoria */}
           <div className="my-20">
-            <h3 className="font-serif font-bold text-2xl md:text-3xl text-foreground text-center mb-12">
+            <h3 className="font-serif font-bold text-2xl md:text-3xl text-foreground text-center mb-4">
               As 4 Etapas da Mentoria SALto
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <p className="font-body text-sm md:text-base text-foreground/70 text-center mb-16 max-w-2xl mx-auto">
+              Nossa metodologia proprietária — Método SAL — guia você por quatro etapas que se complementam:
+            </p>
+            <div className="space-y-12">
               {[
                 {
-                  title: "Alma",
-                  desc: "Encontro com a sua essência e propósito"
+                  title: "1. Alma",
+                  subtitle: "comunicação autêntica se faz com autoconhecimento",
+                  desc: "Esse é o momento de sentir, de investigar, de coletar a matéria prima para sua marca. É a fase na qual você vai compreender na profundidade quem é você, qual é o seu nicho e como você deseja ser percebida. Essa é a fase na qual você começa a se reconhecer enquanto potência.",
+                  foco: [
+                    "Mergulho em quem você é",
+                    "Alinhamento dos seus objetivos",
+                    "Compreensão de contexto atual, nicho, dores e desafios",
+                    "Clareza dos seus diferenciais e o rumo da sua marca",
+                  ],
                 },
                 {
-                  title: "Mente",
-                  desc: "Desenvolvimento da estratégia e posicionamento"
+                  title: "2. Mente",
+                  subtitle: "comunicação eficiente se faz com estratégia",
+                  desc: "A segunda etapa é a hora de racionalizar. Mais do que mudar sua visão sobre o quão única e especial você é, aqui você entende a forma como irá traduzir tudo isso para que o mundo também tenha essa certeza. Para isso, precisamos estruturar os pilares sólidos que sustentam a sua marca e todas as decisões cruciais que envolvem a sua comunicação.",
+                  foco: [
+                    "Seu Posicionamento Autêntico",
+                    "Seus diferenciais",
+                    "Sua mensagem central, os sentimentos que quer passar e qual a estrutura que sustenta isso",
+                  ],
                 },
                 {
-                  title: "Corpo",
-                  desc: "Lapidação da imagem e estilo pessoal"
+                  title: "3. Corpo",
+                  subtitle: "comunicação marcante se faz com presença",
+                  desc: "Com os pilares bem definidos, você terá tudo aquilo de que precisa para estruturar a parte tangível da marca, aquilo que toca o mundo. São os recursos que despertam de forma prática a percepção que deseja gerar. É quando a visão dos outros sobre você muda.",
+                  foco: [
+                    "Construir sua expressão visual com cores, fontes, identidade imagética e mais",
+                    "Definir o seu tom de voz, as expressões e metáforas que mais combinam com você",
+                  ],
                 },
                 {
-                  title: "Expansão",
-                  desc: "Estratégia de conteúdo, definição de público-alvo, canais e perfil nas redes"
-                }
+                  title: "4. Expansão",
+                  subtitle: "quando temos o essencial, conseguimos expandir",
+                  desc: "Com a sua marca enriquecida de atributos únicos, com a clareza daquilo que a torna singular e como isso será comunicado de forma coerente, chegou o momento de expandir essa tradução para novos horizontes que irão potencializar o alcance da marca que você veio deixar no mundo.",
+                  foco: [
+                    "Estratégia de conteúdo",
+                    "Definição de público-alvo e como tocá-lo",
+                    "Definição de canais",
+                    "Lapidação de perfil nas redes sociais",
+                  ],
+                },
               ].map((etapa, i) => (
-                <div key={i} className="text-center">
-                  <h4 className="font-serif text-xl md:text-2xl text-foreground mb-3">{etapa.title}</h4>
-                  <p className="font-body text-sm text-foreground/70 leading-relaxed">{etapa.desc}</p>
+                <div key={i} className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-6 md:gap-12 pb-12 border-b border-foreground/10 last:border-b-0">
+                  <div>
+                    <h4 className="font-serif text-2xl md:text-3xl text-foreground mb-2">{etapa.title}</h4>
+                    <p className="font-body text-sm text-foreground/60 italic leading-relaxed">{etapa.subtitle}</p>
+                  </div>
+                  <div>
+                    <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed mb-4">{etapa.desc}</p>
+                    <ul className="font-body text-sm md:text-base text-foreground/70 leading-relaxed space-y-1">
+                      {etapa.foco.map((f, j) => (
+                        <li key={j}>• {f}</li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
               ))}
             </div>
           </div>
+
 
           {/* Acesso ao Método Sal */}
           <div className="grid grid-cols-1 md:grid-cols-[1fr_1.2fr] gap-8 md:gap-12 items-center">
