@@ -35,12 +35,11 @@ const MentoriaSalto = () => {
         <div className="flex flex-col justify-center px-8 md:px-12 lg:px-16 xl:px-20 py-16 md:py-12">
           <div className="max-w-xl">
             <h1 className="font-serif text-3xl md:text-4xl lg:text-[2.75rem] xl:text-5xl text-foreground leading-[1.2] mb-8">
-              Dê os saltos que você precisa para chegar onde deseja com a sua marca pessoal.
+              Dê os saltos que precisa para chegar onde merece com a sua marca pessoal.
             </h1>
             <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed mb-10">
-              Nessa jornada, vamos te guiar para que você aprenda a se comunicar{" "}
-              <strong className="text-foreground">sem fórmulas engessadas ou discursos forçados</strong>, traduzindo a
-              versão de você que <strong className="text-foreground">te dá orgulho on e offline.</strong>
+              Sem os <strong className="text-foreground">"tem quês"</strong> do digital, saiba se vender com{" "}
+              <strong className="text-foreground">leveza e propósito</strong> seguindo nossa metodologia proprietária.
             </p>
             <a
               href="https://form.respondi.app/ttqcWIpe"
