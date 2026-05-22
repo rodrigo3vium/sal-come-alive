@@ -429,34 +429,142 @@ const MentoriaSalto = () => {
 
       {/* Investimento */}
       <section className="bg-beige py-20 md:py-28">
-        <div className="max-w-4xl mx-auto px-6">
-          <h2 className="font-serif text-3xl md:text-4xl text-foreground text-center mb-12">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="font-serif text-3xl md:text-4xl text-foreground text-center mb-16">
             Investimento
           </h2>
-          <div className="bg-warm-white p-8 md:p-12 rounded-sm">
-            <h3 className="font-serif text-2xl md:text-3xl text-foreground mb-8 text-center">
-              Mentoria Completa
-            </h3>
-            <div className="space-y-6">
-              <div className="text-center">
-                <p className="font-serif text-4xl md:text-5xl text-foreground font-bold mb-2">
-                  6x de R$1.700
-                </p>
-                <p className="font-body text-sm text-foreground/70">sem usar o limite do cartão</p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Mentoria Essencial */}
+            <div className="bg-warm-white p-8 md:p-12 rounded-sm">
+              <h3 className="font-serif text-2xl md:text-3xl text-foreground mb-8 text-center">
+                Mentoria Essencial
+              </h3>
+              <div className="space-y-6">
+                <div className="text-center">
+                  <p className="font-serif text-4xl md:text-5xl text-foreground font-bold mb-2">6x de R$1.070</p>
+                  <p className="font-body text-sm text-foreground/70">sem usar o limite do cartão</p>
+                </div>
+                <div className="text-center border-t border-foreground/10 pt-6">
+                  <p className="font-serif text-3xl md:text-4xl text-foreground font-bold mb-2">até 12x de R$577,70</p>
+                  <p className="font-body text-sm text-foreground/70">no cartão de crédito</p>
+                </div>
+                <div className="text-center border-t border-foreground/10 pt-6">
+                  <p className="font-serif text-2xl md:text-3xl text-foreground font-bold mb-2">total à vista: R$5.777</p>
+                  <p className="font-body text-sm text-foreground/70">com 10% off no pix</p>
+                </div>
               </div>
-              <div className="text-center border-t border-foreground/10 pt-6">
-                <p className="font-serif text-3xl md:text-4xl text-foreground font-bold mb-2">
-                  até 12x de R$882,80
-                </p>
-                <p className="font-body text-sm text-foreground/70">no cartão de crédito</p>
-              </div>
-              <div className="text-center border-t border-foreground/10 pt-6">
-                <p className="font-serif text-2xl md:text-3xl text-foreground font-bold mb-2">
-                  total à vista: R$8.828,00
-                </p>
-                <p className="font-body text-sm text-foreground/70">com 10% off no pix</p>
+              <div className="mt-8 pt-8 border-t border-foreground/10">
+                <p className="font-body text-sm font-semibold text-foreground mb-4">Inclui:</p>
+                <ul className="font-body text-sm text-foreground/70 space-y-2">
+                  <li>✓ Estrutura de Manual de Marca — Método Sal</li>
+                  <li>✓ Desafios de Aceleração</li>
+                  <li>✓ Estrutura do Seu Mapa Individual da Mentoria</li>
+                  <li>✓ Grupo de WhatsApp VIP de Networking</li>
+                  <li>✓ Encontros Quinzenais em Grupo</li>
+                  <li>✓ Treinamento Intensivo de Identidade Visual</li>
+                  <li>✓ Biblioteca de Templates</li>
+                  <li>✓ Acesso próximo ao Time Sal por 6 meses</li>
+                  <li>✓ Acesso à Metodologia Gravada e suas Trilhas</li>
+                  <li>✓ Treinamentos com Especialistas</li>
+                  <li>✓ Planos de Ação Personalizados</li>
+                  <li>✓ Comunidade Teia Sal</li>
+                </ul>
               </div>
             </div>
+
+            {/* Mentoria Completa */}
+            <div className="bg-warm-white p-8 md:p-12 rounded-sm border-2 border-foreground relative">
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-foreground text-primary-foreground px-6 py-2 text-xs uppercase tracking-[0.15em] font-body">
+                Mais Completa
+              </div>
+              <h3 className="font-serif text-2xl md:text-3xl text-foreground mb-8 text-center">
+                Mentoria Completa
+              </h3>
+              <div className="space-y-6">
+                <div className="text-center">
+                  <p className="font-serif text-4xl md:text-5xl text-foreground font-bold mb-2">6x de R$1.700</p>
+                  <p className="font-body text-sm text-foreground/70">sem usar o limite do cartão</p>
+                </div>
+                <div className="text-center border-t border-foreground/10 pt-6">
+                  <p className="font-serif text-3xl md:text-4xl text-foreground font-bold mb-2">até 12x de R$882,80</p>
+                  <p className="font-body text-sm text-foreground/70">no cartão de crédito</p>
+                </div>
+                <div className="text-center border-t border-foreground/10 pt-6">
+                  <p className="font-serif text-2xl md:text-3xl text-foreground font-bold mb-2">total à vista: R$8.828,00</p>
+                  <p className="font-body text-sm text-foreground/70">com 10% off no pix</p>
+                </div>
+              </div>
+              <div className="mt-8 pt-8 border-t border-foreground/10">
+                <p className="font-body text-sm font-semibold text-foreground mb-4">Tudo da Essencial +</p>
+                <ul className="font-body text-sm text-foreground/70 space-y-2">
+                  <li>✓ Encontros <strong className="text-foreground">SEMANAIS</strong> (ao invés de quinzenais)</li>
+                  <li>✓ <strong className="text-foreground">3 Calls Individuais com Giu Salvatore</strong></li>
+                </ul>
+                <p className="font-body text-xs text-foreground/60 mt-4 italic">
+                  Valor Total Recebido: R$19.120
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Cenário Comparativo */}
+      <section className="bg-warm-white py-20 md:py-28">
+        <div className="max-w-5xl mx-auto px-6">
+          <h2 className="font-serif text-3xl md:text-4xl text-foreground text-center mb-16">
+            Cenário Comparativo
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-beige p-8 rounded-sm">
+              <h3 className="font-serif text-xl text-foreground font-bold mb-4 text-center">Cursos Online</h3>
+              <p className="font-serif text-2xl text-foreground text-center mb-6">de 900 a 3 mil reais</p>
+              <div className="space-y-3 font-body text-sm text-foreground/70">
+                <p>– aprendizado</p>
+                <p>– processo autônomo e independente</p>
+                <p>– entrega padronizada</p>
+              </div>
+            </div>
+            <div className="bg-foreground text-primary-foreground p-8 rounded-sm md:scale-105">
+              <h3 className="font-serif text-xl font-bold mb-4 text-center">Mentoria SAL</h3>
+              <p className="font-serif text-2xl text-center mb-6">8 mil reais</p>
+              <div className="space-y-3 font-body text-sm opacity-90">
+                <p>– aprendizado</p>
+                <p>– processo próximo e conjunto</p>
+                <p>– entrega personalizada e completa</p>
+              </div>
+            </div>
+            <div className="bg-beige p-8 rounded-sm">
+              <h3 className="font-serif text-xl text-foreground font-bold mb-4 text-center">Outras Mentorias</h3>
+              <p className="font-serif text-2xl text-foreground text-center mb-6">de 5 a 20 mil reais</p>
+              <div className="space-y-3 font-body text-sm text-foreground/70">
+                <p>– aprendizado</p>
+                <p>– processo muitas vezes superficial</p>
+                <p>– entrega padrão e muitas vezes incompleta</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Por que investir? */}
+      <section className="bg-beige py-20 md:py-28">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-12">
+            Por que investir?
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {[
+              "Oferecemos um serviço especializado, feito por mãos habilidosas.",
+              "Vamos muito além do simples compartilhamento de informações.",
+              "Nós te ensinamos, mas também criamos para e com você.",
+              "Te ajudamos a alcançar novos patamares com a sua marca pessoal.",
+            ].map((t, i) => (
+              <div key={i} className="bg-warm-white p-8 rounded-sm">
+                <p className="font-body text-base text-foreground/80 leading-relaxed">{t}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
