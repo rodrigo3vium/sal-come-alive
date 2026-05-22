@@ -659,6 +659,32 @@ const MentoriaSalto = () => {
         </div>
       </section>
 
+      {/* Informações de Contato */}
+      <section className="bg-warm-white py-12 border-t border-foreground/10">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <p className="font-body text-sm text-foreground/70 mb-4">
+            Para aceitar sua proposta, entre em contato conosco:
+          </p>
+          <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
+            <a
+              href="mailto:contato@studiosal.com.br"
+              className="font-body text-sm text-foreground hover:opacity-70 transition-opacity"
+            >
+              contato@studiosal.com.br
+            </a>
+            <span className="hidden md:block text-foreground/30">|</span>
+            <a
+              href="https://wa.me/14244150554"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-body text-sm text-foreground hover:opacity-70 transition-opacity"
+            >
+              WhatsApp: +1 (424) 415-0554
+            </a>
+          </div>
+        </div>
+      </section>
+
       <Footer />
       <WhatsAppButton />
     </div>
