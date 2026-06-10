@@ -1,73 +1,88 @@
-# Welcome to your Lovable project
+# Studio SAL — Personal Branding Boutique
 
-## Project info
+Site institucional do **Studio SAL**, boutique de personal branding. SPA construída com
+Vite + React, roteamento client-side via React Router e UI com shadcn/ui + Tailwind CSS.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## Stack
 
-## How can I edit this code?
+- **Vite** (build/dev) + **@vitejs/plugin-react-swc**
+- **React 18** + **TypeScript**
+- **React Router** (`react-router-dom`) — SPA, sem SSR
+- **Tailwind CSS** + **shadcn/ui** (Radix UI)
+- **TanStack Query** (`@tanstack/react-query`)
+- **Vitest** + Testing Library (testes)
 
-There are several ways of editing your application.
+Rotas atuais: `/`, `/sobre-nos`, `/consultoria-voo`, `/mentoria-salto` e catch-all 404
+(ver [src/App.tsx](src/App.tsx)).
 
-**Use Lovable**
+## Pré-requisitos
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+- **Node.js 20+** e **npm**
 
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+## Clonar
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+git clone https://github.com/rodrigo3vium/sal-come-alive.git studio-sal-site
+cd studio-sal-site
+```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Instalar
 
-# Step 3: Install the necessary dependencies.
-npm i
+```sh
+npm install
+```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+## Variáveis de ambiente
+
+O projeto **não exige variáveis de ambiente** no estado atual. Caso integrações sejam
+adicionadas (ex.: Supabase), use variáveis com prefixo `VITE_` — só elas são expostas ao
+client pelo Vite. Crie um `.env.local` na raiz (já ignorado pelo git via `*.local`):
+
+```sh
+# .env.local  (exemplo — preencher apenas se/quando a integração existir)
+VITE_SUPABASE_URL=
+VITE_SUPABASE_ANON_KEY=
+```
+
+> Nunca versionar `.env*`. Nunca colocar chaves `service_role` ou secrets server-side
+> em variáveis `VITE_` — elas vão para o bundle público.
+
+## Desenvolvimento
+
+```sh
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Sobe o dev server com HMR em `http://localhost:8080`.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Typecheck
 
-**Use GitHub Codespaces**
+```sh
+npm run typecheck   # tsc --noEmit
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Build
 
-## What technologies are used for this project?
+```sh
+npm run build       # gera /dist
+npm run preview     # serve o build localmente para conferência
+```
 
-This project is built with:
+## Testes & Lint
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+```sh
+npm run test        # vitest run
+npm run lint        # eslint
+```
 
-## How can I deploy this project?
+## Deploy (Vercel)
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+Deploy contínuo **por push**: conecte o repositório na Vercel e cada push para a branch de
+produção dispara um build automático.
 
-## Can I connect a custom domain to my Lovable project?
+- **Build command:** `npm run build`
+- **Output directory:** `dist`
+- **Framework preset:** Vite
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+O [vercel.json](vercel.json) faz o rewrite de todas as rotas para `index.html`, necessário
+para o roteamento client-side da SPA (evita 404 em refresh/deep-links como `/sobre-nos`).
