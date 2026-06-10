@@ -22,13 +22,14 @@ const services = [
     link: "https://studiosal.com.br/contato",
     subtitle: "| EM BREVE |",
     external: true,
+    methodoSal: true,
   },
 ];
 
 const ServicesSection = () => {
   return (
     <section id="services">
-      <div className="bg-white py-16 md:py-20">
+      <div className="bg-white py-11 md:py-20">
         <div className="container mx-auto px-6">
           <div className="flex items-center gap-6 mb-8">
             <div className="flex-1 h-px bg-foreground/20" />
@@ -36,11 +37,11 @@ const ServicesSection = () => {
             <div className="flex-1 h-px bg-foreground/20" />
           </div>
           <div className="flex items-center gap-6">
-            <div className="flex-1 h-px bg-foreground/20" />
-            <p className="font-serif text-lg md:text-xl text-foreground whitespace-nowrap">
+            <div className="hidden md:block flex-1 h-px bg-foreground/20" />
+            <p className="font-serif text-lg md:text-xl text-foreground text-center">
               Conheça os <em>caminhos</em> que oferecemos para seu <em>crescimento</em>
             </p>
-            <div className="flex-1 h-px bg-foreground/20" />
+            <div className="hidden md:block flex-1 h-px bg-foreground/20" />
           </div>
         </div>
       </div>
@@ -62,6 +63,16 @@ const ServicesSection = () => {
                     {service.subtitle || '&nbsp;'}
                   </p>
                   <p className="font-body text-sm text-white/90 leading-relaxed max-w-xs">{service.description}</p>
+                  {service.methodoSal && (
+                    <a
+                      href="https://www.giuliasalvatore.com.br/metodo-sal"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-4 inline-block border-b border-white/70 pb-0.5 font-body text-xs tracking-[0.15em] uppercase text-white hover:text-white/70 transition-colors"
+                    >
+                      conheça o Método SAL
+                    </a>
+                  )}
                 </div>
               </>
             );

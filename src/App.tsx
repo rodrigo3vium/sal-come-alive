@@ -8,6 +8,7 @@ import SobreNos from "./pages/SobreNos";
 import ConsultoriaVoo from "./pages/ConsultoriaVoo";
 import MentoriaSalto from "./pages/MentoriaSalto";
 import NotFound from "./pages/NotFound";
+import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -17,6 +18,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/sobre-nos" element={<SobreNos />} />

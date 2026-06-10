@@ -95,7 +95,32 @@
     @apply bg-background text-foreground font-body antialiased;
   }
 
+  /* Defesa contra overflow horizontal no mobile.
+     position:relative no body é obrigatório para overflow-x:hidden
+     funcionar no Safari iOS (sem ele o bounce-scroll ignora a regra). */
+  html {
+    overflow-x: clip;
+  }
+
+  body {
+    overflow-x: hidden;
+    position: relative;
+    max-width: 100%;
+  }
+
   html {
     scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Corpo de texto padronizado em `text-base` (16px) diretamente nos
+     componentes (item 7) — token único de escala Tailwind, sem valores
+     soltos por página. */
+
+  /* CTA primário padronizado (item 4) — preenchido, uppercase, IDV.
+     Usado nos botões "QUERO SALTAR" / "QUERO VOAR" / "Quero SALtar agora". */
+  .btn-cta {
+    @apply inline-block bg-foreground text-primary-foreground px-10 py-4 text-sm tracking-[0.15em] uppercase font-body border border-foreground transition-colors hover:bg-transparent hover:text-foreground rounded-sm;
   }
 }

@@ -1,6 +1,6 @@
 const HeroSection = () => {
   return (
-    <section id="hero" className="relative min-h-screen flex items-end overflow-hidden pb-24 md:pb-32">
+    <section id="hero" className="relative min-h-[65vh] md:min-h-screen flex items-end overflow-hidden pb-16 md:pb-32">
       {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -15,7 +15,7 @@ const HeroSection = () => {
         <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white leading-tight mb-6">
           traduzimos mulheres<br />que marcam o mundo.
         </h1>
-        <p className="text-white/80 text-base md:text-lg font-body font-light max-w-2xl leading-relaxed">
+        <p className="text-white/80 text-base md:text-lg font-body font-normal max-w-2xl leading-relaxed">
           somos a agência boutique de branding pessoal que trabalha a autenticidade através do autoconhecimento, mudando o mundo, uma mulher e uma marca pessoal por vez.
         </p>
       </div>

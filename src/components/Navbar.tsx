@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 import logoStudioSal from "@/assets/logo-studio-sal.png";
 
@@ -7,26 +7,40 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
 
-  const scrollTo = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  // Navega para uma seção da home (#hero, #services) de qualquer página.
+  // Na home: faz scroll direto. Fora da home: navega para "/" e a Index
+  // lê location.state.scrollTo para rolar até a seção após montar.
+  const goToSection = (id: string) => {
     setIsOpen(false);
     setServicesOpen(false);
+    if (location.pathname === "/") {
+      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    } else {
+      navigate("/", { state: { scrollTo: id } });
+    }
+  };
+
+  const goTo = (path: string) => {
+    setIsOpen(false);
+    setServicesOpen(false);
+    navigate(path);
   };
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white backdrop-blur-sm border-b border-foreground/10">
       <div className="container mx-auto flex items-center py-4 px-6">
-        <button onClick={() => scrollTo("hero")} className="mr-12">
+        <button onClick={() => goTo("/")} className="mr-12">
           <img src={logoStudioSal} alt="Studio SAL" className="h-8" />
         </button>
 
         {/* Desktop */}
         <div className="hidden md:flex items-center gap-8 mr-auto">
-          <button onClick={() => scrollTo("hero")} className="text-sm tracking-[0.1em] lowercase text-foreground/80 hover:text-foreground transition-colors font-body">
+          <button onClick={() => goToSection("hero")} className="text-sm tracking-[0.1em] lowercase text-foreground/80 hover:text-foreground transition-colors font-body">
             início
           </button>
-          <button onClick={() => { navigate("/sobre-nos"); setIsOpen(false); }} className="text-sm tracking-[0.1em] lowercase text-foreground/80 hover:text-foreground transition-colors font-body">
+          <button onClick={() => goTo("/sobre-nos")} className="text-sm tracking-[0.1em] lowercase text-foreground/80 hover:text-foreground transition-colors font-body">
             sobre nós
           </button>
           <div className="relative">
@@ -89,9 +103,11 @@ const Navbar = () => {
       {/* Mobile menu */}
       {isOpen && (
         <div className="md:hidden bg-warm-white border-t border-border px-6 pb-6 space-y-4">
-          <button onClick={() => scrollTo("hero")} className="block w-full text-left text-sm tracking-[0.1em] lowercase text-foreground/80 py-2 font-body">início</button>
-          <button onClick={() => { navigate("/sobre-nos"); setIsOpen(false); }} className="block w-full text-left text-sm tracking-[0.1em] lowercase text-foreground/80 py-2 font-body">sobre nós</button>
-          <button onClick={() => scrollTo("services")} className="block w-full text-left text-sm tracking-[0.1em] lowercase text-foreground/80 py-2 font-body">serviços</button>
+          <button onClick={() => goToSection("hero")} className="block w-full text-left text-sm tracking-[0.1em] lowercase text-foreground/80 py-2 font-body">início</button>
+          <button onClick={() => goTo("/sobre-nos")} className="block w-full text-left text-sm tracking-[0.1em] lowercase text-foreground/80 py-2 font-body">sobre nós</button>
+          <button onClick={() => goToSection("services")} className="block w-full text-left text-sm tracking-[0.1em] lowercase text-foreground/80 py-2 font-body">serviços</button>
+          <button onClick={() => goTo("/consultoria-voo")} className="block w-full text-left text-sm tracking-[0.08em] lowercase text-foreground/60 py-1 pl-4 font-body">— consultoria voo</button>
+          <button onClick={() => goTo("/mentoria-salto")} className="block w-full text-left text-sm tracking-[0.08em] lowercase text-foreground/60 py-1 pl-4 font-body">— mentoria salto</button>
           <a
             href="https://form.respondi.app/ttqcWIpe"
             target="_blank"

@@ -32,7 +32,7 @@ const SobreNos = () => {
           <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl text-white font-light tracking-wide">
             tudo começa com um <span className="uppercase font-normal">sal</span>to
           </h1>
-          <p className="font-body text-sm md:text-base text-white/80 mt-6 italic">
+          <p className="font-body text-base text-white/80 mt-6 italic">
             Ou, pelo menos, a nossa história.
           </p>
         </div>
@@ -42,8 +42,8 @@ const SobreNos = () => {
       <section className="bg-beige py-24 md:py-32">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
-            {/* Left - Image */}
-            <div>
+            {/* Image (texto primeiro no mobile) */}
+            <div className="order-2 md:order-1">
               <img
                 src={aboutBeach}
                 alt="Ondas na praia"
@@ -51,8 +51,8 @@ const SobreNos = () => {
               />
             </div>
 
-            {/* Right - Text */}
-            <div>
+            {/* Text */}
+            <div className="order-1 md:order-2">
               <img
                 src={reencontroIcon}
                 alt="Ícone reencontro"
@@ -61,7 +61,7 @@ const SobreNos = () => {
               <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl text-foreground mb-6 lowercase">
                 do salto, surge um propósito
               </h2>
-              <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed max-w-lg">
+              <p className="font-body text-base text-foreground/70 leading-relaxed max-w-lg">
                 Foi com um salto de fé que a nossa fundadora, Giulia Salvatore, abriu mão de seu emprego e do que era seguro para mergulhar em uma jornada de descobertas e de propósito.
               </p>
             </div>
@@ -83,7 +83,7 @@ const SobreNos = () => {
               <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl text-foreground mb-6 lowercase">
                 do propósito, uma profissão.
               </h2>
-              <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed md:ml-auto max-w-lg">
+              <p className="font-body text-base text-foreground/70 leading-relaxed md:ml-auto max-w-lg">
                 Convidada por mulheres próximas, ela começou de forma espontânea a sua carreira como estrategista de marcas pessoais.
               </p>
             </div>
@@ -115,7 +115,7 @@ const SobreNos = () => {
               <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl text-foreground mb-6 lowercase">
                 o olhar para uma dor comum
               </h2>
-              <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed max-w-lg">
+              <p className="font-body text-base text-foreground/70 leading-relaxed max-w-lg">
                 Durante a sua jornada, Giu percebeu a existência de uma dor, comum a muitas mulheres
               </p>
             </div>
@@ -136,8 +136,8 @@ const SobreNos = () => {
       <section className="bg-warm-white py-24 md:py-32">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
-            {/* Left - Image */}
-            <div>
+            {/* Image (texto primeiro no mobile) */}
+            <div className="order-2 md:order-1">
               <img
                 src={aboutHandWater}
                 alt="Mão na água"
@@ -145,8 +145,8 @@ const SobreNos = () => {
               />
             </div>
 
-            {/* Right - Text */}
-            <div className="md:text-right">
+            {/* Text */}
+            <div className="order-1 md:order-2 md:text-right">
               <img
                 src={evolucaoIcon}
                 alt="Ícone evolução"
@@ -155,7 +155,7 @@ const SobreNos = () => {
               <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl text-foreground mb-6 lowercase">
                 da dor, fez-se o sonho
               </h2>
-              <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed md:ml-auto max-w-lg">
+              <p className="font-body text-base text-foreground/70 leading-relaxed md:ml-auto max-w-lg">
                 Da dor percebida, veio a motivação para criar um projeto capaz de trazer autoconhecimento e confiança para que as mulheres possam reconhecer, e comunicar para o mundo, quem verdadeiramente são.
               </p>
             </div>
@@ -166,8 +166,8 @@ const SobreNos = () => {
       <section className="bg-warm-white py-24 md:py-32">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
-            {/* Left - Image */}
-            <div>
+            {/* Image (texto primeiro no mobile) */}
+            <div className="order-2 md:order-1">
               <img
                 src={aboutHero}
                 alt="Mulher na praia"
@@ -175,8 +175,8 @@ const SobreNos = () => {
               />
             </div>
 
-            {/* Right - Text */}
-            <div className="md:text-right">
+            {/* Text */}
+            <div className="order-1 md:order-2 md:text-right">
               <img
                 src={corpoMenteAlmaIcon}
                 alt="Alma, mente e corpo"
@@ -185,7 +185,7 @@ const SobreNos = () => {
               <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl text-foreground mb-6 lowercase">
                 alma, mente e corpo
               </h2>
-              <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed md:ml-auto max-w-lg">
+              <p className="font-body text-base text-foreground/70 leading-relaxed md:ml-auto max-w-lg">
                 nossos 3 pilares fundamentais alinhados em uma única jornada...
               </p>
             </div>
@@ -202,7 +202,7 @@ const SobreNos = () => {
               <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl text-foreground mb-6 lowercase">
                 assim, nasce a marca
               </h2>
-              <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed max-w-lg">
+              <p className="font-body text-base text-foreground/70 leading-relaxed max-w-lg">
                 Studio Sal, agência boutique de branding pessoal que promove um reencontro com a essência e a autenticidade. Mudando o mundo uma mulher e uma marca pessoal por vez.
               </p>
             </div>
