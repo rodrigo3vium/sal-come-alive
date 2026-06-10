@@ -64,9 +64,10 @@ const ServicesSection = () => {
                   </p>
                   <p className="font-body text-sm text-white/90 leading-relaxed max-w-xs">{service.description}</p>
                   {service.methodoSal && (
-                    // TODO: confirmar URL do Método SAL (não existe rota dedicada ainda)
                     <a
-                      href="#"
+                      href="https://www.giuliasalvatore.com.br/metodo-sal"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="mt-4 inline-block border-b border-white/70 pb-0.5 font-body text-xs tracking-[0.15em] uppercase text-white hover:text-white/70 transition-colors"
                     >
                       conheça o Método SAL
