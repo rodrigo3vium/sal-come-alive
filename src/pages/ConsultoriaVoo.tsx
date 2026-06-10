@@ -1,4 +1,11 @@
 import { Check } from "lucide-react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -59,7 +66,7 @@ const ConsultoriaVoo = () => {
           <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground leading-snug mb-6 lowercase">
             traduza sua autenticidade para o mundo e tenha a marca com o valor que você merece.
           </h1>
-          <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed max-w-lg mb-8">
+          <p className="font-body text-base text-foreground/70 leading-relaxed max-w-lg mb-8">
             Nessa jornada, nosso time trabalha exclusivamente para dar vida à marca que traduz tudo aquilo que muitas vezes nem você enxerga sobre si – com estratégia, autenticidade e leveza.
           </p>
           <div>
@@ -112,7 +119,7 @@ const ConsultoriaVoo = () => {
               <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl text-foreground leading-snug mb-6">
                 A boa notícia é que você não está sozinha e tem um jeito de mudar esse cenário.
               </h2>
-              <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed max-w-lg">
+              <p className="font-body text-base text-foreground/70 leading-relaxed max-w-lg">
                 A onda do marketing digital e seus tem quês nos fez acreditar que todas as respostas estavam nas redes sociais e em conteúdos mirabolantes que te limitam a um personagem forçado. A verdade é que isso até pode dar certo, mas dura pouco.
               </p>
             </div>
@@ -135,7 +142,7 @@ const ConsultoriaVoo = () => {
               <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl text-foreground leading-snug mb-6">
                 Existe algo muito mais perene do que qualquer trend ou rede social, algo que você jamais vai perder: sua marca pessoal.
               </h2>
-              <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed max-w-lg">
+              <p className="font-body text-base text-foreground/70 leading-relaxed max-w-lg">
                 E é essa marca que vamos potencializar nessa jornada, nesse VOO.
               </p>
             </div>
@@ -150,27 +157,39 @@ const ConsultoriaVoo = () => {
           <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl text-foreground mb-4">
             O que dizem as mulheres que já VOARAM
           </h2>
-          <p className="font-body text-sm md:text-base text-foreground/70 mb-16 max-w-2xl">
+          <p className="font-body text-base text-foreground/70 mb-16 max-w-2xl">
             Ninguém melhor do que quem já viveu essa transformação para falar sobre nosso trabalho.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              { image: depoimentoIsabella, name: "Isabella Franklin", role: "Advogada e Mentora de Mulheres" },
-              { image: depoimentoNathalia, name: "Nathalia Bovolon", role: "Empresária e Especialista em HOF" },
-              { image: depoimentoLeticia, name: "Letícia Madeira", role: "Empresária e Mentora Executiva" },
-            ].map((dep) => (
-              <div key={dep.name} className="flex flex-col items-center text-center">
-                <img
-                  src={dep.image}
-                  alt={`Depoimento de ${dep.name}`}
-                  className="w-full max-w-sm rounded-lg mb-6"
-                />
-                <h3 className="font-serif text-lg text-foreground">{dep.name}</h3>
-                <p className="font-body text-sm text-foreground/60">{dep.role}</p>
-              </div>
-            ))}
-          </div>
+          {/* Carrossel acessível (swipe + setas + teclado): 1 depoimento por vez
+              no mobile, 3 no desktop. */}
+          <Carousel
+            opts={{ align: "start", loop: true }}
+            className="w-full"
+            aria-label="Depoimentos de clientes"
+          >
+            <CarouselContent>
+              {[
+                { image: depoimentoIsabella, name: "Isabella Franklin", role: "Advogada e Mentora de Mulheres" },
+                { image: depoimentoNathalia, name: "Nathalia Bovolon", role: "Empresária e Especialista em HOF" },
+                { image: depoimentoLeticia, name: "Letícia Madeira", role: "Empresária e Mentora Executiva" },
+              ].map((dep) => (
+                <CarouselItem key={dep.name} className="basis-full md:basis-1/3">
+                  <div className="flex flex-col items-center text-center">
+                    <img
+                      src={dep.image}
+                      alt={`Depoimento de ${dep.name}`}
+                      className="w-full max-w-sm rounded-lg mb-6"
+                    />
+                    <h3 className="font-serif text-lg text-foreground">{dep.name}</h3>
+                    <p className="font-body text-sm text-foreground/60">{dep.role}</p>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="left-2" />
+            <CarouselNext className="right-2" />
+          </Carousel>
         </div>
       </section>
 
@@ -241,7 +260,7 @@ const ConsultoriaVoo = () => {
             <h3 className="font-serif text-xl md:text-2xl text-foreground mb-4">
               Começaremos mergulhando na profundidade que é você.
             </h3>
-            <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed">
+            <p className="font-body text-base text-foreground/70 leading-relaxed">
               Seria impossível criarmos uma marca verdadeiramente autêntica se não estivéssemos dispostas e te olhar por inteiro. Por isso, nessa etapa fazemos...
             </p>
           </div>
@@ -253,7 +272,7 @@ const ConsultoriaVoo = () => {
               <h3 className="font-serif text-2xl md:text-3xl text-foreground leading-snug mb-6">
                 O quanto você se conhece antes do mundo te conhecer?
               </h3>
-              <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed max-w-lg">
+              <p className="font-body text-base text-foreground/70 leading-relaxed max-w-lg">
                 Nossas clientes brincam que é quase uma sessão de terapia. Trata-se uma conversa bastante profunda na qual faremos perguntas essenciais para o nosso trabalho, mas também para a sua jornada de autoconhecimento.
               </p>
             </div>
@@ -279,7 +298,7 @@ const ConsultoriaVoo = () => {
               <h3 className="font-serif text-2xl md:text-3xl text-foreground leading-snug mb-6">
                 Mergulhamos no seu nicho e na percepção que você tem hoje.
               </h3>
-              <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed max-w-lg">
+              <p className="font-body text-base text-foreground/70 leading-relaxed max-w-lg">
                 Depois de mergulharmos no seu universo, começaremos a olhar para fora com uma análise do seu nicho e um diagnóstico de como está sua comunicação hoje.
               </p>
             </div>
@@ -300,7 +319,7 @@ const ConsultoriaVoo = () => {
             <h3 className="font-serif text-xl md:text-2xl text-foreground mb-4">
               Nessa etapa, estruturamos os pilares do seu posicionamento.
             </h3>
-            <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed">
+            <p className="font-body text-base text-foreground/70 leading-relaxed">
               Imagine que a sua marca pessoal é um templo. Antes de pensarmos nos adornos e acabamentos, precisamos de um alicerce sólido e profundo que irá sustentar e inspirar tudo aquilo que vier como expressão da sua marca no mundo.
             </p>
           </div>
@@ -308,7 +327,7 @@ const ConsultoriaVoo = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
             <div>
               <h3 className="font-body text-sm tracking-[0.15em] uppercase text-foreground mb-4">O QUE SUSTENTA SUA MARCA PARA ALÉM DA SUPERFÍCIE?</h3>
-              <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed max-w-lg">
+              <p className="font-body text-base text-foreground/70 leading-relaxed max-w-lg">
                 Muitos pensam que trabalhar branding é pensar no logo e conteúdo, mas começar por aí é como querer construir uma casa especial apenas com um papel de parede. Os formatos de conteúdo mudam, nossos gostoso estéticos também, mas quando estruturamos pilares sólidos (e profundos como gostamos de fazer aqui) nos fortalecemos para além das efemeridades do mundo. Aqui trabalhamos os pilares abaixo, clique e saiba mais sobre cada um.
               </p>
             </div>
@@ -356,14 +375,14 @@ const ConsultoriaVoo = () => {
                     <svg className="w-4 h-4 text-foreground/60 transition-transform group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                       <path d="M19 9l-7 7-7-7" />
                     </svg>
-                    <span className="font-body text-sm md:text-base tracking-[0.15em] uppercase text-foreground">{pilar.title}</span>
+                    <span className="font-body text-base tracking-[0.15em] uppercase text-foreground">{pilar.title}</span>
                   </summary>
                   <div className="px-6 pb-6 pl-12 md:pl-14">
-                    <p className="font-body text-sm md:text-base font-semibold italic text-foreground mb-2">
+                    <p className="font-body text-base font-semibold italic text-foreground mb-2">
                       {pilar.subtitle}
                     </p>
                     {pilar.text.split("\n").map((line, j) => (
-                      <p key={j} className="font-body text-sm md:text-base text-foreground/70 leading-relaxed">
+                      <p key={j} className="font-body text-base text-foreground/70 leading-relaxed">
                         {line}
                       </p>
                     ))}
@@ -388,7 +407,7 @@ const ConsultoriaVoo = () => {
             <h3 className="font-serif text-xl md:text-2xl text-foreground mb-4">
               Na etapa final, cuidaremos dos pontos de maior contato da sua marca com o mundo.
             </h3>
-            <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed">
+            <p className="font-body text-base text-foreground/70 leading-relaxed">
               Uma vez que a base sólida da sua marca está clara, podemos partir para a parte mais tangível da sua comunicação, aquilo que é percebido de forma mais concreta pelas pessoas.
             </p>
           </div>
@@ -396,8 +415,8 @@ const ConsultoriaVoo = () => {
           {/* Identidade Verbal */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center mb-20">
             <div>
-              <h3 className="font-body text-sm md:text-base tracking-[0.15em] uppercase text-foreground mb-4">IDENTIDADE VERBAL</h3>
-              <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed max-w-lg">
+              <h3 className="font-body text-base tracking-[0.15em] uppercase text-foreground mb-4">IDENTIDADE VERBAL</h3>
+              <p className="font-body text-base text-foreground/70 leading-relaxed max-w-lg">
                 A forma como você se expressa através da fala e da escrita on e offline. Nessa etapa olharemos para sua linha editorial, seus conteúdos, mensagens e como instruir equipe e IA para garantir a coerência do tom de voz que te marca.
               </p>
             </div>
@@ -420,8 +439,8 @@ const ConsultoriaVoo = () => {
               />
             </div>
             <div className="order-1 md:order-2">
-              <h3 className="font-body text-sm md:text-base tracking-[0.15em] uppercase text-foreground mb-4">IDENTIDADE VISUAL</h3>
-              <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed max-w-lg">
+              <h3 className="font-body text-base tracking-[0.15em] uppercase text-foreground mb-4">IDENTIDADE VISUAL</h3>
+              <p className="font-body text-base text-foreground/70 leading-relaxed max-w-lg">
                 A forma como a sua estética traduz a marca que você quer deixar. Aqui, é importante entendermos que uma identidade visual vai muito além de um logo bonito. Ela precisa comunicar quem você é de forma coerente em todos os pontos de contato.
               </p>
             </div>
@@ -462,7 +481,7 @@ const ConsultoriaVoo = () => {
             <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground mb-6">
               sente o chamado para VOAR?
             </h2>
-            <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed mb-10 max-w-xl">
+            <p className="font-body text-base text-foreground/70 leading-relaxed mb-10 max-w-xl">
               Clique abaixo para fazer sua aplicação e receber um orçamento. Analisamos com muito carinho cada caso para entendermos se faz sentido trabalharmos juntos. Você nos escolhe e nós escolhemos você!
             </p>
             <a

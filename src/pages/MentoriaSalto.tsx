@@ -34,10 +34,10 @@ const MentoriaSalto = () => {
         {/* Right - Content */}
         <div className="flex flex-col justify-center px-8 md:px-12 lg:px-16 xl:px-20 py-16 md:py-12">
           <div className="max-w-xl">
-            <h1 className="font-serif text-3xl md:text-4xl lg:text-[2.75rem] xl:text-5xl text-foreground leading-[1.2] mb-8">
-              Dê os saltos que precisa para chegar onde merece com a sua marca pessoal.
+            <h1 className="font-serif text-[1.6rem] md:text-3xl lg:text-[2.25rem] xl:text-[2.5rem] text-foreground leading-[1.25] mb-8">
+              Não estamos aqui pra te ensinar uma fórmula pronta. Estamos aqui pra te entregar o seu jeito único de fazer.
             </h1>
-            <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed mb-10">
+            <p className="font-body text-base text-foreground/70 leading-relaxed mb-10">
               Sem os <strong className="text-foreground">"tem quês"</strong> do digital, saiba se vender com{" "}
               <strong className="text-foreground">leveza e propósito</strong> seguindo nossa metodologia proprietária.
             </p>
@@ -45,7 +45,7 @@ const MentoriaSalto = () => {
               href="https://form.respondi.app/ttqcWIpe"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block w-fit border border-foreground bg-foreground text-primary-foreground px-10 py-4 text-sm tracking-[0.15em] uppercase font-body hover:bg-transparent hover:text-foreground transition-colors"
+              className="btn-cta w-fit"
             >
               Quero SALtar
             </a>
@@ -82,10 +82,10 @@ const MentoriaSalto = () => {
           ].map((card, i) => (
             <div key={i} className="bg-warm-white p-10 md:p-12">
               <p className="font-body text-xl font-bold text-foreground mb-2">...</p>
-              <h3 className="font-body text-sm md:text-base tracking-[0.05em] uppercase text-foreground font-semibold mb-4 leading-relaxed">
+              <h3 className="font-body text-base tracking-[0.05em] uppercase text-foreground font-semibold mb-4 leading-relaxed">
                 {card.title}
               </h3>
-              <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed">{card.text}</p>
+              <p className="font-body text-base text-foreground/70 leading-relaxed">{card.text}</p>
             </div>
           ))}
         </div>
@@ -123,7 +123,7 @@ const MentoriaSalto = () => {
               <h2 className="font-serif text-2xl md:text-3xl text-foreground leading-relaxed mb-6">
                 O mesmo conhecimento que trouxe sua mentora até aqui...
               </h2>
-              <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed">
+              <p className="font-body text-base text-foreground/70 leading-relaxed">
                 Com um crescimento completamente orgânico, sem investir um centavo em publicidade e um mundo de
                 oportunidades que aparecem por conta de sua marca pessoal.
               </p>
@@ -142,7 +142,7 @@ const MentoriaSalto = () => {
           <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl text-foreground leading-relaxed mb-8">
             Não é sobre caber em uma fórmula pronta. É sobre finalmente encontrar o <strong>seu</strong> jeito de fazer.
           </h2>
-          <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed max-w-3xl">
+          <p className="font-body text-base text-foreground/70 leading-relaxed max-w-3xl">
             Varios gurus do marketing vendem fórmulas prontas porque é isso que a maioria busca: soluções fáceis e
             rápidas. Mas essa dinâmica criou um problema gigante: todo mundo está ficando igual. Abrimos nosso feed e
             nos deparamos com os mesmos tipos de conteúdo, os mesmos tipos de identidade visual. Como se agora tudo
@@ -180,8 +180,12 @@ const MentoriaSalto = () => {
               },
             ].map((item, i) => (
               <div key={i} className="flex flex-col">
-                <p className="font-body text-sm md:text-base text-foreground leading-relaxed mb-4">{item.bold}</p>
-                <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed mb-8">{item.text}</p>
+                <p className="font-body text-base text-foreground leading-relaxed mb-4">{item.bold}</p>
+                <p className="font-body text-base text-foreground/70 leading-relaxed mb-8">{item.text}</p>
+                {/* TODO: confirmar se estes ícones circulares (icon-isi/go/eye) são os
+                    oficiais ou placeholders das etapas. Hoje são marcas de linha em círculo
+                    dourado (conteúdo real) — mantidos como estão. Trocar pelos ícones
+                    oficiais da etapa {nome} se forem placeholders. */}
                 <img src={item.icon} alt="" className="w-16 h-16 rounded-full mt-auto" />
               </div>
             ))}
@@ -200,12 +204,12 @@ const MentoriaSalto = () => {
               href="https://form.respondi.app/ttqcWIpe"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 md:mt-0 inline-block border border-foreground text-foreground px-8 py-3 text-sm tracking-[0.15em] uppercase font-body hover:bg-foreground hover:text-primary-foreground transition-colors whitespace-nowrap"
+              className="mt-4 md:mt-0 btn-cta"
             >
               Quero SALtar
             </a>
           </div>
-          <p className="font-body text-sm md:text-base text-foreground/70 mb-12">
+          <p className="font-body text-base text-foreground/70 mb-12">
             Cada jornada é única, mas é sempre maravilhoso podermos nos inspirar na transformação de mulheres incríveis:
           </p>
 
@@ -254,7 +258,7 @@ const MentoriaSalto = () => {
             ].map((item, i) => (
               <div key={i} className="flex gap-4 items-start">
                 <div className="flex-shrink-0 w-6 h-6 rounded-full border-2 border-foreground mt-1" />
-                <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed">{item}</p>
+                <p className="font-body text-base text-foreground/70 leading-relaxed">{item}</p>
               </div>
             ))}
           </div>
@@ -270,7 +274,7 @@ const MentoriaSalto = () => {
               <br />
               ao seu alcance
             </h2>
-            <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed max-w-2xl mx-auto">
+            <p className="font-body text-base text-foreground/70 leading-relaxed max-w-2xl mx-auto">
               Caso você seja aprovada, muito mais do que conhecimento, trazemos um ecossistema que transforma sua força
               de vontade em realidade.
             </p>
@@ -280,7 +284,7 @@ const MentoriaSalto = () => {
           <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-8 md:gap-12 items-center mb-16">
             <div>
               <h3 className="font-serif font-bold text-xl md:text-2xl text-foreground mb-4">6 Meses de Acompanhamento</h3>
-              <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed">
+              <p className="font-body text-base text-foreground/70 leading-relaxed">
                 Esse é o tempo que nós estaremos com você para cuidar com todo o carinho e sensibilidade da marca que
                 você veio deixar no mundo.
               </p>
@@ -292,15 +296,15 @@ const MentoriaSalto = () => {
 
           {/* Encontros Semanais */}
           <div className="grid grid-cols-1 md:grid-cols-[1.2fr_1fr] gap-8 md:gap-12 items-center mb-20">
-            <div>
+            <div className="order-2 md:order-1">
               <img src={mentoriaEncontros} alt="Encontros semanais" className="w-full" />
             </div>
-            <div>
+            <div className="order-1 md:order-2">
               <h3 className="font-serif font-bold text-xl md:text-2xl text-foreground mb-4">Encontros Semanais</h3>
-              <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed mb-4">
+              <p className="font-body text-base text-foreground/70 leading-relaxed mb-4">
                 Toda semana você estará com a Giu e sua equipe maravilhosa para aprofundar, discutir e evoluir em temas como:
               </p>
-              <ul className="font-body text-sm md:text-base text-foreground/70 leading-relaxed space-y-2">
+              <ul className="font-body text-base text-foreground/70 leading-relaxed space-y-2">
                 <li>• Estratégias de conteúdo</li>
                 <li>• Autoconhecimento</li>
                 <li>• Imagem e Estilo Pessoal</li>
@@ -316,7 +320,7 @@ const MentoriaSalto = () => {
             <h3 className="font-serif font-bold text-2xl md:text-3xl text-foreground text-center mb-4">
               As 4 Etapas da Mentoria SALto
             </h3>
-            <p className="font-body text-sm md:text-base text-foreground/70 text-center mb-16 max-w-2xl mx-auto">
+            <p className="font-body text-base text-foreground/70 text-center mb-16 max-w-2xl mx-auto">
               Nossa metodologia proprietária — Método SAL — guia você por quatro etapas que se complementam:
             </p>
             <div className="space-y-12">
@@ -369,8 +373,8 @@ const MentoriaSalto = () => {
                     <p className="font-body text-sm text-foreground/60 italic leading-relaxed">{etapa.subtitle}</p>
                   </div>
                   <div>
-                    <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed mb-4">{etapa.desc}</p>
-                    <ul className="font-body text-sm md:text-base text-foreground/70 leading-relaxed space-y-1">
+                    <p className="font-body text-base text-foreground/70 leading-relaxed mb-4">{etapa.desc}</p>
+                    <ul className="font-body text-base text-foreground/70 leading-relaxed space-y-1">
                       {etapa.foco.map((f, j) => (
                         <li key={j}>• {f}</li>
                       ))}
@@ -383,10 +387,10 @@ const MentoriaSalto = () => {
 
 
           {/* Acesso ao Método Sal */}
-          <div className="grid grid-cols-1 md:grid-cols-[1fr_1.2fr] gap-8 md:gap-12 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-[1fr_1.2fr] gap-8 md:gap-12 items-center mb-20">
             <div>
               <h3 className="font-serif font-bold text-xl md:text-2xl text-foreground mb-4">Acesso ao Método Sal</h3>
-              <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed">
+              <p className="font-body text-base text-foreground/70 leading-relaxed">
                 Todo o nosso conhecimento sobre como descobrir aquilo que você tem de único e potencializar isso para o
                 mundo vai estar em uma área exclusiva, tipo a Netflix da sua Marca Pessoal.
               </p>
@@ -397,12 +401,12 @@ const MentoriaSalto = () => {
           </div>
           {/* Peixaria */}
           <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-8 md:gap-12 items-center mb-20">
-            <div>
+            <div className="order-2 md:order-1">
               <img src={peixariaTemplates} alt="Templates da Peixaria" className="w-full" />
             </div>
-            <div>
+            <div className="order-1 md:order-2">
               <h3 className="font-serif font-bold text-xl md:text-2xl text-foreground mb-4">Acesso à "Peixaria"</h3>
-              <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed">
+              <p className="font-body text-base text-foreground/70 leading-relaxed">
                 Aqui na Sal nós ensinamos a pescar, mas também gostamos de dar o peixe porque sabemos como{" "}
                 <strong className="text-foreground">fica mais fácil quando temos algo "mastigadinho"</strong>. A
                 peixaria é o nosso acervo de templates lindos que facilitam sua vida. Templates, de posts,
@@ -415,7 +419,7 @@ const MentoriaSalto = () => {
           <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-8 md:gap-12 items-center">
             <div>
               <h3 className="font-serif font-bold text-xl md:text-2xl text-foreground mb-4">Grupo de Conexão e Apoio</h3>
-              <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed">
+              <p className="font-body text-base text-foreground/70 leading-relaxed">
                 Todas as mentoradas são recebidas com carinho em um grupo no qual acontece muita troca, suporte e
                 networking.
               </p>
@@ -596,7 +600,7 @@ const MentoriaSalto = () => {
           <div className="flex flex-col justify-center px-8 md:px-16 lg:px-20 py-16 md:py-20">
             <p className="font-serif text-lg md:text-xl text-foreground/70 mb-2">Conheça a sua mentora,</p>
             <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground mb-6">Giulia Salvatore.</h2>
-            <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed mb-10">
+            <p className="font-body text-base text-foreground/70 leading-relaxed mb-10">
               A Giu entendeu na prática que autenticidade não se compra. Se constrói.
             </p>
 
@@ -641,7 +645,7 @@ const MentoriaSalto = () => {
               <h2 className="font-serif text-3xl md:text-4xl text-foreground leading-relaxed mb-6">
                 Sente o chamado para SALtar?
               </h2>
-              <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed mb-8">
+              <p className="font-body text-base text-foreground/70 leading-relaxed mb-8">
                 Clique abaixo para fazer sua aplicação. Analisamos com muito carinho cada caso para entendermos se faz
                 sentido trabalharmos juntas. Você nos escolhe e nós escolhemos você!
               </p>
@@ -649,7 +653,7 @@ const MentoriaSalto = () => {
                 href="https://form.respondi.app/ttqcWIpe"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block border border-foreground bg-foreground text-primary-foreground px-10 py-4 text-sm tracking-[0.15em] uppercase font-body hover:bg-transparent hover:text-foreground transition-colors"
+                className="btn-cta"
               >
                 Quero SALtar
               </a>
