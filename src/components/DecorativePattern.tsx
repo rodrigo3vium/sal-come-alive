@@ -9,7 +9,7 @@ interface DecorativePatternProps {
  * usado como assinatura visual sutil no canto superior-esquerdo de seções.
  */
 const DecorativePattern = ({
-  className = "absolute top-12 md:top-16 left-0 w-[280px] md:w-[420px] opacity-30 pointer-events-none select-none z-0",
+  className = "absolute -top-28 -left-[460px] w-[460px] md:w-[700px] opacity-30 pointer-events-none select-none z-0",
 }: DecorativePatternProps) => {
   return (
     <img
