@@ -337,7 +337,7 @@ const MentoriaSalto = () => {
           </div>
 
           {/* Grupo de Conexão */}
-          <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-8 md:gap-12 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-8 md:gap-12 items-center mb-20">
             <div>
               <h3 className="font-serif font-bold text-xl md:text-2xl text-foreground mb-4">Grupo de Conexão e Apoio</h3>
               <p className="font-body text-base text-foreground/70 leading-relaxed">
@@ -347,6 +347,75 @@ const MentoriaSalto = () => {
             </div>
             <div>
               <img src={mentoriaCafe} alt="Café e caderno" className="w-full aspect-[16/9] object-cover" />
+            </div>
+          </div>
+
+          {/* SALVA */}
+          <div className="border-t border-foreground/10 pt-20">
+            <h3 className="font-serif font-bold text-xl md:text-2xl text-foreground mb-3">
+              Acesso à SALVA, a IA da Sal
+            </h3>
+            <p className="font-serif text-2xl md:text-3xl text-foreground leading-relaxed mb-12 max-w-3xl">
+              Você não precisa atravessar o Método SAL sozinha.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center mb-16">
+              {/* Depoimento - balão de conversa */}
+              <div className="flex items-start">
+                <div className="bg-warm-white rounded-2xl rounded-tl-sm p-6 md:p-8 shadow-sm space-y-4">
+                  <p className="font-body text-base text-foreground/80 leading-relaxed">
+                    Giu, acabei de assistir todas as aulas do método SAL e amei! ❤️
+                  </p>
+                  <p className="font-body text-base text-foreground/80 leading-relaxed">
+                    Fiquei feliz por ter concluído mas ao mesmo tempo com dó pq acabou….de tanto que gostei!! 😂
+                  </p>
+                  <p className="font-body text-base text-foreground/80 leading-relaxed">
+                    Era exatamente o que eu precisava!! Me conectar com a minha essência para me comunicar com verdade
+                    e intenção com a minha audiência!
+                  </p>
+                  <p className="font-body text-base text-foreground/80 leading-relaxed">
+                    E estou encantada com a SALVA tb!! 🤩
+                  </p>
+                </div>
+              </div>
+
+              {/* Texto descritivo */}
+              <div>
+                <p className="font-body text-base text-foreground/70 leading-relaxed mb-4">
+                  Eu criei a <strong className="text-foreground">SALVA</strong> pra estar com você durante o processo.
+                </p>
+                <p className="font-body text-base text-foreground/70 leading-relaxed mb-6">
+                  Ela é uma inteligência artificial treinada com a minha linguagem, o meu olhar e tudo o que eu ensino
+                  dentro do método. Toda a base dela vem da transcrição completa das aulas, dos conceitos e das
+                  provocações que eu trago ao longo da jornada.
+                </p>
+                <p className="font-body text-base text-foreground font-semibold mb-2">Não é uma IA genérica.</p>
+                <p className="font-body text-base text-foreground/70 leading-relaxed">
+                  É como se você tivesse acesso direto à forma como eu penso — sempre que precisar.
+                </p>
+              </div>
+            </div>
+
+            {/* Benefícios */}
+            <div className="text-center">
+              <p className="font-serif text-xl md:text-2xl text-foreground mb-8">A SALVA vai te ajudar a:</p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto mb-8">
+                {[
+                  "destravar ideias",
+                  "refinar a sua comunicação",
+                  "voltar pra sua essência quando você se perder",
+                  "transformar o que você sente em algo claro, verdadeiro e comunicável",
+                ].map((item, i) => (
+                  <div key={i} className="flex items-center gap-3 bg-warm-white rounded-sm px-6 py-5 text-left">
+                    <span className="font-body text-sm text-foreground/50 flex-shrink-0">✓</span>
+                    <p className="font-body text-sm text-foreground/70 leading-relaxed">{item}</p>
+                  </div>
+                ))}
+              </div>
+              <p className="font-body text-base text-foreground/60 leading-relaxed italic max-w-2xl mx-auto">
+                O Método SAL te ajuda a integrar tudo isso na sua forma de se expressar no mundo. E agora, você não
+                precisa fazer isso sozinha.
+              </p>
             </div>
           </div>
         </div>
