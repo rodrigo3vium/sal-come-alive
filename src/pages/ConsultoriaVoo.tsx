@@ -25,6 +25,10 @@ import corpoIdentidadeVisual from "@/assets/corpo-identidade-visual.jpg";
 import etapaAlma from "@/assets/etapa-alma.jpg";
 import etapaMente from "@/assets/etapa-mente.jpg";
 import etapaCorpo from "@/assets/etapa-corpo.jpg";
+import instagramAntes from "@/assets/instagram-antes.png";
+import instagramDepois from "@/assets/instagram-depois.png";
+import etapaExpansao from "@/assets/etapa-expansao.png";
+import expansaoConteudo from "@/assets/expansao-conteudo.gif";
 
 const talvezVoceItems = [
   {
@@ -200,7 +204,7 @@ const ConsultoriaVoo = () => {
             conheça cada etapa da sua jornada conosco
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
                 image: etapaAlma,
@@ -220,15 +224,27 @@ const ConsultoriaVoo = () => {
                 etapa: "ETAPA 3 | PRESENÇA",
                 desc: "Te damos as ferramentas para comunicar a sua marca e despertar a percepção que você deseja. Nessa etapa tangibilizamos tudo aquilo que estruturamos. É quando a visão dos outros sobre você começa a mudar.",
               },
+              {
+                image: etapaExpansao,
+                label: "expansão",
+                etapa: "ETAPA 4 | EXPANSÃO",
+                desc: "Com a base e a expressão da sua marca prontas, é hora de levá-la ao mundo. Organizamos a sua presença nos canais digitais e estruturamos toda a estratégia de conteúdo, para que a sua marca cresça de forma autêntica, prática e sustentável.",
+              },
             ].map((item) => (
               <div key={item.etapa} className="flex flex-col">
                 {/* Card image */}
                 <div className="relative aspect-[4/3] overflow-hidden">
-                  <img
-                    src={item.image}
-                    alt={item.label}
-                    className="w-full h-full object-cover"
-                  />
+                  {item.image ? (
+                    <img
+                      src={item.image}
+                      alt={item.label}
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <div className="w-full h-full bg-beige/60 border border-dashed border-foreground/25 flex items-center justify-center">
+                      <span className="font-body text-xs tracking-[0.15em] uppercase text-foreground/40">imagem em breve</span>
+                    </div>
+                  )}
                 </div>
                 {/* Card text */}
                 <div className="bg-beige/40 p-6 flex-1">
@@ -442,6 +458,69 @@ const ConsultoriaVoo = () => {
               <h3 className="font-body text-base tracking-[0.15em] uppercase text-foreground mb-4">IDENTIDADE VISUAL</h3>
               <p className="font-body text-base text-foreground/70 leading-relaxed max-w-lg">
                 A forma como a sua estética traduz a marca que você quer deixar. Aqui, é importante entendermos que uma identidade visual vai muito além de um logo bonito. Ela precisa comunicar quem você é de forma coerente em todos os pontos de contato.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Expansão - Detalhamento */}
+      <section className="bg-warm-white py-20 md:py-28">
+        <div className="container mx-auto px-6">
+          <div className="flex items-center justify-center gap-6 mb-16">
+            <div className="h-px bg-foreground/30 flex-1 max-w-[200px]" />
+            <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground">expansão</h2>
+            <div className="h-px bg-foreground/30 flex-1 max-w-[200px]" />
+          </div>
+
+          <div className="text-center max-w-3xl mx-auto mb-20">
+            <h3 className="font-serif text-xl md:text-2xl text-foreground mb-4">
+              Com a essência da sua marca viva, chegou a hora de expandir.
+            </h3>
+            <p className="font-body text-base text-foreground/70 leading-relaxed">
+              Agora que estruturamos quem você é e como a sua marca se expressa, levamos tudo isso para o mundo digital — com uma presença impecável e uma estratégia de conteúdo que sustenta o seu crescimento.
+            </p>
+          </div>
+
+          {/* Expressão Digital */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
+            <div>
+              <p className="font-body text-sm tracking-[0.15em] uppercase text-foreground/60 mb-2">EXPRESSÃO DIGITAL</p>
+              <h3 className="font-serif text-2xl md:text-3xl text-foreground leading-snug mb-6">
+                Seu Instagram é a casa da sua marca dentro do digital.
+              </h3>
+              <p className="font-body text-base text-foreground/70 leading-relaxed max-w-lg">
+                Por isso, ele precisa estar pronto para receber com personalidade quem chega. Cuidamos para que tanto a estética quanto os conteúdos que apresentam a sua marca estejam impecáveis: copy e conceito dos destaques, bio e os posts essenciais — os primeiros pontos de contato da sua marca no digital.
+              </p>
+            </div>
+            <div className="flex gap-4 justify-center items-start">
+              <div className="flex flex-col items-center gap-2">
+                <img src={instagramAntes} alt="Perfil antes" className="w-full rounded-lg shadow-md" />
+                <span className="font-body text-xs tracking-[0.15em] uppercase text-foreground/50">antes</span>
+              </div>
+              <div className="flex flex-col items-center gap-2">
+                <img src={instagramDepois} alt="Perfil depois" className="w-full rounded-lg shadow-md" />
+                <span className="font-body text-xs tracking-[0.15em] uppercase text-foreground/50">depois</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Estratégia de Conteúdo */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center mt-20">
+            <div>
+              <img
+                src={expansaoConteudo}
+                alt="Estratégia de conteúdo"
+                className="w-full aspect-[16/9] object-cover"
+              />
+            </div>
+            <div>
+              <p className="font-body text-sm tracking-[0.15em] uppercase text-foreground/60 mb-2">ESTRATÉGIA DE CONTEÚDO E PLATAFORMA DE GESTÃO</p>
+              <h3 className="font-serif text-2xl md:text-3xl text-foreground leading-snug mb-6">
+                Toda a estratégia editorial da sua marca, de forma prática e estruturada.
+              </h3>
+              <p className="font-body text-base text-foreground/70 leading-relaxed max-w-lg">
+                Estabelecemos a linha editorial que nasce do seu posicionamento e da sua autenticidade, seguindo a nossa metodologia proprietária. Você recebe tudo organizado em uma plataforma de gestão, para evoluir na sua jornada com clareza e consistência.
               </p>
             </div>
           </div>
