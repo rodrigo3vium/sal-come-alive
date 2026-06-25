@@ -23,7 +23,7 @@ const CTASection = () => {
         {/* Button - aligned left */}
         <div className="flex justify-start">
           <a
-            href="https://form.respondi.app/ttqcWIpe"
+            href="https://aos-studio-sal-crm-d6cd.vercel.app/f/aplicacao-sal"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block border border-warm-white text-warm-white px-8 md:px-10 py-3 md:py-4 text-sm tracking-[0.15em] uppercase font-body hover:bg-warm-white hover:text-foreground transition-colors rounded-sm"

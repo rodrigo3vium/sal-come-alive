@@ -75,7 +75,7 @@ const ConsultoriaVoo = () => {
           </p>
           <div>
             <a
-              href="https://form.respondi.app/ttqcWIpe"
+              href="https://aos-studio-sal-crm-d6cd.vercel.app/f/aplicacao-sal"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-brown text-white px-8 py-3 text-xs tracking-[0.15em] uppercase font-body hover:bg-brown/90 transition-colors"
@@ -544,7 +544,7 @@ const ConsultoriaVoo = () => {
               Clique abaixo para fazer sua aplicação e receber um orçamento. Analisamos com muito carinho cada caso para entendermos se faz sentido trabalharmos juntos. Você nos escolhe e nós escolhemos você!
             </p>
             <a
-              href="https://form.respondi.app/ttqcWIpe"
+              href="https://aos-studio-sal-crm-d6cd.vercel.app/f/aplicacao-sal"
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full text-center bg-foreground text-primary-foreground py-4 text-sm tracking-[0.15em] uppercase font-body hover:bg-foreground/90 transition-colors"
@@ -564,7 +564,7 @@ const ConsultoriaVoo = () => {
               Clique abaixo para fazer sua aplicação e receber um orçamento. Analisamos com muito carinho cada caso para entendermos se faz sentido trabalharmos juntos. Você nos escolhe e nós escolhemos você!
             </p>
             <a
-              href="https://form.respondi.app/ttqcWIpe"
+              href="https://aos-studio-sal-crm-d6cd.vercel.app/f/aplicacao-sal"
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full max-w-xl text-center bg-foreground text-primary-foreground py-4 text-sm tracking-[0.15em] uppercase font-body hover:bg-foreground/90 transition-colors rounded-sm"

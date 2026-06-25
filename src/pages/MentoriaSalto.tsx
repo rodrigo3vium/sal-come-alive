@@ -42,7 +42,7 @@ const MentoriaSalto = () => {
               <strong className="text-foreground">leveza e propósito</strong> seguindo nossa metodologia proprietária.
             </p>
             <a
-              href="https://form.respondi.app/ttqcWIpe"
+              href="https://aos-studio-sal-crm-d6cd.vercel.app/f/aplicacao-sal"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-cta w-fit"
@@ -425,7 +425,7 @@ const MentoriaSalto = () => {
       <section className="bg-warm-white py-20 md:py-28">
         <div className="max-w-4xl mx-auto px-6 flex flex-col items-center">
           <a
-            href="https://form.respondi.app/ttqcWIpe"
+            href="https://aos-studio-sal-crm-d6cd.vercel.app/f/aplicacao-sal"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-8 group"
@@ -498,7 +498,7 @@ const MentoriaSalto = () => {
                 sentido trabalharmos juntas. Você nos escolhe e nós escolhemos você!
               </p>
               <a
-                href="https://form.respondi.app/ttqcWIpe"
+                href="https://aos-studio-sal-crm-d6cd.vercel.app/f/aplicacao-sal"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-cta"

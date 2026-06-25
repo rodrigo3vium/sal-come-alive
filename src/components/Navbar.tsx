@@ -86,7 +86,7 @@ const Navbar = () => {
         </div>
 
         <a
-          href="https://form.respondi.app/ttqcWIpe"
+          href="https://aos-studio-sal-crm-d6cd.vercel.app/f/aplicacao-sal"
           target="_blank"
           rel="noopener noreferrer"
           className="hidden md:inline-flex border border-foreground text-foreground px-6 py-2 text-xs tracking-[0.15em] uppercase font-body hover:bg-foreground hover:text-primary-foreground transition-colors rounded-sm"
@@ -109,7 +109,7 @@ const Navbar = () => {
           <button onClick={() => goTo("/consultoria-voo")} className="block w-full text-left text-sm tracking-[0.08em] lowercase text-foreground/60 py-1 pl-4 font-body">— consultoria voo</button>
           <button onClick={() => goTo("/mentoria-salto")} className="block w-full text-left text-sm tracking-[0.08em] lowercase text-foreground/60 py-1 pl-4 font-body">— mentoria salto</button>
           <a
-            href="https://form.respondi.app/ttqcWIpe"
+            href="https://aos-studio-sal-crm-d6cd.vercel.app/f/aplicacao-sal"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block border border-foreground text-foreground px-6 py-2 text-xs tracking-[0.15em] uppercase font-body hover:bg-foreground hover:text-primary-foreground transition-colors rounded-sm"
