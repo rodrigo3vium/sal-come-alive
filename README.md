@@ -75,6 +75,25 @@ npm run test        # vitest run
 npm run lint        # eslint
 ```
 
+## Identidade visual & assets
+
+- **Logo (wordmark):** [src/assets/logo-studio-sal.png](src/assets/logo-studio-sal.png) —
+  usada no header ([src/components/Navbar.tsx](src/components/Navbar.tsx)) e no rodapé.
+- **Favicon:** [public/favicon.ico](public/favicon.ico) (multi-resolução 16→256px) e
+  [public/apple-touch-icon.png](public/apple-touch-icon.png) (180px, iOS/Safari), ambos
+  linkados no [index.html](index.html). Gerados a partir de um crop quadrado central da foto
+  da marca `SAL_-161.jpg`.
+  > ⚠️ A foto não traz um símbolo legível em ~20px (fica um quadrado verde na aba). Quando
+  > houver um **símbolo/ícone isolado da SAL** (quadrado, fundo transparente), regerar o
+  > `favicon.ico` e o `apple-touch-icon.png` a partir dele.
+- **Legado do template:** o projeto nasceu de um template Lovable. Os resquícios foram
+  removidos — favicon do Lovable, `public/placeholder.svg` não utilizado e o nome default
+  `vite_react_shadcn_ts` no `package.json` (renomeado para `studio-sal-site`). Não há mais
+  referências ao Lovable (`gpteng`/`og:image` do template) no código.
+
+> **Pendência conhecida:** o [index.html](index.html) ainda não define uma `og:image` —
+> compartilhamentos em WhatsApp/redes saem sem imagem de preview.
+
 ## Deploy (Vercel)
 
 Deploy contínuo **por push**: conecte o repositório na Vercel e cada push para a branch de
