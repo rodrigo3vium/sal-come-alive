@@ -526,7 +526,7 @@ const MentoriaSalto = () => {
             </a>
             <span className="hidden md:block text-foreground/30">|</span>
             <a
-              href="https://wa.me/14244150554"
+              href="https://wa.me/message/4GEMZDTURP6EE1"
               target="_blank"
               rel="noopener noreferrer"
               className="font-body text-sm text-foreground hover:opacity-70 transition-opacity"
