@@ -17,10 +17,10 @@ const services = [
   },
   {
     title: "Cursos",
-    description: "Você poderá aprender tudo sobre o nosso método para estruturar a comunicação que traduz profundamente aquilo que temos de único para nós e para o mundo.",
+    description: "Aprenda tudo sobre o nosso método para estruturar a comunicação que traduz profundamente aquilo que temos de único para nós e para o mundo.",
     image: "/images/cursos.jpeg",
-    link: "https://studiosal.com.br/contato",
-    subtitle: "| EM BREVE |",
+    link: "https://www.giuliasalvatore.com.br/metodo-sal",
+    subtitle: "",
     external: true,
     methodoSal: true,
   },
@@ -64,14 +64,9 @@ const ServicesSection = () => {
                   </p>
                   <p className="font-body text-sm text-white/90 leading-relaxed max-w-xs">{service.description}</p>
                   {service.methodoSal && (
-                    <a
-                      href="https://www.giuliasalvatore.com.br/metodo-sal"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="mt-4 inline-block border-b border-white/70 pb-0.5 font-body text-xs tracking-[0.15em] uppercase text-white hover:text-white/70 transition-colors"
-                    >
+                    <span className="mt-4 inline-block border-b border-white/70 pb-0.5 font-body text-xs tracking-[0.15em] uppercase text-white group-hover:text-white/70 transition-colors">
                       conheça o Método SAL
-                    </a>
+                    </span>
                   )}
                 </div>
               </>
@@ -80,9 +75,15 @@ const ServicesSection = () => {
 
             if (service.external) {
               return (
-                <div key={service.title} className="relative overflow-hidden">
+                <a
+                  key={service.title}
+                  href={service.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={className}
+                >
                   {content}
-                </div>
+                </a>
               );
             }
 

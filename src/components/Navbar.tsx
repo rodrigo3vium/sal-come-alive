@@ -71,14 +71,18 @@ const Navbar = () => {
                     </p>
                   </a>
                   {/* Cursos */}
-                  <div className="p-10 bg-beige/40">
+                  <a
+                    href="https://www.giuliasalvatore.com.br/metodo-sal"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-10 bg-beige/40 hover:bg-beige/70 transition-colors group block"
+                  >
                     <h3 className="font-serif text-lg text-foreground mb-4">Cursos</h3>
                     <div className="w-full h-[2px] bg-foreground/50 mb-6" />
-                    <p className="font-body text-sm font-semibold text-foreground/80 mb-1">[EM BREVE]</p>
                     <p className="font-body text-sm text-foreground/70 leading-relaxed">
-                      Você poderá aprender tudo sobre o nosso método para estruturar a comunicação que traduz profundamente aquilo que temos de único para nós e para o mundo.
+                      Aprenda tudo sobre o nosso método para estruturar a comunicação que traduz profundamente aquilo que temos de único para nós e para o mundo.
                     </p>
-                  </div>
+                  </a>
                 </div>
               </div>
             )}
