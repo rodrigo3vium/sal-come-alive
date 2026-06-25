@@ -531,7 +531,7 @@ const MentoriaSalto = () => {
               rel="noopener noreferrer"
               className="font-body text-sm text-foreground hover:opacity-70 transition-opacity"
             >
-              WhatsApp: +1 (424) 415-0554
+              Falar pelo WhatsApp
             </a>
           </div>
         </div>
